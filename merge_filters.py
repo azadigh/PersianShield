@@ -4,43 +4,28 @@ from datetime import datetime, timezone
 
 REPO = os.getenv('GITHUB_REPOSITORY', 'yourusername/PersianShield')
 HOMEPAGE = f"https://github.com/{REPO}"
-LOCAL_EXTRA_FILE = "extra.txt"   # <-- your custom rules file
+LOCAL_EXTRA_FILE = "extra.txt"
 
 # ============================================================
-# SOURCES (expanded with more comprehensive lists)
+# CATEGORY LABELS (for header citation)
+# ============================================================
+CATEGORY_LABELS = {
+    "persian":         "🇮🇷 Persian / Iranian",
+    "ads":             "🚫 Ads Blocking",
+    "privacy":         "🕵️ Privacy & Tracking",
+    "annoyances":      "🙅 Annoyances",
+    "security_light":  "🛡️ Security (Light)",
+    "security_rules":  "🛡️ Security Rules",
+    "crypto":          "⛏️ Crypto-mining",
+    "security_heavy":  "🛡️ Security (Heavy)",
+    "adult":           "🔞 Adult / NSFW",
+}
+
+# ============================================================
+# SOURCES — split into granular categories to control size
 # ============================================================
 SOURCES = {
-    "ads_trackers": [
-        ("EasyList", "https://easylist-downloads.adblockplus.org/easylist.txt"),
-        ("EasyPrivacy", "https://easylist-downloads.adblockplus.org/easyprivacy.txt"),
-        ("Peter Lowe's Ad/Tracking Server List", "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=0&mimetype=plaintext"),
-        ("AdGuard Base filter", "https://filters.adtidy.org/extension/ublock/filters/2_optimized.txt"),
-        ("AdGuard Tracking Protection", "https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt"),
-        ("AdGuard Mobile Ads", "https://filters.adtidy.org/extension/ublock/filters/11_optimized.txt"),
-        ("AdGuard Experimental", "https://filters.adtidy.org/extension/ublock/filters/5.txt"),
-        ("uBlock filters", "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt"),
-        ("uBlock - Privacy", "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt"),
-        ("uBlock - Unbreak", "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt"),
-        ("uBlock - Quick fixes", "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/quick-fixes.txt"),
-    ],
-    "annoyances": [
-        ("EasyList Cookie List", "https://easylist-downloads.adblockplus.org/easylist-cookie.txt"),
-        ("Fanboy's Annoyance List", "https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt"),
-        ("Fanboy's Social Blocking List", "https://easylist-downloads.adblockplus.org/fanboy-social.txt"),
-        ("Fanboy's Notifications Blocking List", "https://easylist-downloads.adblockplus.org/fanboy-notifications.txt"),
-        ("AdGuard Annoyances", "https://filters.adtidy.org/extension/ublock/filters/14_optimized.txt"),
-        ("AdGuard Social Media", "https://filters.adtidy.org/extension/ublock/filters/4_optimized.txt"),
-        ("uBlock - Annoyances", "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/annoyances.txt"),
-    ],
-    "security": [
-        ("oisd full", "https://dbl.oisd.nl/"),
-        ("StevenBlack unified hosts", "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"),
-        ("uBlock - Badware risks", "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt"),
-        ("CoinBlockerLists", "https://raw.githubusercontent.com/ZeroDot1/CoinBlockerLists/master/list_browser.txt"),
-        ("NoCoin (cryptomining)", "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt"),
-        ("Dandelion Sprout's Anti-Malware List", "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout%27s%20Anti-Malware%20List.txt"),
-        ("Spam404 malicious domains", "https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt"),
-    ],
+    # --- Persian (small) ---
     "persian": [
         ("PersianBlocker", "https://raw.githubusercontent.com/MasterKia/PersianBlocker/main/PersianBlocker.txt"),
         ("uBOPa", "https://raw.githubusercontent.com/nimasaj/uBOPa/master/uBOPa.txt"),
@@ -48,11 +33,121 @@ SOURCES = {
         ("AdBlockFA", "https://raw.githubusercontent.com/SlashArash/adblockfa/master/adblockfa.txt"),
         ("Persian Community List", "https://ideone.com/plain/K452p"),
     ],
-    "porn": [
+    # --- Ads: adblock rules (medium) ---
+    "ads": [
+        ("EasyList", "https://easylist-downloads.adblockplus.org/easylist.txt"),
+        ("Peter Lowe's Ad/Tracking", "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=0&mimetype=plaintext"),
+        ("AdGuard Base", "https://filters.adtidy.org/extension/ublock/filters/2_optimized.txt"),
+        ("AdGuard Mobile Ads", "https://filters.adtidy.org/extension/ublock/filters/11_optimized.txt"),
+        ("uBlock filters", "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt"),
+        ("uBlock Unbreak", "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt"),
+        ("uBlock Quick fixes", "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/quick-fixes.txt"),
+    ],
+    # --- Privacy: adblock rules (medium) ---
+    "privacy": [
+        ("EasyPrivacy", "https://easylist-downloads.adblockplus.org/easyprivacy.txt"),
+        ("AdGuard Tracking Protection", "https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt"),
+        ("uBlock Privacy", "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt"),
+    ],
+    # --- Annoyances: adblock rules (medium) ---
+    "annoyances": [
+        ("EasyList Cookie", "https://easylist-downloads.adblockplus.org/easylist-cookie.txt"),
+        ("Fanboy's Annoyance", "https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt"),
+        ("Fanboy's Social", "https://easylist-downloads.adblockplus.org/fanboy-social.txt"),
+        ("Fanboy's Notifications", "https://easylist-downloads.adblockplus.org/fanboy-notifications.txt"),
+        ("AdGuard Annoyances", "https://filters.adtidy.org/extension/ublock/filters/14_optimized.txt"),
+        ("AdGuard Social Media", "https://filters.adtidy.org/extension/ublock/filters/4_optimized.txt"),
+        ("uBlock Annoyances", "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/annoyances.txt"),
+    ],
+    # --- Security LIGHT domain list (small) ---
+    "security_light": [
+        ("oisd small", "https://small.oisd.nl/"),
+    ],
+    # --- Security adblock rules (small) ---
+    "security_rules": [
+        ("uBlock Badware risks", "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt"),
+    ],
+    # --- Crypto-mining (small) ---
+    "crypto": [
+        ("NoCoin", "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt"),
+    ],
+    # --- Security HEAVY domain lists (very large) ---
+    "security_heavy": [
+        ("oisd full", "https://dbl.oisd.nl/"),
+        ("StevenBlack unified hosts", "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"),
+        ("Spam404", "https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt"),
+        ("Dandelion Sprout Anti-Malware", "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout%27s%20Anti-Malware%20List.txt"),
+        ("CoinBlockerLists", "https://raw.githubusercontent.com/ZeroDot1/CoinBlockerLists/master/list_browser.txt"),
+    ],
+    # --- Adult (very large) ---
+    "adult": [
         ("oisd NSFW", "https://nsfw.oisd.nl/"),
         ("Chad Mayfield Porn Top1M", "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list"),
-        ("StevenBlack hosts (porn)", "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn/hosts"),
+        ("StevenBlack porn", "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn/hosts"),
     ],
+}
+
+# ============================================================
+# OUTPUT FILES — tiered system
+# ============================================================
+FILES = {
+    # ⭐ LIGHT — recommended for most users (small & fast)
+    "persianshield-light.txt": {
+        "title": "PersianShield Light ⭐ (Recommended)",
+        "desc": "Lightweight & fast. Essential ads + privacy + annoyances + Persian + light security. Best balance of protection and performance for most users.",
+        "categories": ["persian", "ads", "privacy", "annoyances", "security_light", "security_rules", "crypto"],
+        "include_extra": True,
+    },
+    # --- CATEGORY lists (mix & match) ---
+    "persianshield-persian.txt": {
+        "title": "PersianShield — Persian Only",
+        "desc": "Only Persian/Iranian filters. Combine with other category lists.",
+        "categories": ["persian"],
+        "include_extra": True,
+    },
+    "persianshield-ads.txt": {
+        "title": "PersianShield — Ads Blocking",
+        "desc": "Global + Persian ad blocking only. No privacy/security.",
+        "categories": ["persian", "ads"],
+        "include_extra": False,
+    },
+    "persianshield-privacy.txt": {
+        "title": "PersianShield — Privacy & Tracking",
+        "desc": "Blocks trackers and privacy invasion only.",
+        "categories": ["privacy"],
+        "include_extra": False,
+    },
+    "persianshield-annoyances.txt": {
+        "title": "PersianShield — Annoyances",
+        "desc": "Removes cookie popups, social widgets, and notification prompts.",
+        "categories": ["annoyances"],
+        "include_extra": False,
+    },
+    "persianshield-security.txt": {
+        "title": "PersianShield — Security",
+        "desc": "Blocks malware, phishing, and cryptomining using a light domain list.",
+        "categories": ["security_light", "security_rules", "crypto"],
+        "include_extra": False,
+    },
+    "persianshield-nsfw.txt": {
+        "title": "PersianShield — Adult Blocking (NSFW)",
+        "desc": "Blocks adult/pornographic content. Add on top of any other list.",
+        "categories": ["adult"],
+        "include_extra": False,
+    },
+    # --- COMPLETE lists (heavy, max protection) ---
+    "persianshield-ultimate.txt": {
+        "title": "PersianShield Ultimate (Complete)",
+        "desc": "MAXIMUM protection: everything except adult content. HEAVY — includes large security domain lists. For users who want the strongest blocking.",
+        "categories": ["persian", "ads", "privacy", "annoyances", "security_heavy", "security_rules", "crypto"],
+        "include_extra": True,
+    },
+    "persianshield-family.txt": {
+        "title": "PersianShield Family Safe (Complete + Adult)",
+        "desc": "MAXIMUM protection + strict adult blocking. HEAVY. For family/work devices.",
+        "categories": ["persian", "ads", "privacy", "annoyances", "security_heavy", "security_rules", "crypto", "adult"],
+        "include_extra": True,
+    },
 }
 
 LOCALHOST_NAMES = {"localhost", "localhost.localdomain", "broadcasthost", "local", "ip6-localhost"}
@@ -64,21 +159,15 @@ def looks_like_ip(token):
 
 
 def parse_line(line):
-    """Normalize a line into an adblock rule. Returns None for comments/invalid."""
     line = line.strip()
     if not line:
         return None
-    if line.startswith("!"):          # adblock comment
+    if line.startswith("!") or line.startswith("["):
         return None
-    if line.startswith("["):          # [Adblock Plus 2.0] header
-        return None
-    # hosts-style comment: '#' but NOT global cosmetic '##' nor exception '#@#'
     if line.startswith("#") and not line.startswith("##") and not line.startswith("#@"):
         return None
 
     parts = line.split()
-
-    # hosts format: 0.0.0.0 domain / 127.0.0.1 domain
     if len(parts) == 2 and parts[0] in ("0.0.0.0", "127.0.0.1", "::1"):
         d = parts[1].lower()
         if d in LOCALHOST_NAMES:
@@ -96,16 +185,16 @@ def parse_line(line):
         if is_bare_domain:
             d = token.lower().rstrip(".")
             return f"||{d}^" if len(d) > 3 else None
-        return token  # already a valid adblock rule (cosmetic, exception, etc.)
+        return token
 
-    return line  # anything else, keep as-is
+    return line
 
 
 def fetch(url):
     try:
         print(f"   ⬇️  {url}")
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (PersianShield)"})
-        with urllib.request.urlopen(req, timeout=30) as r:
+        with urllib.request.urlopen(req, timeout=40) as r:
             text = r.read().decode("utf-8", errors="ignore")
         return {p for ln in text.splitlines() if (p := parse_line(ln))}
     except Exception as e:
@@ -114,7 +203,6 @@ def fetch(url):
 
 
 def read_local_extra(path=LOCAL_EXTRA_FILE):
-    """Read your custom extra.txt rules from the repository root."""
     if not os.path.exists(path):
         print(f"   ⚠️  '{path}' not found — skipping custom rules.")
         return set()
@@ -129,85 +217,97 @@ def read_local_extra(path=LOCAL_EXTRA_FILE):
         return set()
 
 
-def build_header(title, desc_lines):
+def human_size(nbytes):
+    for unit in ("B", "KB", "MB", "GB"):
+        if nbytes < 1024:
+            return f"{nbytes:.1f} {unit}"
+        nbytes /= 1024
+    return f"{nbytes:.1f} TB"
+
+
+def build_header(cfg, rule_count, size_bytes):
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
     ver = datetime.now(timezone.utc).strftime("%Y.%m.%d")
-    
-    header = ["[Adblock Plus 2.0]", f"! Title: {title}"]
-    header.extend(f"! {line}" for line in desc_lines)
-    header.extend([
+    lines = ["[Adblock Plus 2.0]", f"! Title: {cfg['title']}"]
+    for dl in cfg["desc"].split(". "):
+        lines.append(f"! {dl.strip()}.")
+    lines += [
         f"! Homepage: {HOMEPAGE}",
-        "! Coded by: github.com/azadigh and t.me/azadi_tg", # <-- YOUR CREDIT ADDED HERE
+        "! Coded by: github.com/azadigh and t.me/azadi_tg",
         f"! Version: {ver}",
         f"! Last modified: {now}",
         "! Expires: 1 days (update frequency)",
+        f"! Total rules: {rule_count:,}",
+        f"! File size: {human_size(size_bytes)}",
         "! License: MIT",
-        "! ---------------------------------------------------------",
         "!",
-    ])
-    return "\n".join(header) + "\n"
+        "! ==================== SOURCES / CREDITS ====================",
+    ]
+    seen = set()
+    for cat in cfg["categories"]:
+        label = CATEGORY_LABELS.get(cat, cat)
+        if label in seen:
+            continue
+        seen.add(label)
+        lines.append(f"! [{label}]")
+        for name, url in SOURCES[cat]:
+            lines.append(f"!   - {name}: {url}")
+    lines.append("! ============================================================")
+    lines.append("")
+    return "\n".join(lines) + "\n"
 
 
-def generate(filename, title, desc_lines, categories, extra_rules):
-    print(f"\n🔨 Building {filename}...")
-    all_rules = set()
-    for cat in categories:
-        print(f"  ➕ Category: {cat}")
-        for _, url in SOURCES[cat]:
-            all_rules |= fetch(url)
-    all_rules |= extra_rules  # <-- merge YOUR custom extra.txt rules
+def fetch_all_sources():
+    cache = {}
+    for cat, sources in SOURCES.items():
+        cache[cat] = set()
+        print(f"\n📂 Category: {CATEGORY_LABELS.get(cat, cat)}")
+        for _, url in sources:
+            cache[cat] |= fetch(url)
+        print(f"   → {len(cache[cat]):,} rules cached")
+    return cache
 
+
+def write_file(filename, cfg, rules):
+    sorted_rules = sorted(rules)
+    body = "\n".join(sorted_rules) + "\n"
+    size_bytes = len(body.encode("utf-8"))
+    header = build_header(cfg, len(rules), size_bytes)
     with open(filename, "w", encoding="utf-8") as f:
-        f.write(build_header(title, desc_lines))
-        f.write("\n".join(sorted(all_rules)))
-        f.write("\n")
-    print(f"  ✅ {len(all_rules):,} unique rules saved → {filename}")
+        f.write(header)
+        f.write(body)
+    return size_bytes, len(rules)
 
 
 def main():
-    desc_common = [
-        "Description: The ultimate, comprehensive adblock filter list.",
-        "Once you subscribe, NO OTHER LIST IS REQUIRED. Blocks ads, trackers, malware,",
-        "crypto-miners, cookie notices, social annoyances + deep Persian coverage.",
-        "",
-        "SOURCES USED (Citations & Credits):",
-        "---------------------------------------------------------",
-        "🌍 GLOBAL ADS & TRACKERS: EasyList, EasyPrivacy, Peter Lowe's,",
-        "   AdGuard Base/Tracking/Mobile/Experimental, uBlock Origin core filters.",
-        "🙅 ANNOYANCES: EasyList Cookie, Fanboy's Annoyance/Social/Notifications,",
-        "   AdGuard Annoyances/Social, uBlock Annoyances.",
-        "🛡️ SECURITY: oisd full, StevenBlack hosts, uBlock Badware,",
-        "   CoinBlockerLists, NoCoin, Dandelion Sprout Anti-Malware, Spam404.",
-        "🇮🇷 PERSIAN: PersianBlocker, uBOPa, AdBlock Iran, AdBlockFA, Community List.",
-        "📝 CUSTOM: Includes additional hand-curated rules from this repo (extra.txt).",
-        "---------------------------------------------------------",
-    ]
+    print("🚀 PersianShield — building tiered filter lists...\n")
 
-    desc_family = desc_common + [
-        "",
-        "🔞 ADULT / PORNOGRAPHY BLOCKING (Family Safe):",
-        "   oisd NSFW, Chad Mayfield Porn Top1M, StevenBlack porn extension.",
-        "---------------------------------------------------------",
-    ]
+    cache = fetch_all_sources()
+    extra = read_local_extra()
 
-    # Load your custom rules ONCE, then merge into every final list
-    extra_rules = read_local_extra(LOCAL_EXTRA_FILE)
+    print("\n" + "=" * 60)
+    print("📦 Generating output files...")
+    print("=" * 60)
 
-    generate(
-        "persianshield-ultimate.txt",
-        "PersianShield Ultimate - The ONLY List You Need (No Ads, No Tracking)",
-        desc_common,
-        ["ads_trackers", "annoyances", "security", "persian"],
-        extra_rules,
-    )
+    summary = []
+    for filename, cfg in FILES.items():
+        rules = set()
+        for cat in cfg["categories"]:
+            rules |= cache.get(cat, set())
+        if cfg.get("include_extra", False):
+            rules |= extra
+        size, count = write_file(filename, cfg, rules)
+        summary.append((filename, count, size))
+        print(f"  ✅ {filename} — {count:,} rules — {human_size(size)}")
 
-    generate(
-        "persianshield-family.txt",
-        "PersianShield Family Safe - Ultimate + Adult Content Blocking",
-        desc_family,
-        ["ads_trackers", "annoyances", "security", "persian", "porn"],
-        extra_rules,
-    )
+    print("\n" + "=" * 60)
+    print("📊 SUMMARY")
+    print("=" * 60)
+    print(f"{'File':<32} {'Rules':>12} {'Size':>10}")
+    print("-" * 60)
+    for filename, count, size in summary:
+        print(f"{filename:<32} {count:>12,} {human_size(size):>10}")
+    print("\n🎉 All lists generated successfully!")
 
 
 if __name__ == "__main__":
