@@ -275,4 +275,3 @@ https://raw.githubusercontent.com/azadigh/PersianShield/main/persianshield-famil
 ---
 
 ساخته شده با ❤️ و قدرت GitHub Actions | آپدیت خودکار روزانه
-```
