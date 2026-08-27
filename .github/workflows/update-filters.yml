@@ -12,22 +12,15 @@ jobs:
   build-and-update:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
       - name: Run merge script
         run: python merge_filters.py
-
-      - name: Commit and push generated lists
+      - name: Commit and push generated files
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: auto-update tiered filter lists"
-          # Commits generated lists including the standalone pornlist.
-          # extra.txt (your custom rules) stays untouched.
-          file_pattern: "persianshield-*.txt pornlist.txt"
+          commit_message: "chore: auto-update filter lists + stats"
+          file_pattern: "persianshield-*.txt persianshield-dns-* pornlist.txt stats.json"
           branch: main
