@@ -270,4 +270,3 @@ https://raw.githubusercontent.com/azadigh/PersianShield/main/pornlist.txt
 ---
 
 ساخته شده با ❤️ و قدرت GitHub Actions | آپدیت خودکار روزانه
-```
