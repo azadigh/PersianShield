@@ -88,7 +88,7 @@
 https://raw.githubusercontent.com/azadigh/PersianShield/main/persianshield-light.txt
 ```
 
-### 🇮🇷 ۲. فقط فارسی (Persian Only)
+###  ۲. فقط فارسی (Persian Only)
 
 ```text
 https://raw.githubusercontent.com/azadigh/PersianShield/main/persianshield-persian.txt
