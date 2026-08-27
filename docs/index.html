@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سپر پارسی | PersianShield</title>
+<style>
+  :root{--bg:#0f172a;--card:#1e293b;--accent:#38bdf8;--text:#e2e8f0;--muted:#94a3b8;}
+  *{margin:0;padding:0;box-sizing:border-box;font-family:Tahoma,'Segoe UI',sans-serif;}
+  body{background:var(--bg);color:var(--text);padding:24px;min-height:100vh;}
+  .hero{text-align:center;padding:40px 16px;}
+  .hero h1{font-size:2.2rem;margin-bottom:12px;}
+  .hero p{color:var(--muted);max-width:640px;margin:0 auto;line-height:1.8;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;max-width:1100px;margin:32px auto;}
+  .card{background:var(--card);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:12px;border:1px solid #334155;}
+  .card h3{font-size:1.05rem;color:var(--accent);}
+  .card p{color:var(--muted);font-size:.85rem;line-height:1.6;flex-grow:1;}
+  .btns{display:flex;gap:8px;flex-wrap:wrap;}
+  a.btn{flex:1;text-align:center;padding:10px 12px;border-radius:8px;text-decoration:none;font-size:.85rem;font-weight:bold;transition:.2s;}
+  .sub{background:var(--accent);color:#03101f;}
+  .sub:hover{opacity:.85;}
+  .copy{background:#334155;color:var(--text);cursor:pointer;border:none;}
+  .copy:hover{background:#475569;}
+  .badge{display:inline-block;background:#0ea5e9;color:#03101f;font-size:.7rem;padding:3px 8px;border-radius:20px;font-weight:bold;}
+  footer{text-align:center;color:var(--muted);padding:32px;font-size:.85rem;}
+  footer a{color:var(--accent);text-decoration:none;}
+</style>
+</head>
+<body>
+  <div class="hero">
+    <h1>🛡️ سپر پارسی <span style="color:var(--accent)">PersianShield</span></h1>
+    <p>مجموعه فیلتر لیست‌های یکپارچه برای مسدودسازی تبلیغات، ردیاب‌ها و بدافزارها در وب فارسی و جهانی. یک لیست برای همیشه.</p>
+  </div>
+
+  <div class="grid" id="cards"></div>
+
+  <footer>
+    ساخته شده با ❤️ توسط <a href="https://github.com/azadigh">azadigh</a> |
+    <a href="https://t.me/azadi_tg">کانال تلگرام</a> |
+    <a href="https://github.com/azadigh/PersianShield">گیت‌هاب</a>
+  </footer>
+
+<script>
+const base = "https://raw.githubusercontent.com/azadigh/PersianShield/main/";
+const lists = [
+  {f:"persianshield-light.txt", t:"⭐ نسخه سبک (پیشنهادی)", d:"سریع و متعادل. مناسب اکثر کاربران. بدون محتوای بزرگسالان.", badge:"سبک"},
+  {f:"persianshield-persian.txt", t:"🇮🇷 فقط فارسی", d:"فقط فیلترهای سایت‌های فارسی.", badge:"فارسی"},
+  {f:"persianshield-ads.txt", t:"🚫 تبلیغات", d:"فقط مسدودسازی تبلیغات.", badge:"تبلیغ"},
+  {f:"persianshield-privacy.txt", t:"🕵️ حریم خصوصی", d:"فقط مسدودسازی ردیاب‌ها.", badge:"حریم خصوصی"},
+  {f:"persianshield-annoyances.txt", t:"🙅 مزاحمت‌ها", d:"حذف کوکی، پاپ‌آپ و ویجت‌های اجتماعی.", badge:"مزاحمت"},
+  {f:"persianshield-security.txt", t:"🛡️ امنیت", d:"مسدودسازی بدافزار و فیشینگ.", badge:"امنیت"},
+  {f:"persianshield-ultimate.txt", t:"🔒 نسخه نهایی", d:"حداکثر حفاظت + بزرگسالان. سنگین.", badge:"کامل"},
+  {f:"pornlist.txt", t:"🔞 پورن‌لیست", d:"مسدودسازی جداگانه بزرگسالان. روی لیست سبک اضافه کنید.", badge:"بزرگسال"},
+  {f:"whitelist.txt", t:"✅ لیست سفید", d:"استثنائات پیشنهادی برای سایت‌های بانکی و پرداخت.", badge:"استثناء"},
+];
+const grid = document.getElementById("cards");
+lists.forEach(l => {
+  const url = base + l.f;
+  const card = document.createElement("div");
+  card.className = "card";
+  card.innerHTML = `
+    <h3>${l.t} <span class="badge">${l.badge}</span></h3>
+    <p>${l.d}</p>
+    <div class="btns">
+      <a class="btn sub" href="${url}" target="_blank">مشاهده لیست</a>
+      <button class="btn copy" onclick="navigator.clipboard.writeText('${url}');this.textContent='✅ کپی شد!'">کپی لینک</button>
+    </div>`;
+  grid.appendChild(card);
+});
+</script>
+</body>
+</html>
