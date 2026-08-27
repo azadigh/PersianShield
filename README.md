@@ -1,13 +1,10 @@
 # 🛡️ سپر پارسی | PersianShield
 
-![GitHub Actions](https://img.shields.io/badge/Auto--Update-Daily-brightgreen?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
-![Lists](https://img.shields.io/badge/Filter%20Lists-8-purple?style=flat-square)
-![Platform](https://img.shields.io/badge/uBlock%20Origin-%E2%9C%93-orange?style=flat-square)
-![Platform](https://img.shields.io/badge/AdGuard-%E2%9C%93-green?style=flat-square)
-![Platform](https://img.shields.io/badge/Pi--hole-%E2%9C%93-red?style=flat-square)
-![Platform](https://img.shields.io/badge/AdGuard%20Home-%E2%9C%93-blue?style=flat-square)
-
+![Total Rules](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/azadigh/PersianShield/main/stats.json)
+![Build](https://github.com/azadigh/PersianShield/actions/workflows/update-filters.yml/badge.svg)
+![Last Commit](https://img.shields.io/github/last-commit/azadigh/PersianShield)
+![Repo Size](https://img.shields.io/github/repo-size/azadigh/PersianShield)
+![License](https://img.shields.io/badge/License-MIT-blue)
 > **«یک لیست برای همیشه؛ خداحافظی با تبلیغات، ردیاب‌ها و بدافزارها!»**
 >
 > مجموعه‌ای از ۸ فیلتر لیست یکپارچه برای وب فارسی و جهانی — از نسخه سبک و سریع تا نسخه کامل با حداکثر حفاظت. با اشتراک در لیست مناسب، **نیاز شما به هر لیست دیگری برای همیشه از بین می‌رود.**
