@@ -1,0 +1,19 @@
+[Adblock Plus 2.0]
+! Title: PersianShield Whitelist (Recommended Exceptions)
+! Description: Recommended allowlist for common false positives (banking, payment, gov).
+! Coded by: github.com/azadigh and t.me/azadi_tg
+! ---------------------------------------------------------------
+! ⚠️ Customize this file for your needs. Subscribe to it alongside your main list.
+!
+! Payment / Shaparak gateway
+@@||shaparak.ir^$document
+!
+! Banking (add your bank if blocked)
+@@||bankmellat.ir^$document
+@@||bmi.ir^$document
+!
+! Government services
+@@||my.gov.ir^$document
+!
+! Example: allow first-party scripts on a broken site
+! @@||example.com^$script,first-party
