@@ -1,0 +1,26 @@
+name: "💥 گزارش خرابی سایت"
+description: "سایتی که توسط فیلترها به مشکل برخورده است"
+title: "[Broken Site] "
+labels: ["broken-site"]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: "آدرس سایت (URL)"
+      placeholder: "https://example.com"
+    validations:
+      required: true
+  - type: dropdown
+    id: list
+    attributes:
+      label: "کدام لیست فعال است؟"
+      options: [Light, Ultimate, Persian Only, PornList, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: desc
+    attributes:
+      label: "شرح مشکل"
+      description: "چه چیزی کار نمی‌کند؟ (لود نشدن صفحه، خالی بودن محتوا و...)"
+    validations:
+      required: true
