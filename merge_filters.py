@@ -2,7 +2,7 @@ import urllib.request
 import os
 from datetime import datetime, timezone
 
-REPO = os.getenv('GITHUB_REPOSITORY', 'yourusername/PersianShield')
+REPO = os.getenv('GITHUB_REPOSITORY', 'azadigh/PersianShield')
 HOMEPAGE = f"https://github.com/{REPO}"
 LOCAL_EXTRA_FILE = "extra.txt"
 
@@ -88,65 +88,61 @@ SOURCES = {
 }
 
 # ============================================================
-# OUTPUT FILES — tiered system
+# OUTPUT FILES — porn kept OUT of category lists (to reduce size).
+# Porn lives ONLY in: Ultimate (built-in) + standalone pornlist.txt
 # ============================================================
 FILES = {
-    # ⭐ LIGHT — recommended for most users (small & fast)
+    # ⭐ LIGHT — recommended (NO porn)
     "persianshield-light.txt": {
         "title": "PersianShield Light ⭐ (Recommended)",
-        "desc": "Lightweight & fast. Essential ads + privacy + annoyances + Persian + light security. Best balance of protection and performance for most users.",
+        "desc": "Lightweight & fast. Essential ads + privacy + annoyances + Persian + light security. NO adult content. Best balance of protection and performance for most users.",
         "categories": ["persian", "ads", "privacy", "annoyances", "security_light", "security_rules", "crypto"],
         "include_extra": True,
     },
-    # --- CATEGORY lists (mix & match) ---
+    # --- CATEGORY lists (NO porn, kept small) ---
     "persianshield-persian.txt": {
         "title": "PersianShield — Persian Only",
-        "desc": "Only Persian/Iranian filters. Combine with other category lists.",
+        "desc": "Only Persian/Iranian filters. NO adult content. Combine with other category lists.",
         "categories": ["persian"],
         "include_extra": True,
     },
     "persianshield-ads.txt": {
         "title": "PersianShield — Ads Blocking",
-        "desc": "Global + Persian ad blocking only. No privacy/security.",
+        "desc": "Global + Persian ad blocking only. NO adult content.",
         "categories": ["persian", "ads"],
         "include_extra": False,
     },
     "persianshield-privacy.txt": {
         "title": "PersianShield — Privacy & Tracking",
-        "desc": "Blocks trackers and privacy invasion only.",
+        "desc": "Blocks trackers and privacy invasion only. NO adult content.",
         "categories": ["privacy"],
         "include_extra": False,
     },
     "persianshield-annoyances.txt": {
         "title": "PersianShield — Annoyances",
-        "desc": "Removes cookie popups, social widgets, and notification prompts.",
+        "desc": "Removes cookie popups, social widgets, and notification prompts. NO adult content.",
         "categories": ["annoyances"],
         "include_extra": False,
     },
     "persianshield-security.txt": {
         "title": "PersianShield — Security",
-        "desc": "Blocks malware, phishing, and cryptomining using a light domain list.",
+        "desc": "Blocks malware, phishing, and cryptomining using a light domain list. NO adult content.",
         "categories": ["security_light", "security_rules", "crypto"],
         "include_extra": False,
     },
-    "persianshield-nsfw.txt": {
-        "title": "PersianShield — Adult Blocking (NSFW)",
-        "desc": "Blocks adult/pornographic content. Add on top of any other list.",
-        "categories": ["adult"],
-        "include_extra": False,
-    },
-    # --- COMPLETE lists (heavy, max protection) ---
+    # --- ULTIMATE — the ONLY list with built-in porn blocking ---
     "persianshield-ultimate.txt": {
-        "title": "PersianShield Ultimate (Complete)",
-        "desc": "MAXIMUM protection: everything except adult content. HEAVY — includes large security domain lists. For users who want the strongest blocking.",
-        "categories": ["persian", "ads", "privacy", "annoyances", "security_heavy", "security_rules", "crypto"],
-        "include_extra": True,
-    },
-    "persianshield-family.txt": {
-        "title": "PersianShield Family Safe (Complete + Adult)",
-        "desc": "MAXIMUM protection + strict adult blocking. HEAVY. For family/work devices.",
+        "title": "PersianShield Ultimate (Complete + Adult)",
+        "desc": "MAXIMUM protection: everything INCLUDING adult/porn blocking. HEAVY — includes large security and adult domain lists. This is the only list with built-in adult blocking.",
         "categories": ["persian", "ads", "privacy", "annoyances", "security_heavy", "security_rules", "crypto", "adult"],
         "include_extra": True,
+    },
+    # --- PORNLIST — standalone adult blocking (add on top of any list) ---
+    "pornlist.txt": {
+        "title": "PornList — Standalone Adult Blocking",
+        "desc": "Standalone adult/pornography blocking list. Add this ON TOP of any other list (e.g., Light) to block adult content without using the heavy Ultimate list.",
+        "categories": ["adult"],
+        "include_extra": False,
     },
 }
 
