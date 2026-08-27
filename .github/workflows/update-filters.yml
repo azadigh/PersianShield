@@ -1,14 +1,12 @@
 name: Update & Merge Filter Lists
 
 on:
-  # Runs automatically every day at 00:00 UTC
   schedule:
     - cron: '0 0 * * *'
-  # Allows manual trigger from the Actions tab
   workflow_dispatch:
 
 permissions:
-  contents: write   # Required to push the updated lists back
+  contents: write
 
 jobs:
   build-and-update:
@@ -29,7 +27,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: auto-update tiered filter lists"
-          # Only commit the generated output files.
-          # This protects extra.txt (your custom rules) from being overwritten.
-          file_pattern: "persianshield-*.txt"
+          # Commits generated lists including the standalone pornlist.
+          # extra.txt (your custom rules) stays untouched.
+          file_pattern: "persianshield-*.txt pornlist.txt"
           branch: main
