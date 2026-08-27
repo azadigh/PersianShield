@@ -1,0 +1,26 @@
+name: "🐛 گزارش تبلیغ مسدودنشده"
+description: "تبلیغی که هنوز نمایش داده می‌شود را گزارش دهید"
+title: "[Unblocked Ad] "
+labels: ["unblocked-ad"]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: "آدرس صفحه (URL)"
+      placeholder: "https://example.com/page"
+    validations:
+      required: true
+  - type: dropdown
+    id: list
+    attributes:
+      label: "کدام لیست را استفاده می‌کنید؟"
+      options: [Light, Ultimate, Persian Only, PornList, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: desc
+    attributes:
+      label: "توضیحات"
+      description: "نوع تبلیغ (بنر، پاپ‌آپ، ویدیو) و اسکرین‌شات در صورت امکان"
+    validations:
+      required: true
