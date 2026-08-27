@@ -1,0 +1,18 @@
+name: "➕ پیشنهاد منبع جدید"
+description: "یک فیلتر لیست جدید برای اضافه شدن پیشنهاد دهید"
+title: "[Suggest Source] "
+labels: ["enhancement"]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: "لینک منبع (URL)"
+      placeholder: "https://raw.githubusercontent.com/..."
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: "چرا این منبع مفید است؟"
+    validations:
+      required: true
