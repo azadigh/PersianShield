@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.08.28
-! Last modified: 2026-08-28 09:57:29 UTC
+! Version: 2026.08.29
+! Last modified: 2026-08-29 05:56:51 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 355,275
+! Total rules: 355,283
 ! File size: 10.8 MB
 ! License: MIT
 !
@@ -218459,6 +218459,8 @@ www.google.*##+js(href-sanitizer, #main a[href^="/url?q=http"], ?q)
 www.google.*##+js(remove-attr, ping, div[id="search"] a[data-ved][ping])
 www.google.*##+js(set, rwt, noopFunc)
 www.google.*##+js(set-attr, c-wiz[data-p] [data-query] a[target="_blank"][role="link"], rlhc, 1)
+www.google.com##+js(aeld, mouseover, b.src, elements, #search #rso div[data-rpos] > div[data-ved])
+www.google.com##+js(rpnt, script, this.gbar_=, `window.addEventListener("mousemove",(()=>{W_jd&&document.querySelectorAll("#search #rso div[data-rpos]").forEach((t=>{let e=t.querySelector('div[data-hveid] span[jsaction^="trigger."] > a[href^="/goto?url="]');if(!e)return;let r=t.querySelector('div[id^="atritem-"]')?.attributes?.jsdata?.value?.split?.(";_;")?.[1];r&&Object.getOwnPropertySymbols(W_jd[r]).map((t=>{let l=W_jd[r][t];if("object"!=typeof l||null===l)return;let s=Object.values(l)?.[0]?.[32];if(s?.[3]?.[0]?.startsWith?.("http"))e.setAttribute("href",s[3][0]);else if(null!==s?.[3]){let t=Object.values(s?.[3]);t?.[0]?.[0]?.startsWith?.("http")&&e.setAttribute("href",t[0][0])}else null===s?.[3]&&s[11]?.[7]?.startsWith?.("http")&&e.setAttribute("href",s[11][7])}))}))}));this.gbar_=`)
 www.hdview.vn$image
 www.heads.email.oneassessment.com$image
 www.heartland.webspecmail.com$image
@@ -226902,6 +226904,7 @@ zonedirector.avadacom.com$image
 ||analytics-ingestion.production-public.tubi.io^
 ||analytics-ingress-global.bitmovin.com^
 ||analytics-ingress.bitmovin.com^
+||analytics-ios-tcp.rayjump.com^
 ||analytics-ipv6.tiktokw.us^
 ||analytics-lgs.corebridgefinancial.com^
 ||analytics-log.withhive.com^
@@ -249902,6 +249905,7 @@ zonedirector.avadacom.com$image
 ||drvive.lamoda.ru^
 ||drxeqq.wishhotels.com.br^
 ||drydrum.com^
+||dryerwasher.com^
 ||dryvit.actonservice.com^
 ||drzbe.agileoffroad.com^
 ||drzzg.mallet.com^
@@ -255185,6 +255189,7 @@ zonedirector.avadacom.com$image
 ||files.urlinsgroup.com^
 ||files.userlink.ai/public/tracking.js
 ||files.velpa.pl^
+||fileshareengine.com^
 ||filesonic.com/referral/$third-party
 ||filesys.mccmedale.pl^
 ||filetransfer.velpa.pl^
@@ -292016,6 +292021,7 @@ zonedirector.avadacom.com$image
 ||northbeam.io^$third-party
 ||northplains.actonservice.com^
 ||northsidemediagroup.actonservice.com^
+||northstar.cr^
 ||northstartravelmedia.com^$third-party
 ||northwire.actonservice.com^
 ||norton.com/service/norton/head?
@@ -295825,6 +295831,7 @@ zonedirector.avadacom.com$image
 ||perk0mean.com^$3p
 ||perle.perledelumina.ro^
 ||perljs.com^$third-party
+||permagroove.com^
 ||permission.au.actonservice.com^
 ||permutive.app^
 ||permutive.app^$3p
@@ -296604,6 +296611,7 @@ zonedirector.avadacom.com$image
 ||plantcourse.com^
 ||plantet.pl/products/ping/
 ||plants.outsidein.com^
+||plantscafe.net^
 ||plas.imfeld.dev^
 ||platform-eu.cloud.coveo.com/rest/*/analytics/view?
 ||platform.datazoom.io/beacon/
