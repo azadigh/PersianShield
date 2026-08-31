@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.08.30
-! Last modified: 2026-08-30 04:01:34 UTC
+! Version: 2026.08.31
+! Last modified: 2026-08-31 04:06:54 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 355,285
+! Total rules: 355,299
 ! File size: 10.8 MB
 ! License: MIT
 !
@@ -10759,6 +10759,7 @@ ada.moseasia.com$image
 addons.mozilla.org##+js(href-sanitizer, a[href^="https://prod.outgoing.prod.webservices.mozgcp.net/"]:not([title])
 addons.mozilla.org##+js(href-sanitizer, a[href^="https://prod.outgoing.prod.webservices.mozgcp.net/"][title], [title])
 adfs.avadacom.com$image
+adhs-zentrum.de##+js(no-xhr-if, method:POST body:/"track"|adblock/)
 adm.avadacom.com$image
 adm2.moseasia.com$image
 admin.avadacom.com$image
@@ -11014,6 +11015,8 @@ al.com,attackofthefanboy.com,beavertonvalleytimes.com,destructoid.com,edmontonsu
 alba.alalikexpress.com$image
 album.moseasia.com$image
 alert.avadacom.com$image
+aliexpress.com,aliexpress.ru,aliexpress.us##+js(set, OfflineAudioContext, undefined)
+aliexpress.com,aliexpress.ru,aliexpress.us##+js(set, navigator.bluetooth, undefined)
 all.videocdn.moseasia.com$image
 allegro.moseasia.com$image
 allrecipes.com##+js(remove-cookie, /_sharedid|_lc2_fpi/)
@@ -219152,7 +219155,6 @@ zonedirector.avadacom.com$image
 ||78rkcgj4i8c6.www.cefirates.com^
 ||79.125.117.123^$3p
 ||7bet.sevenbets.com.br^
-||7bpeople.com^$3p
 ||7bpeople.com^$third-party
 ||7c2vd9kr4pt.assugrin.ch^
 ||7days.ru/ajax/route/browser
@@ -225250,6 +225252,7 @@ zonedirector.avadacom.com$image
 ||aehudh.rakumachi.jp^
 ||aehvf.tentree.com^
 ||aeibnv.golfino.com^
+||aeis.alicdn.com/awsc/fireyejs/$script,domain=alibaba.com
 ||aejfyn.rsd-reisen.de^
 ||aem-collector.daumkakao.io^
 ||aem-kakao-collector.onkakao.net^
@@ -229915,6 +229918,7 @@ zonedirector.avadacom.com$image
 ||api.toyboxdiversoes.com.br^
 ||api.trabalhedeondequiser.com.br^
 ||api.transcy.io/api/statistic/
+||api.transtore.app/api/v2/storefront/tracking
 ||api.tricotstore.com.br^
 ||api.trocvan.com^
 ||api.trueaudience.io^
@@ -230120,6 +230124,7 @@ zonedirector.avadacom.com$image
 ||apllogistics.actonservice.com^
 ||aplobv.xexymix.com^
 ||aplus.alibaba.com^
+||aplus.aliexpress.$image,ping,~third-party
 ||aplus.aliexpress.*/Product.*.Event
 ||aplus.aliexpress.*/ae.pc_click.statweb_ae_click
 ||aplus.aliexpress.*/ae.pc_ctr.statweb_ae_ctr
@@ -233589,6 +233594,7 @@ zonedirector.avadacom.com$image
 ||bestbuy.com/bf?$ping
 ||bestbuy.com/~assets/bby/_js/ext/bbydyn/dyn_digital_gvp.js
 ||bestclimbers.net^
+||bestcoffeemachine.net^
 ||bestcontactform.com^$~image,3p
 ||bestcontactform.com^$~image,third-party
 ||bestill.help.no^
@@ -255595,6 +255601,7 @@ zonedirector.avadacom.com$image
 ||flixcar.com/gvid
 ||flixcart.com/px/gNtTli3A/init.js
 ||flixcdn.com^*/track.js
+||flixcloud.cc/swetrix.js
 ||flixfacts.co.uk^$third-party
 ||flixgvid.flix360.io^
 ||flixster.com^*/analytics.
@@ -256819,7 +256826,6 @@ zonedirector.avadacom.com$image
 ||g-fallback.whatsapp.net.iberostar.com^
 ||g-scale.org/scripts/EventLog.js
 ||g-stats.openhost.es^
-||g.alicdn.com/AWSC/fireyejs/
 ||g.alicdn.com/alilog/s/*/plugin/aplus_spmact.js
 ||g.aline.co^
 ||g.analytics.versa-ai.com^
@@ -272267,6 +272273,7 @@ zonedirector.avadacom.com$image
 ||justanswer.com/jatag/
 ||justconfig.com^
 ||justdial.com/jd-trkr
+||justfordocs.com^
 ||justicejudo.com^
 ||justid.io^
 ||justlagoon.com^
@@ -284654,6 +284661,7 @@ zonedirector.avadacom.com$image
 ||marriedbelief.com^
 ||marriedmailbox.com^
 ||marriedvalue.com^
+||marriott.com/mi/api/shop-renderer/logger
 ||mars.msfin.at^
 ||marsflag.com/mf2file/site/ext/tr.js
 ||marsh.actonservice.com^
@@ -292708,6 +292716,7 @@ zonedirector.avadacom.com$image
 ||obs.forseasky.com^
 ||obs.greencolumnblog.com^
 ||obs.jollyoutdoorjogger.com^
+||obs.sd4823.spglobal.com^
 ||obs.system1onesource.com^
 ||obscenesidewalk.com^
 ||obscure.stomp-nutrition.com^
@@ -296381,6 +296390,7 @@ zonedirector.avadacom.com$image
 ||pixel.tuko.co.ke^
 ||pixel.udpauto.ru^
 ||pixel.underzstore.com^
+||pixel.uppromote.com^
 ||pixel.veritone-ce.com^
 ||pixel.videohub.tv^
 ||pixel.visitiq.io^
@@ -299789,6 +299799,7 @@ zonedirector.avadacom.com$image
 ||realzeit.io^$3p
 ||realzeit.io^$third-party
 ||reanimator.net/informer-images/
+||reanime.to/pv.js
 ||reaonq.xn--hdks770u8f0a8dvzft.net^
 ||reauthenticator.com^
 ||rebelclover.com^
@@ -300087,6 +300098,7 @@ zonedirector.avadacom.com$image
 ||rehmann.actonservice.com^
 ||rei.com/customer-analytics-attributes/
 ||reibootmac.com/script/rn_event_track_v*.min.js
+||reibootmac.com/script/rn_event_track_v2.min.js
 ||reichelt.com/setsid.php?
 ||reico.actonservice.com^
 ||reindaks.com^$3p
@@ -332948,6 +332960,7 @@ zonedirector.avadacom.com$image
 ||stats.fishersci.it^
 ||stats.flightformation.com^
 ||stats.flightsphere.com^
+||stats.flixcloud.cc^
 ||stats.flixhq.live^
 ||stats.florianfritz.net^
 ||stats.flowphantom.com^
@@ -333514,6 +333527,7 @@ zonedirector.avadacom.com$image
 ||stats.realestate.cv.ua^
 ||stats.realestate.kyiv.ua^
 ||stats.realestate.uz.ua^
+||stats.reanime.to^
 ||stats.redlabelsports.com^
 ||stats.redpandabooks.com^
 ||stats.referralhero.com^
