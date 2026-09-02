@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.09.01
-! Last modified: 2026-09-01 03:54:58 UTC
+! Version: 2026.09.02
+! Last modified: 2026-09-02 03:15:07 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 355,307
+! Total rules: 355,320
 ! File size: 10.8 MB
 ! License: MIT
 !
@@ -42,7 +42,6 @@ $csp=child-src 'none'; frame-src 'self' *; worker-src 'none',domain=fileone.tv|t
 $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vidoza.net
 $doc,removeparam=s_cid
 $domain=nzherald.co.nz,permissions=geolocation=()
-$ping,third-party
 $removeparam=__hsfp
 $removeparam=__hssc
 $removeparam=__hstc
@@ -210,6 +209,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 *$permissions=private-state-token-redemption=(),from=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 *$permissions=run-ad-auction=(),from=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 *$ping,domain=webnovel.com
+*$ping,third-party
 *$strict3p,ipaddress=0.0.0.0,domain=~0.0.0.0|~127.0.0.1|~[::1]|~[::]|~local|~localhost
 *$xhr,3p,denyallow=github.com|stripe.com|fpjs.pro,domain=fingerprint.com|~dev.fingerprint.com|~docs.fingerprint.com
 *%2FAPPLE_EMAIL_LINK%2F$image
@@ -6182,7 +6182,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 24712.editor-qa1.marketingcloudqaapis.com$image
 24721.connector-qa1.marketingcloudqaapis.com$image
 24793.editor-qa1.marketingcloudqaapis.com$image
-247sports.com,al.com,arstechnica.com,bringmethenews.com,cattime.com,cbr.com,cheatsheet.com,collider.com,comingsoon.net,crooksandliars.com,cwtv.com,dogtime.com,esportstales.com,forums.hfboards.com,freep.com,fresnobee.com,gamerant.com,gbatemp.net,golfdigest.com,grabify.link,hancinema.net,hemmings.com,howtogeek.com,ijr.com,informazionefiscale.it,inquirer.net,insider-gaming.com,knowyourmeme.com,magesypro.pro,makeuseof.com,mlive.com,money.it,motorbiscuit.com,movieweb.com,nationalreview.com,nbcnews.com,neopets.com,nofilmschool.com,nypost.com,omg.blog,order-order.com,oregonlive.com,pcwelt.de,pennlive.com,playstationlifestyle.net,pwinsider.com,savvytime.com,screenrant.com,siliconera.com,silive.com,simpleflying.com,sporcle.com,stealthoptional.com,techlicious.com,technicpack.net,thedraftnetwork.com,thefashionspot.com,thegamer.com,thelayoff.com,thenerdstash.com,theprovince.com,titantv.com,topspeed.com,twinfinite.net,videogamer.com,webmail.wiki,wnd.com,worldpopulationreview.com,wral.com,wrestlezone.com,wrestlinginc.com,xda-developers.com##+js(acs, document.createElement, admiral)
+247sports.com,al.com,arstechnica.com,bringmethenews.com,cattime.com,cbr.com,cheatsheet.com,collider.com,comingsoon.net,crooksandliars.com,cwtv.com,dogtime.com,esportstales.com,forums.hfboards.com,freep.com,fresnobee.com,gamerant.com,gbatemp.net,golfdigest.com,grabify.link,hancinema.net,hemmings.com,howtogeek.com,ijr.com,informazionefiscale.it,inquirer.net,insider-gaming.com,knowyourmeme.com,magesypro.pro,makeuseof.com,mlive.com,money.it,motorbiscuit.com,movieweb.com,nationalreview.com,nbcnews.com,neopets.com,nofilmschool.com,nypost.com,omg.blog,order-order.com,oregonlive.com,pcwelt.de,pennlive.com,playstationlifestyle.net,pwinsider.com,savvytime.com,screenrant.com,siliconera.com,simpleflying.com,sporcle.com,stealthoptional.com,techlicious.com,technicpack.net,thedraftnetwork.com,thefashionspot.com,thegamer.com,thelayoff.com,thenerdstash.com,theprovince.com,titantv.com,topspeed.com,twinfinite.net,videogamer.com,webmail.wiki,wnd.com,worldpopulationreview.com,wral.com,wrestlezone.com,wrestlinginc.com,xda-developers.com##+js(acs, document.createElement, admiral)
 247sports.com,cbsnews.com,cbssports.com,indiewire.com,nypost.com,pagesix.com,pennlive.com,syracuse.com##+js(rmnt, script, "data-adm-url")
 248.connector-qa1.marketingcloudqaapis.com$image
 248.editor-qa1.marketingcloudqaapis.com$image
@@ -8478,7 +8478,6 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||dekra-akademie.de/resource/*/eCom_FrontendV3/assets/js/gtm.js$~third-party
 @@||delivery.satr.jp^$script,domain=mieru-ca.com
 @@||delta.com/dlhome/ruxitagentjs$~third-party
-@@||demdex.net/dest4.html?d_nsid=$subdocument,domain=multipack.com.mx
 @@||descopera.ro/js/addLinkerEvents-ga.js
 @@||detectadblock.com/ads.js
 @@||deteql.net/recommend/provision?$xmlhttprequest,domain=t-fashion.jp
@@ -8684,7 +8683,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||geo.kaloo.ga/json/$script,domain=tagesspiegel.de
 @@||geoip-db.com/jsonp/$script,third-party
 @@||geoplugin.net/javascript.gp$domain=uptime.community
-@@||geoplugin.net/javascript.gp$script,domain=christianhouseshare.com.au|gamemazing.com|soundsonline.com
+@@||geoplugin.net/javascript.gp$script,domain=gamemazing.com|soundsonline.com
 @@||get.cervell.io/api/$domain=cildimveben.com
 @@||get.s-onetag.com/*/tag.min.js$domain=zakzak.co.jp
 @@||getclicky.com/ajax/marketshare?$script
@@ -8716,7 +8715,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||google-analytics.com$domain=bt.com
 @@||google-analytics.com/analytics.js$domain=0mniscient.github.io
 @@||google-analytics.com/analytics.js$domain=24timezones.com
-@@||google-analytics.com/analytics.js$domain=afternic.com|clipitto.com|deviantart.com
+@@||google-analytics.com/analytics.js$domain=afternic.com|deviantart.com
 @@||google-analytics.com/analytics.js$domain=amd.com
 @@||google-analytics.com/analytics.js$domain=androidpit.es|androidpit.fr
 @@||google-analytics.com/analytics.js$domain=antenaplay.ro
@@ -9356,7 +9355,6 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||gtimg.com/qqcdn/*/beacon.min.js$script,domain=qq.com
 @@||gtm.idealo.*/gtm.js?$domain=idealo.at|idealo.co.uk|idealo.de|idealo.es|idealo.fr|idealo.it
 @@||guce.advertising.com/collectIdentifiers$~third-party
-@@||guim.co.uk/flash/video/embedded/player-$object,domain=thedailywh.at
 @@||guinnessworldrecords.jp/ezais/analytics$~third-party
 @@||gva.et-gv.fr^$script,domain=culture.gouv.fr
 @@||gymnasedeburier.ch/themes/segment/js/$~third-party
@@ -10101,7 +10099,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||scdn.cxense.com/cx.js$domain=wsj.com
 @@||scorecardresearch.com$domain=bt.com
 @@||scorecardresearch.com/*/streamingtag_plugin_jwplayer.js$domain=telemundopr.com
-@@||scorecardresearch.com/beacon.js$domain=agame.com|allrecipes.com|apl.tv|babycenter.com|cbc.ca|deviantart.com|fastcompany.com|firstwefeast.com|hitfix.com|laptopmag.com|last.fm|linkinpark.com|mainstreet.com|ning.com|ouramazingplanet.com|outsideonline.com|plixi.com|radaronline.com|salon.com|thedailybeast.com|thinkatheist.com
+@@||scorecardresearch.com/beacon.js$domain=agame.com|allrecipes.com|apl.tv|babycenter.com|cbc.ca|deviantart.com|fastcompany.com|firstwefeast.com|hitfix.com|laptopmag.com|last.fm|linkinpark.com|mainstreet.com|ning.com|outsideonline.com|plixi.com|radaronline.com|salon.com|thedailybeast.com|thinkatheist.com
 @@||scorecardresearch.com/beacon.js$domain=spielen.com
 @@||scorecardresearch.com/crossdomain.xml$domain=web.de
 @@||scorecardresearch.com/internal-c2/plugins/streamingtag_plugin_jwplayer.js$domain=indiatoday.in
@@ -10711,7 +10709,7 @@ aaa.avadacom.com$image
 aamulehti.fi##+js(set-local-storage-item, /^(pe-|sndp-laneitem-impressions)/, $remove$)
 aatyu.livedoor.blog##.article > div.plugin-memo:has(> div.side > div.ninja-recommend-block)
 abc.net.au##+js(set-local-storage-item, snowplowOutQueue_Presentation Layer, $remove$)
-abc17news.com,al.com,artforum.com,artnews.com,awkward.com,awkwardmom.com,bailiwickexpress.com,barnsleychronicle.com,becomingpeculiar.com,bethcakes.com,blogher.com,bluegraygal.com,briefeguru.de,carmagazine.co.uk,cattime.com,cbr.com,chaptercheats.com,collider.com,comingsoon.net,commercialobserver.com,competentedigitale.ro,crafty.house,dailyvoice.com,decider.com,didyouknowfacts.com,dogtime.com,dualshockers.com,dustyoldthing.com,faithhub.net,femestella.com,footwearnews.com,freeconvert.com,frogsandsnailsandpuppydogtail.com,fsm-media.com,funtasticlife.com,fwmadebycarli.com,gamerant.com,gfinityesports.com,givemesport.com,gulflive.com,helloflo.com,homeglowdesign.com,honeygirlsworld.com,hotcars.com,howtogeek.com,insider-gaming.com,insurancejournal.com,jasminemaria.com,kion546.com,lehighvalleylive.com,lettyskitchen.com,lifeinleggings.com,liveandletsfly.com,lizzieinlace.com,localnews8.com,lonestarlive.com,madeeveryday.com,maidenhead-advertiser.co.uk,makeuseof.com,mardomreport.net,melangery.com,milestomemories.com,mlive.com,modernmom.com,momtastic.com,mostlymorgan.com,motherwellmag.com,movieweb.com,muddybootsanddiamonds.com,musicfeeds.com.au,nationalreview.com,nj.com,nordot.app,nothingbutnewcastle.com,nsjonline.com,oakvillenews.org,observer.com,oregonlive.com,pagesix.com,pennlive.com,pinkonthecheek.com,predic.ro,puckermom.com,qtoptens.com,realgm.com,robbreport.com,royalmailchat.co.uk,samchui.com,sandrarose.com,screenrant.com,sheknows.com,sherdog.com,sidereel.com,silive.com,simpleflying.com,sloughexpress.co.uk,spacenews.com,sportsgamblingpodcast.com,spotofteadesigns.com,ssnewstelegram.com,stacysrandomthoughts.com,superherohype.com,syracuse.com,tablelifeblog.com,thebeautysection.com,thecelticblog.com,thecurvyfashionista.com,thefashionspot.com,thegamer.com,thenerdyme.com,thenonconsumeradvocate.com,thethings.com,timesnews.net,topspeed.com,toyotaklub.org.pl,travelingformiles.com,tvline.com##+js(rmnt, script, "v4ac1eiZr0")
+abc17news.com,al.com,artforum.com,artnews.com,awkward.com,awkwardmom.com,bailiwickexpress.com,barnsleychronicle.com,becomingpeculiar.com,bethcakes.com,blogher.com,bluegraygal.com,briefeguru.de,carmagazine.co.uk,cattime.com,cbr.com,chaptercheats.com,collider.com,comingsoon.net,commercialobserver.com,competentedigitale.ro,crafty.house,dailyvoice.com,decider.com,didyouknowfacts.com,dogtime.com,dualshockers.com,dustyoldthing.com,faithhub.net,femestella.com,footwearnews.com,freeconvert.com,frogsandsnailsandpuppydogtail.com,fsm-media.com,funtasticlife.com,fwmadebycarli.com,gamerant.com,gfinityesports.com,givemesport.com,gulflive.com,helloflo.com,homeglowdesign.com,honeygirlsworld.com,hotcars.com,howtogeek.com,insider-gaming.com,insurancejournal.com,jasminemaria.com,kion546.com,lehighvalleylive.com,lettyskitchen.com,lifeinleggings.com,liveandletsfly.com,lizzieinlace.com,localnews8.com,lonestarlive.com,madeeveryday.com,maidenhead-advertiser.co.uk,makeuseof.com,mardomreport.net,melangery.com,milestomemories.com,mlive.com,modernmom.com,momtastic.com,mostlymorgan.com,motherwellmag.com,movieweb.com,muddybootsanddiamonds.com,musicfeeds.com.au,nationalreview.com,nj.com,nordot.app,nothingbutnewcastle.com,nsjonline.com,oakvillenews.org,observer.com,pagesix.com,pennlive.com,pinkonthecheek.com,predic.ro,puckermom.com,qtoptens.com,realgm.com,robbreport.com,royalmailchat.co.uk,samchui.com,sandrarose.com,screenrant.com,sheknows.com,sherdog.com,sidereel.com,simpleflying.com,sloughexpress.co.uk,spacenews.com,sportsgamblingpodcast.com,spotofteadesigns.com,ssnewstelegram.com,stacysrandomthoughts.com,superherohype.com,syracuse.com,tablelifeblog.com,thebeautysection.com,thecelticblog.com,thecurvyfashionista.com,thefashionspot.com,thegamer.com,thenerdyme.com,thenonconsumeradvocate.com,thethings.com,timesnews.net,topspeed.com,toyotaklub.org.pl,travelingformiles.com,tvline.com##+js(rmnt, script, "v4ac1eiZr0")
 abema.tv##+js(remove-node-text, script, NREUM)
 abema.tv##+js(rmnt, script, NREUM)
 abilbao.mg.abilbao.cl$image
@@ -11011,7 +11009,7 @@ airtel.in##+js(no-xhr-if, analytics/bulk-pixel)
 akali.webspecmail.com$image
 akamai.webspecmail.com$image
 akshare.moseasia.com$image
-al.com,attackofthefanboy.com,beavertonvalleytimes.com,destructoid.com,edmontonsun.com,gamepur.com,gamerjournalist.com,gameskinny.com,lehighvalleylivecom,lgbtqnation.com,macwelt.de,mlive.com,news8000.com,nj.com,pcwelt.de,pennlive.com,portlandtribune.com,primagames.com,progameguides.com,queerty.com,siliconera.com,sporcle.com,syracuse.com,techcrunch.com,thebeenews.com,themarysue.com,theoutlookonline.com,touchtapplay.com,wegotthiscovered.com##+js(aost, decodeURI, /(?=^(?!.*\.js))/)
+al.com,attackofthefanboy.com,beavertonvalleytimes.com,destructoid.com,edmontonsun.com,gamepur.com,gamerjournalist.com,gameskinny.com,lehighvalleylivecom,lgbtqnation.com,macwelt.de,masslive.com,mlive.com,news8000.com,nj.com,oregonlive.com,pcwelt.de,pennlive.com,portlandtribune.com,primagames.com,progameguides.com,queerty.com,siliconera.com,silive.com,sporcle.com,syracuse.com,techcrunch.com,thebeenews.com,themarysue.com,theoutlookonline.com,touchtapplay.com,wegotthiscovered.com##+js(aost, decodeURI, /(?=^(?!.*\.js))/)
 alba.alalikexpress.com$image
 album.moseasia.com$image
 alert.avadacom.com$image
@@ -224241,6 +224239,7 @@ zonedirector.avadacom.com$image
 ||actuallysnake.com^
 ||acuityplatform.com^$3p
 ||acuris.com/wat/v2/data-event
+||acustomizedgift.com^$domain=masslive.com|oregonlive.com|silive.com
 ||acv.au-hikari-kddi.com^
 ||acv.auhikari-norikae.com^
 ||acv.aun-air-wifi.com^
@@ -224795,6 +224794,7 @@ zonedirector.avadacom.com$image
 ||adnz.co/api/ws-events-sink/
 ||adnz.co/dmp/publisher.js
 ||adnz.co/header.js
+||adnz.co/semantiq/semantiq.js
 ||adnz.co^$3p
 ||adobe-analytics-dc.amlc.eu^
 ||adobe-analytics-dc.amlc.nl^
@@ -229549,6 +229549,7 @@ zonedirector.avadacom.com$image
 ||api.mendoachocolates.com.br^
 ||api.mentoriapower.com.br^
 ||api.menuskull.com.br^
+||api.mercadolibre.com/melidata/tracks
 ||api.mercadolibre.com/tracks
 ||api.mercari.jp/client_events/
 ||api.mestracegonhas.com^
@@ -230130,6 +230131,7 @@ zonedirector.avadacom.com$image
 ||aplus.aliexpress.*/ae.pc_ctr.statweb_ae_ctr
 ||aplus.aliexpress.*/aes.1.1
 ||aplus.aliexpress.*/g.gif?logtype=
+||aplus.aliexpress.com^$ping
 ||aplus.gmarket.co.kr^
 ||aplus.qwen.ai/aplus.monitor.load_cna_success?
 ||aplus.qwen.ai/aplus.monitor.log_arrival_rate
@@ -236724,6 +236726,7 @@ zonedirector.avadacom.com$image
 ||carloforward.com^
 ||carmazoon24-pu01.ihre-webseite.it/js/logger
 ||carmen.golem.de^
+||carmen2.golem.de^
 ||carmona.anunciojuridico.com.br^
 ||carolina.actonservice.com^
 ||carolsdaughter.com/IZ/uaPO0cuk/init.js
@@ -239373,6 +239376,7 @@ zonedirector.avadacom.com$image
 ||collector.megaxh.com^
 ||collector.moderntv.eu^
 ||collector.net-logger.com^
+||collector.orf.at^
 ||collector.pi.spectrum.net^
 ||collector.plarium.com^
 ||collector.pmc.com^
@@ -252436,6 +252440,7 @@ zonedirector.avadacom.com$image
 ||emeanews.secureforms.partnermcafee.com^
 ||emediatrack.com^$third-party
 ||emedns.bonify.de^
+||emergency.zeta-ai.io^
 ||emerheat-ss.shopperlo.com^
 ||emerheat-ss.wellheater.com^
 ||emersonecologics.com.102.122.207.net^
@@ -255363,6 +255368,7 @@ zonedirector.avadacom.com$image
 ||firecrux.com/track/$xmlhttprequest
 ||firefly.jamesbrowne.me^
 ||fireseo.ru/wp-content/*/jquery.iframetracker.js
+||firestream.to/api/videos/*/view
 ||fireworkanalytics.com^$3p
 ||fireworkanalytics.com^$third-party
 ||fireworkcamp.com^
@@ -259339,6 +259345,7 @@ zonedirector.avadacom.com$image
 ||goldstats.com^$3p
 ||goldstats.com^$third-party
 ||goldstudies.com^
+||golem.de/assets/scripts/golem-snw.js
 ||golem.de/staticrl/scripts/external/snow-390-min.js
 ||golem.de/staticrl/scripts/golem_cpxl_
 ||golem.met.vgwort.de^
@@ -272474,6 +272481,7 @@ zonedirector.avadacom.com$image
 ||kameleoon.eu^$3p
 ||kameleoon.eu^$third-party
 ||kameleoon.io/visit/
+||kameleoon.io^
 ||kameo.32degrees.com^
 ||kaminari.click^$third-party
 ||kaminoretail.io/tracking/
@@ -274441,6 +274449,9 @@ zonedirector.avadacom.com$image
 ||lift.acquia.com^$3p
 ||liftedknowledge.com^
 ||lifterpopup.com^$third-party
+||ligainsider.de/*.gif?d=
+||ligainsider.de/adblock-event/
+||ligainsider.de/li-check
 ||lightboxcdn.com/*/digibox.gif?
 ||lightboxcdn.com/*/digibox.gif?c=
 ||lightboxcdn.com/*/jsonp/z?
@@ -282626,7 +282637,6 @@ zonedirector.avadacom.com$image
 ||mangakoma.net/ajax/manga/view
 ||mangapedia.com/js/abb.
 ||mangaraw.to/api/v1/view/
-||mangaseek.jp/static/js/riveted.min.js
 ||mango-office.ru/calltracking/
 ||mango-office.ru/track/
 ||mango.craigsguide.org^
@@ -292639,6 +292649,7 @@ zonedirector.avadacom.com$image
 ||o.techmaniak.pl^$image
 ||o.webmd.com^
 ||o.xbox.com^
+||o11y-proxy-otel-frontend.meli.com^
 ||o1lvz.poopy.co^
 ||o1ych4jb.com^
 ||o2.cz^*-ga_o2cz_bundle.js?
@@ -298169,6 +298180,7 @@ zonedirector.avadacom.com$image
 ||puffypurpose.com^
 ||pufjc.attunemedspa.com^
 ||pufqhd.rounz.com^
+||pugspress.com^
 ||pugvm.durangoboots.com^
 ||puiwrs.misterspex.de^
 ||puja.amardeeprawat.com^
@@ -299865,6 +299877,7 @@ zonedirector.avadacom.com$image
 ||rechenschieber.transfermarkt.world^
 ||recid.aquatalia.com^
 ||recipefy.net/analytics.js
+||recipepile.net^
 ||recipepin.com^
 ||recml.simplynootropics.com^
 ||reco.target2sell.com^
@@ -299945,6 +299958,7 @@ zonedirector.avadacom.com$image
 ||redditstatic.com/shreddit/sentry-
 ||redditstream.arborapps.io^
 ||reddwarf.till-sanders.de^
+||redexecs.com^
 ||redfast.com/ping/
 ||redfastlabs.com^$third-party
 ||redfin.com/rift?
@@ -312016,7 +312030,7 @@ zonedirector.avadacom.com$image
 ||shrekis.life^$all
 ||shrewsburyshow.com^
 ||shrillspoon.com^
-||shrinetheme.com^$third-party
+||shrinetheme.com/api/analytics/
 ||shrinkearn.com/full?*&type=1$urlskip=?url -base64 +https
 ||shrinktheweb.com^$3p
 ||shroughtened.com^$third-party
@@ -318641,8 +318655,6 @@ zonedirector.avadacom.com$image
 ||spam.rottne.com^
 ||spamanalyst.com^$third-party
 ||spamtitan.actonservice.com^
-||spanids.dictionary.com^
-||spanids.thesaurus.com^
 ||spaning.creavite.co^
 ||spanishdict.com/page-view-metadata
 ||spankbang.com/api/*/events
@@ -353291,6 +353303,7 @@ zonedirector.avadacom.com$image
 ||xgysy.aureumcollective.com^
 ||xgyvaf.easydew.co.kr^
 ||xhamster.com/api/$ping
+||xhamster.com/api/v1/player/metrics
 ||xhamster.com/stats/
 ||xhamsterlive.com/pixel/
 ||xhbzrk.hotmart.com^
