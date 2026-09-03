@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.09.02
-! Last modified: 2026-09-02 03:15:07 UTC
+! Version: 2026.09.03
+! Last modified: 2026-09-03 03:17:33 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 67,429
+! Total rules: 67,541
 ! File size: 1.5 MB
 ! License: MIT
 !
@@ -310,7 +310,7 @@ $xmlhttprequest,domain=auroravid.to|dekoder.ws|powvideo.cc|powvideo.net|sorteosr
 /^https:\/\/[a-z0-9]{50,}\.[a-z0-9]{4,11}\.com\/[a-zA-Z0-9]{50,}$/$xhr,3p,method=get,to=com|~google.com|~microsoft.com,from=com|ru|su
 /^https:\/\/[a-z0-9]{50,}\.[a-z0-9]{4,11}\.ru\/[a-zA-Z0-9]{50,}$/$xhr,3p,method=get,to=ru,from=com|ru|su
 /^https:\/\/[a-z0-9]{50,}\.[a-z0-9]{4,11}\.su\/[a-zA-Z0-9]{50,}$/$xhr,3p,method=get,to=su,from=com|ru|su
-/^https:\/\/[a-z]+\.[a-z]+\/[a-z]+\?rnd=[a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9]&ts=[0-9]+$/$script,xhr,3p,match-case
+/^https:\/\/[a-z]+\.[a-z]+\/[a-z]+\?rnd=[a-z0-9]{8}&ts=\d+$/$script,xhr,3p,match-case
 /^https:\/\/[a-z]\.[a-z]{10,}\.top\/l(?:\/|$)/$doc,to=top|~usps.com
 /^https:\/\/[a-z]{10,}\.[a-z]{3,4}\/(?:engine|track)-[a-f0-9]{8}\.js$/$script,3p,to=~edu|~gov,header=vary:/^referer\,accept-encoding/i
 /^https:\/\/[a-z]{12,15}\.com\/\?p=[0-9a-f]{32}&u=[0-9a-f]{138}\b/$doc,match-case
@@ -362,7 +362,7 @@ $xmlhttprequest,domain=auroravid.to|dekoder.ws|powvideo.cc|powvideo.net|sorteosr
 /^https:\/\/storage\.googleapis\.com\/[a-z]{5,}\/[a-z]+_v\d\.html#\?act=/$doc,match-case,to=storage.googleapis.com
 /^https:\/\/tdk[det]0[0-9]\.com\//$doc,to=com|~tiki.vn
 /^https:\/\/telegram-[a-z]{2}\.[a-z]{2,3}\//$doc,to=~gov|~edu|~com|~net|~org|~telegram.org
-/^https:\/\/telegram-[a-z]{3,4}\.com\//$doc,to=com|~telegram.org
+/^https:\/\/telegram-[a-z]{3,4}\.com\//$doc,to=com|~telegram.org|~telegram-gif.com
 /^https:\/\/thetollroads\.[a-z]+-[a-z]{4}\.[a-z]{3}\//$doc,to=~thetollroads.com
 /^https:\/\/tpbank\.[-a-z0-9]{5,}\.[a-z]{3}(?:\.vn)?\//$doc,to=~edu|~gov|~gov.vn|~tpb.vn
 /^https:\/\/transporta[a-z]{8,9}pro\.top\/i\b/$doc,to=top|~usps.com
@@ -1016,6 +1016,7 @@ zuketcreation.net##.cente-1
 ||119dbc9238.com^
 ||11b5e84fb9.com^
 ||11df2f7d8d.com^
+||11fkkw8h3i.com^
 ||11g1ip22h.de^
 ||11policy.net^
 ||11rhol0ni.com^
@@ -1888,6 +1889,7 @@ zuketcreation.net##.cente-1
 ||3utilities.com^$all
 ||3vetz.com^
 ||3vnofjidlv.com^
+||3vvuu0z8ui.com^
 ||3wr110.net^
 ||3wzq2yxde.com^
 ||3x1ry6we9.com^
@@ -2478,6 +2480,7 @@ zuketcreation.net##.cente-1
 ||6knlhnjfv.com^
 ||6kpudsordv.com^
 ||6l1urunxgil3lr94u.py2byffhzgvttjmx.cyou^
+||6lcb0f6wt.com^
 ||6lmcqj7d.xyz^
 ||6lpm5zq6t3.com^
 ||6mdf9teiz.com^
@@ -2708,6 +2711,7 @@ zuketcreation.net##.cente-1
 ||7nb71ub2xi.com^
 ||7nt9p4d4.de^
 ||7p5ruxflv0.com^
+||7pe17z68y.com^
 ||7q.j68l67f4yknn1t.cyou^
 ||7q1z79gxsi.global.ssl.fastly.net^
 ||7q2701vx8e.com^
@@ -2916,6 +2920,7 @@ zuketcreation.net##.cente-1
 ||8p814q01np.com^
 ||8pbiddjtp.com^
 ||8po6fdwjsym3.com^
+||8poz7uwoho.com^
 ||8proe3xx6.com^
 ||8q5urel9y5v5h5kj.cfd^
 ||8qfqhat9d.com^
@@ -5297,7 +5302,6 @@ zuketcreation.net##.cente-1
 ||ads.townhall.com^
 ||ads.travelaudience.com^
 ||ads.tripod.lycos.de^
-||ads.tripod.lycos.es^
 ||ads.tso.dennisnet.co.uk^
 ||ads.tvb.com^
 ||ads.tvmnews.mt^
@@ -7004,6 +7008,7 @@ zuketcreation.net##.cente-1
 ||ams.naturalnews.com^
 ||ams.naturalnewsblogs.com^
 ||ams.newstarget.com^
+||amsacpcugjc.in^
 ||amsctdspsyeqf.website^
 ||amsgjybwclvoq.space^
 ||amstarlyer.com^
@@ -7854,6 +7859,7 @@ zuketcreation.net##.cente-1
 ||aoglfrntimnre.space^
 ||aoicixdnneinb.online^
 ||aokbsmygff.com^
+||aokhxalifwmhm.site^
 ||aokqftjypnrrg.website^
 ||aokrbjfklqvsd.space^
 ||aokxcojgnjjkv.online^
@@ -8258,6 +8264,7 @@ zuketcreation.net##.cente-1
 ||apture.com^
 ||aptwcewxlhufh.website^
 ||apu.hentaibox.xyz^
+||apuxexhbpeqsm.website^
 ||apvroftoomqjy.site^
 ||apvwiaqjvw.com^
 ||apxbikolh.in^
@@ -8528,6 +8535,7 @@ zuketcreation.net##.cente-1
 ||asap15.com^$doc
 ||asaumbakblnpj.space^
 ||asaumpimlqysg.site^
+||asaunmavgitw.com^
 ||asayfwihbwkii.space^
 ||asbfala.com^
 ||asbolanablauts.shop^
@@ -9590,6 +9598,7 @@ zuketcreation.net##.cente-1
 ||balancedsuppercreed.com^
 ||balasesersatz.com^
 ||balasesgaleenybursty.qpon^
+||balathyacine.cyou^
 ||balayite.cfd^
 ||balconelichens.cfd^
 ||balconrekiss.cyou^
@@ -9819,6 +9828,7 @@ zuketcreation.net##.cente-1
 ||base-dawgz.web.app^$doc
 ||base-swap-frontend-*.vercel.app^$doc
 ||baselinetoisolated.net^
+||basellaanchat.qpon^
 ||basementyachtendorsement.com^
 ||baseporno.com^
 ||basesfiles.com^$all
@@ -9943,6 +9953,7 @@ zuketcreation.net##.cente-1
 ||bbrav96ax.com^
 ||bbrdbr.com^
 ||bbs-7.jp^$doc
+||bbs.xhamster.com^
 ||bbsdx.jp^$doc
 ||bbssgjpbdrurh.space^
 ||bbtuvgqhflajx.com^
@@ -10169,6 +10180,7 @@ zuketcreation.net##.cente-1
 ||becketcoffee.com^
 ||beckoning-whitecat.com^$doc
 ||becode.xiao84.com^
+||becomekulan.cfd^
 ||becomeraoulia.cfd^
 ||becorsolaom.com^
 ||becostbastes.cfd^
@@ -10475,6 +10487,7 @@ zuketcreation.net##.cente-1
 ||betweenprimarily.com^
 ||betwinner1.com^
 ||beugvprxnmxke.online^
+||beutavpysjojf.site^
 ||bevelwrox.qpon^
 ||beveyckzdzheo.site^
 ||bevwcymvettup.space^
@@ -10727,6 +10740,7 @@ zuketcreation.net##.cente-1
 ||binmenguanase.shop^
 ||binomnet.com^
 ||binomnet3.com^
+||binwlhffwbmjl.site^
 ||bio.site/atttt^$all
 ||bio39rx7p0.com^
 ||biodegradable-building.pro^
@@ -11523,6 +11537,7 @@ zuketcreation.net##.cente-1
 ||bpzxevecpsxva.store^
 ||bqaijuqtjwpbf.website^
 ||bqajoisaiwlxs.site^
+||bqbwvfofginwp.online^
 ||bqdisnocj.com^
 ||bqenzxdijbdov.space^
 ||bqglwzsuxvfsr.space^
@@ -12211,6 +12226,7 @@ zuketcreation.net##.cente-1
 ||bybyuxxgcqoze.space^
 ||bycarver.com^
 ||bycathyhoughsheu.org^
+||bycsg.oii.la^
 ||bycvdrvphznyr.site^
 ||bydpbpjtbsfta.online^
 ||bydurantr.com^
@@ -12270,6 +12286,7 @@ zuketcreation.net##.cente-1
 ||bzqy2p14z.com^
 ||bzr.openai.com^
 ||bzrcdn.openai.com^
+||bztcjooivbndu.space^
 ||bztzpzqpltlad.site^
 ||bzuifguapodmcs.com^
 ||bzux-protect.pro^
@@ -12612,6 +12629,7 @@ zuketcreation.net##.cente-1
 ||canid.20inchlabs.com^
 ||canidae.collectingsocialphoto.org^
 ||canidae.fidum.uk^
+||canidquott.shop^
 ||caninusrauraci.qpon^
 ||canionscowshut.shop^
 ||cank.xyz^
@@ -12728,6 +12746,7 @@ zuketcreation.net##.cente-1
 ||carlozigzag.com^
 ||carlsonmedia.streetinteractive.com^
 ||carmen.golem.de^
+||carmen2.golem.de^
 ||carnelbawrel.com^
 ||carnivorouswordsroute.com^
 ||caromedsirloin.shop^
@@ -13175,6 +13194,7 @@ zuketcreation.net##.cente-1
 ||cdn.stat-track.com^
 ||cdn.stoic-media.com^
 ||cdn.stray228.com^
+||cdn.streameet.top^$all
 ||cdn.tbfos.com^
 ||cdn.tcwrf.com^
 ||cdn.testdomain12345xyz.com^
@@ -13376,6 +13396,7 @@ zuketcreation.net##.cente-1
 ||ceremonioustakeintoaccountcustomer.com^
 ||ceremonyjogglecling.com^
 ||ceresincostedpanini.qpon^
+||cerillaletches.cyou^
 ||cerilloinverts.com^
 ||cerineas.com^
 ||cerosratio.shop^
@@ -14229,7 +14250,6 @@ zuketcreation.net##.cente-1
 ||client.smartpushedm.com^
 ||client.tbadni.com^
 ||client2009x25.xcdn.ovh^
-||clientinfo.phimmoizz.net^
 ||clientlog.midomi.com^
 ||clientlog.perfectworldgames.com^
 ||clientlog.pwsdk.com^
@@ -15136,6 +15156,7 @@ zuketcreation.net##.cente-1
 ||contentproxy10.cz^
 ||contents-search-windows.com^
 ||context.hotline.ua^
+||contextelvira.cyou^
 ||contextrewindfreed.com^
 ||contextualadv.com^
 ||contextweb.com^
@@ -15323,6 +15344,7 @@ zuketcreation.net##.cente-1
 ||corrupt-peak.com^
 ||corruptionburlylawsuit.com^
 ||corulercled.shop^
+||corvinacoy.cfd^
 ||corvinapont.cyou^
 ||coryphstoma.com^
 ||coscetfec.cfd^
@@ -15482,6 +15504,7 @@ zuketcreation.net##.cente-1
 ||cowtownimbrued.qpon^
 ||coxiestbebusy.shop^
 ||coxiesthubble.com^
+||coxmavefzvnqwl.com^
 ||coxpythiuspau.cyou^
 ||coxsnlangrddj.online^
 ||coylycaptate.com^
@@ -16242,6 +16265,7 @@ zuketcreation.net##.cente-1
 ||customslongest.com^
 ||cuterbond.com^
 ||cutescale.online^
+||cuteyflout.cfd^
 ||cutlasaglypha.qpon^
 ||cutterbewilderedvile.com^
 ||cuttingvibioid.qpon^
@@ -17967,7 +17991,6 @@ zuketcreation.net##.cente-1
 ||data.gosquared.com^
 ||data.hailuo.ai^
 ||data.jaytuckwell.com^
-||data.kameleoon.io^
 ||data.kuiniuca.com^
 ||data.media-lab.ai^
 ||data.mistat.india.xiaomi.com^
@@ -19956,6 +19979,7 @@ zuketcreation.net##.cente-1
 ||drossedruffledvalois.cyou^
 ||drossesareca.com^
 ||droughtperceptive.com^
+||droukantuebor.cyou^
 ||drownhewchevy.com^
 ||drozhhgsejvhn.space^
 ||drqkgbytuwdpi.site^
@@ -20153,6 +20177,7 @@ zuketcreation.net##.cente-1
 ||ductsstourybyrnies.cfd^
 ||dudaimarake.cyou^
 ||dudinebacchar.qpon^
+||dudleycutches.cfd^
 ||dudleyrevolutioninconsistent.com^
 ||dudppbtqgdvam.site^
 ||due5a6x777z0x.cloudfront.net^
@@ -20614,6 +20639,7 @@ zuketcreation.net##.cente-1
 ||eaaclwbrcoqdd.site^
 ||eaaratte.net^
 ||eaauvspicaeq.com^
+||eabwmonhlyumm.website^
 ||each-task.com^
 ||eactmionovl.com^
 ||eadexchange.com^
@@ -21376,6 +21402,7 @@ zuketcreation.net##.cente-1
 ||ementseconom.org^
 ||emergedcom.cyou^
 ||emergeddoleful.com^
+||emergency.zeta-ai.io^
 ||emergencyadditions.com^
 ||emergencyidiomjokingly.com^
 ||emergencystopped.com^
@@ -21402,6 +21429,7 @@ zuketcreation.net##.cente-1
 ||emlifok.info^
 ||emmettdossman.qpon^
 ||emmi-findet.de^
+||emmmbed.com^
 ||emmyrambler.cyou^
 ||emnurrtgmjcil.website^
 ||emnwivlrmorwm.website^
@@ -21596,6 +21624,7 @@ zuketcreation.net##.cente-1
 ||enterpriseswithmetric.net^
 ||entertainenslave.com^
 ||entertainlavish.com^
+||entetdskukbbj.site^
 ||enthaitingshospic.org^
 ||enthefeetofthea.org^
 ||enthronediscovering.com^
@@ -21743,6 +21772,7 @@ zuketcreation.net##.cente-1
 ||eprgsfzkoakpj.site^
 ||eproof.drudgereport.com^
 ||eprqryhpwjmox.site^
+||epsbasbuiyhbm.space^
 ||epsilon.6sense.com^
 ||epthmgzgztzxt.online^
 ||eptrpomofmqtx.website^
@@ -22641,6 +22671,7 @@ zuketcreation.net##.cente-1
 ||eywkdpzpyggcq.site^
 ||eyxafvqxebmxc.space^
 ||eyyhsmsvymolw.online^
+||ez2q38b1ik.com^
 ||ezacbjalzjvrb.online^
 ||ezca.asia^
 ||ezcgojaamg.com^
@@ -23091,6 +23122,7 @@ zuketcreation.net##.cente-1
 ||fcs.ovh^
 ||fctpkherkgpk.com^
 ||fctuxsuitasid.website^
+||fcuzoswetczks.site^
 ||fcvqvetrmo.com^
 ||fcvxmhtpvpuld.space^
 ||fcwdsidinixoz.website^
@@ -23503,6 +23535,7 @@ zuketcreation.net##.cente-1
 ||filllocate.com^
 ||fillpoliteness.com^
 ||filmoljupci.com^
+||filmswattled.cyou^
 ||filter-eu.adconverge.com^
 ||filter-eu.adexone.com^
 ||filter-eu.adfootmedia.com^
@@ -24087,6 +24120,7 @@ zuketcreation.net##.cente-1
 ||fluidbagfulwag.com^
 ||fluiyhtncueau.store^
 ||flukedlegato.cyou^
+||flumesripsaw.shop^
 ||flungperformgirlfriend.com^
 ||fluoricbramjara.cyou^
 ||flurry.cachefly.net^
@@ -24722,6 +24756,7 @@ zuketcreation.net##.cente-1
 ||fryboldlymalice.com^
 ||fryduxmudk.in^
 ||fryhzcadnypnn.online^
+||fryqtvjohwknh.online^
 ||frzlftr9y.com^
 ||frzsblxklkuoa.site^
 ||frztpfjmnuexn.space^
@@ -25327,6 +25362,7 @@ zuketcreation.net##.cente-1
 ||gassingmollusk.shop^
 ||gassycupcake.qpon^
 ||gastfulabeles.com^
+||gastzat.shop^
 ||gatag.uplus.co.kr^
 ||gate.datacaciques.com^
 ||gate4learn.com^
@@ -27625,6 +27661,7 @@ zuketcreation.net##.cente-1
 ||hawk.makroskop.eu^
 ||hawk.mjsarfatti.com^
 ||hawkerystrand.shop^
+||hawkeysalconde.cfd^
 ||hawserseuryon.cyou^
 ||hawsuffer.com^
 ||haxrkdicbviay.online^
@@ -28177,6 +28214,7 @@ zuketcreation.net##.cente-1
 ||hiprofitnetworks.com^
 ||hipub.hiwit.org^
 ||hipzpktsyugcu.website^
+||hirerabaculi.cfd^
 ||hirmbzroviasa.online^
 ||hirony.xyz^
 ||hispidtux.com^
@@ -28379,6 +28417,7 @@ zuketcreation.net##.cente-1
 ||hnmonkedguxxl.website^
 ||hnnqbxhvpbgvf.site^
 ||hnnwonwjeiqpq.space^
+||hnqqvagxfnrgr.website^
 ||hnrgmc.com^
 ||hnsbsgnqcvqmn.site^
 ||hnsrvcjnrmzd.com^
@@ -28865,6 +28904,7 @@ zuketcreation.net##.cente-1
 ||htufkxrviozxm.space^
 ||htukmobukvkdi.website^
 ||htvwdruzmaqlb.site^
+||htwvovlpuoaaf.online^
 ||htxvelrehecjm.site^
 ||hu2e7z5x.xyz^
 ||huanacoheard.cyou^
@@ -28994,6 +29034,7 @@ zuketcreation.net##.cente-1
 ||huvehsszwdzkp.space^
 ||huwgjgf.icu^
 ||huwtkpcqaygow.online^
+||huxzgdfmeqlgv.online^
 ||huyapxxwno.com^
 ||huzytgmqsnecd.website^
 ||hv7w3au49.com^
@@ -29142,6 +29183,7 @@ zuketcreation.net##.cente-1
 ||hzlhxlivfnxur.site^
 ||hzlswdkrcutie.website^
 ||hznenxxzupeym.site^
+||hzpvxwmljizrl.online^
 ||hzqqldqfjsyjn.site^
 ||hzr0dm28m17c.com^
 ||hzskcsmxnzmcz.website^
@@ -29449,6 +29491,7 @@ zuketcreation.net##.cente-1
 ||iebhbkzfwcwoq.space^
 ||iecxpghbv.com^
 ||iedjdpmpnm.com^
+||ieecfjcwadvrz.online^
 ||ieecjjfzmbhgs.site^
 ||ieenhijxbigyt.space^
 ||ieeucpssxsepw.online^
@@ -29659,6 +29702,7 @@ zuketcreation.net##.cente-1
 ||ikkakvnicwguw.store^
 ||iklparx8i.com^
 ||ikmmigvehmod.com^
+||ikonaseewee.cfd^
 ||ikonsripcordslice.qpon^
 ||ikquaycaaygib.space^
 ||ikqyazeadzqvo.space^
@@ -30732,6 +30776,7 @@ zuketcreation.net##.cente-1
 ||iseawave.com^
 ||isegrimbough.com^
 ||isepnumgqdthg.space^
+||iserinekugel.com^
 ||isgost.com^
 ||isgsrilzpqp.com^
 ||ishbqnmriafnt.store^
@@ -31447,6 +31492,7 @@ zuketcreation.net##.cente-1
 ||jhjgzxkdlztab.site^
 ||jhkfd.com^
 ||jhlxmodmknxce.online^
+||jhmeackyrbstv.site^
 ||jhncmokruwmhd.website^
 ||jhnvsxmcitxye.site^
 ||jhnwr.com^
@@ -31501,6 +31547,7 @@ zuketcreation.net##.cente-1
 ||jinkads.de^
 ||jinraoiahbrhg.online^
 ||jinshanduba.org.cn^$all
+||jinsinganay.shop^
 ||jinsoppidum.cyou^
 ||jio.ocz3czqghg51qb2lb.cyou^
 ||jioads.akamaized.net^
@@ -31875,6 +31922,7 @@ zuketcreation.net##.cente-1
 ||jraaraflargqt.website^
 ||jreanjvuvpmy.in^
 ||jrge.cn^
+||jrhameobeihmv.space^
 ||jrjexx.com^
 ||jrjmgjfefawpy.site^
 ||jrkihvllezsla.space^
@@ -32000,6 +32048,7 @@ zuketcreation.net##.cente-1
 ||jsvfrtifmtmwx.com^
 ||jswebcollects.kugou.com^
 ||jswlnhcfmotapnm.com^
+||jsxhottjzil.com^
 ||jsyefc.com^
 ||jszmbkfsaeupx.space^
 ||jszpagyvknvhv.website^
@@ -32296,6 +32345,7 @@ zuketcreation.net##.cente-1
 ||jziweafbssqyj.store^
 ||jzklxzldskqok.online^
 ||jzmgykztfsjwd.website^
+||jzpgspqbmbhxk.site^
 ||jzrmxnvcniwmj.online^
 ||jzszrfzi.com^
 ||jztxtlsupbqcu.site^
@@ -32311,6 +32361,7 @@ zuketcreation.net##.cente-1
 ||k.qwant.com^
 ||k030.koco.com^
 ||k06kldksi3.com^
+||k0b9nwt6d.com^
 ||k0ikana.com^$doc
 ||k0jw6qzyh.com^
 ||k0k0cha.link^$doc
@@ -32372,6 +32423,7 @@ zuketcreation.net##.cente-1
 ||kadime.cc^
 ||kadxin.net^
 ||kaeslantana.cfd^
+||kaffirsshoal.cfd^
 ||kagkbhfnxye.com^
 ||kagocvncavfqi.store^
 ||kahblkqxbjscd.website^
@@ -32400,6 +32452,7 @@ zuketcreation.net##.cente-1
 ||kalmukhydra.cfd^
 ||kalstats.kaltura.com^
 ||kalwarsandawe.cfd^
+||kameleoon.io^
 ||kaminari.space^
 ||kaminari.systems^
 ||kamiyatabinet.cyou^
@@ -32497,6 +32550,7 @@ zuketcreation.net##.cente-1
 ||kcafupebrgybq.website^
 ||kcbchoevit.com^
 ||kcbelamyyeti.qpon^
+||kcbwifgbxzubj.site^
 ||kcdnbeczdhqea.space^
 ||kcerlelentmatc.org^
 ||kcfq6g.ezrep55kkv42r9kmojc1t.cyou^
@@ -32927,6 +32981,7 @@ zuketcreation.net##.cente-1
 ||kkzv9rhek.com^
 ||kl.67it.com^
 ||kl8f4kge3c3zfh5v1jziqefpbmcv4rzx.cfd^
+||klarextqcjbis.space^
 ||klaushydra.com^
 ||klcdoqvajycbg.site^
 ||klcevcy3ngug1pb9bv6.cfd^
@@ -33517,6 +33572,7 @@ zuketcreation.net##.cente-1
 ||kyccmn.com^
 ||kycgrnuxacgcn.site^
 ||kyecnhpxp.com^
+||kyfrqnupucfnu.space^
 ||kyggpktctzozd.space^
 ||kygwbcvevmaoz.store^
 ||kyigqvraimsly.space^
@@ -33665,7 +33721,6 @@ zuketcreation.net##.cente-1
 ||lahscedteo.in^
 ||lahsxicxicuvp.store^
 ||lahwsusoarmbk.site^
-||laichegloavy.com^
 ||laidgreens.com^
 ||laihtsfmbrmog.site^
 ||laimroll.ru^
@@ -34260,6 +34315,7 @@ zuketcreation.net##.cente-1
 ||lhacuwpfjscds.online^
 ||lharfoeeeqsxr.site^
 ||lhbejygzfhvsh.space^
+||lhdkvvfmydrvhs.com^
 ||lhe-beacon.team-rec.jp^
 ||lhgzfet8n.com^
 ||lhhpbaiyufphu.site^
@@ -35982,6 +36038,7 @@ zuketcreation.net##.cente-1
 ||lxwmazdgleyxy.website^
 ||lxwp426ao.com^
 ||lxyvpfalzuhnx.space^
+||lxzduwepfkhiu.site^
 ||lyaauumakulfq.site^
 ||lyajuchnb.com^
 ||lyccjoyj.com^
@@ -36983,6 +37040,7 @@ zuketcreation.net##.cente-1
 ||meguri-y.net^$doc
 ||mehcleverly.com^
 ||meibjonjgxjqb.store^
+||meiiistusnlyd.site^
 ||meioseshoaxer.cfd^
 ||meioticbanba.cfd^
 ||meitustat.com^
@@ -37319,6 +37377,7 @@ zuketcreation.net##.cente-1
 ||mhydndfvgzvwu.site^
 ||mi-de-ner-nis3.info^
 ||mi.gdt.qq.com^
+||mi1pbnrk8d.com^
 ||mi82ltk3veb7.com^
 ||mialifestyle.com^$all
 ||miaromance.com^$doc
@@ -37532,6 +37591,7 @@ zuketcreation.net##.cente-1
 ||misguidedconclusion.com^
 ||misguidedshelves.com^
 ||mishandlepretty.com^
+||mishearanhimae.qpon^
 ||misjudgebuoyeye.com^
 ||misleadgifted.com^
 ||misnamefilters.cfd^
@@ -38662,6 +38722,7 @@ zuketcreation.net##.cente-1
 ||mvhlcshfdhsql.website^
 ||mvjnibdoiqd.com^
 ||mvkxtrsnfdggx.site^
+||mvmmigtkznbga.site^
 ||mvnhdtqphlkmy.website^
 ||mvojg61g6g6iwekgg.cyou^
 ||mvovblzjltyec.online^
@@ -38989,6 +39050,7 @@ zuketcreation.net##.cente-1
 ||n6wxm.com^
 ||n730.timesunion.com^
 ||n7fyrdeen.com^
+||n7hnij4fah.com^
 ||n818.timesherald.com^
 ||n82bkk8zou53xc5.lc6y1ex4oxp8fkoz1.cyou^
 ||n86kfk4vc1t536xqlt9xo.cfd^
@@ -39272,6 +39334,7 @@ zuketcreation.net##.cente-1
 ||ndha4sding6gf.com^
 ||ndhadbeensoa.org^
 ||ndhvcwnczxupa.online^
+||ndifzhemlnlop.space^
 ||ndja.cn^
 ||ndkdobohmlqxw.website^
 ||ndourapfeafmy.space^
@@ -39752,6 +39815,7 @@ zuketcreation.net##.cente-1
 ||ninontoising.com^
 ||ninthprerogativerap.com^
 ||ninuptaaajrdk.space^
+||ninvbqfzgoovx.online^
 ||niobeanechinid.shop^
 ||niolpwvcjjfvj.website^
 ||nip6mgvw1otkz6.rest^
@@ -39935,6 +39999,7 @@ zuketcreation.net##.cente-1
 ||nmlsdfybzuqta.space^
 ||nmluwlxnolamc.website^
 ||nmnuvnrarnf.com^
+||nmonomqmojouo.site^
 ||nmrcrghsaplxeoc.com^
 ||nmroutvgijplm.space^
 ||nmtjuybtnyuxi.website^
@@ -39986,6 +40051,7 @@ zuketcreation.net##.cente-1
 ||noblemanbestowed.com^
 ||noblemangetawayeclipse.com^
 ||noblemanhandicraftpot.com^
+||noblesnarrativepool.com^
 ||noblyalecs.cyou^
 ||nobodymiller.com^
 ||nocccxnarymvl.store^
@@ -40080,7 +40146,6 @@ zuketcreation.net##.cente-1
 ||normalround.com^
 ||normecologyomit.com^
 ||normkela.com^
-||norse.mingxiaow.com^
 ||northauthority.xyz^
 ||northcoolingdiving.com^
 ||northstar.cr^
@@ -40516,6 +40581,7 @@ zuketcreation.net##.cente-1
 ||nxcli.io/pub/swissii/$doc
 ||nxeioyakjqusf.space^
 ||nxethnjxkujoa.site^
+||nxgqgxefdfree.website^
 ||nxhkagcslidhv.website^
 ||nxirjotovfnvh.space^
 ||nxishctcjccry.com^$doc
@@ -40614,6 +40680,7 @@ zuketcreation.net##.cente-1
 ||o000oo.com^
 ||o03fssif8l.com^
 ||o0rnzwzst5.com^
+||o11y-proxy-otel-frontend.meli.com^
 ||o18.click^
 ||o18.link^
 ||o1fhfeu6qa.com^
@@ -41605,6 +41672,7 @@ zuketcreation.net##.cente-1
 ||openglass.tv^
 ||openingclutter.com^
 ||openingfridayconsulting.com^
+||openlive.chat^$all
 ||openlog.tapapis.cn^
 ||openlog.tapapis.com^
 ||openmindedaching.com^
@@ -42318,6 +42386,7 @@ zuketcreation.net##.cente-1
 ||ozu9c8rlygo8zj8xy4hr.kecit2rc5pnzwcumye.cyou^
 ||ozuvdfqzkqxho.store^
 ||ozvmsmvmbxlfg.site^
+||ozvwjlhfxloio.website^
 ||ozwvd.com^
 ||ozxhasoxc.in^
 ||ozxvyaklufsce.space^
@@ -43942,6 +44011,7 @@ zuketcreation.net##.cente-1
 ||plainslabredtbebless.cfd^
 ||plainsuburbtoilet.com^
 ||plaintive-east.pro^
+||plaitluctual.com^
 ||plan-smlp.com^$doc
 ||planarbs.cfd^
 ||planarian.614deals.com^
@@ -46226,6 +46296,7 @@ zuketcreation.net##.cente-1
 ||qixledkawgizq.space^
 ||qiyywlruwtfga.website^
 ||qiyzxtvsswtxg.online^
+||qizbddwgcrbfu.online^
 ||qizq4hn7pr.com^
 ||qj9m4nou8t.com^
 ||qjaioccuzbmud.site^
@@ -46349,7 +46420,6 @@ zuketcreation.net##.cente-1
 ||qoaaa.com^
 ||qoannfrwdwifv.site^
 ||qobfocmmyhbaw.space^
-||qobuz.surveysparrow.com^
 ||qoclick.com^
 ||qoebdgzpnonpu.online^
 ||qoewovfmkn4rw3u.rest^
@@ -46530,6 +46600,7 @@ zuketcreation.net##.cente-1
 ||quailsbs.shop^
 ||quaintbitter.com^
 ||quaintcounty.pro^
+||quaintgeneratestink.com^
 ||quaizoa.xyz^
 ||quakedevastatedprinter.com^
 ||quakingapathetic.com^
@@ -46701,6 +46772,7 @@ zuketcreation.net##.cente-1
 ||qvvurjgilhgbd.space^
 ||qvwcrygyfqeih.site^
 ||qvwvsajsiwmhb.site^
+||qvywpyxrwqugw.site^
 ||qvzynkitqiook.site^
 ||qw7fi6e194.com^
 ||qwcohdprvst.com^
@@ -46724,6 +46796,7 @@ zuketcreation.net##.cente-1
 ||qwrwawwlrlkyr.top^
 ||qwsbegovo.top^
 ||qwskjvlutemqg.website^
+||qwt9oyg741.com^
 ||qwtcmhgblnfeu.site^
 ||qwtrynpy.com^
 ||qwubjdcxzwwpw.site^
@@ -46964,6 +47037,7 @@ zuketcreation.net##.cente-1
 ||rafflesgrabby.shop^
 ||rafflisle.com^
 ||raffomfha.com^
+||rafterrowport.qpon^
 ||raftschoreasfavi.cyou^
 ||rafvertizing.crazygames.com^
 ||ragakxzz.in^
@@ -47284,6 +47358,7 @@ zuketcreation.net##.cente-1
 ||rdroot.com^
 ||rdrtrk.com^
 ||rdtk.io^
+||rdtnrsjxybybd.site^
 ||rdtracer.com^
 ||rdtrck2.com^
 ||rdv.naruto-base.tv^
@@ -47748,6 +47823,7 @@ zuketcreation.net##.cente-1
 ||removedidentification.com^
 ||removedrehabilitation.com^
 ||remox.com^
+||remp-beam.golem.de^
 ||remp-campaign.golem.de^
 ||remwukymdcakx.space^
 ||renamereptiliantrance.com^
@@ -48087,6 +48163,7 @@ zuketcreation.net##.cente-1
 ||rgoxcknehm.com^
 ||rgqhf7zqn2f5mvju6gq7ofyrb.cfd^
 ||rgqneyzmihvdg.space^
+||rgqxtgxqvgzgt.space^
 ||rgsoxfrxdalom.website^
 ||rgstispqfesdl.website^
 ||rgtirdhtvixql.online^
@@ -48415,6 +48492,7 @@ zuketcreation.net##.cente-1
 ||rmgdapfnccsharpprd.azurewebsites.net^
 ||rmggipaazeupw.site^
 ||rmgyawyeqngtw.space^
+||rmhewmmaeaenl.space^
 ||rmhfrtnd.com^
 ||rmishe.com^
 ||rmividzwdzapr.com^
@@ -51083,6 +51161,7 @@ zuketcreation.net##.cente-1
 ||sf16-telemetry-proxy-oci.tiktokcdn-us.com^
 ||sfaazgosczit.in^
 ||sfahuhmlwdjop.store^
+||sfaifjprcqttn.site^
 ||sfaobvfic.in^
 ||sfazkosinpad.in^
 ||sfblgasgohxzz.online^
@@ -51124,6 +51203,7 @@ zuketcreation.net##.cente-1
 ||sfzeqzazjmowe.space^
 ||sfzjk57ov.com^
 ||sgaijlnojrrok.site^
+||sgarszzwnjfzt.site^
 ||sgben.com^
 ||sgbrftxioksgf.online^
 ||sgcjwdshiacfv.space^
@@ -51674,6 +51754,7 @@ zuketcreation.net##.cente-1
 ||sites.google.com/view/ai-image-3d^$all
 ||sites.google.com/view/awesome-themes-desktop^$all
 ||sites.google.com/view/blue-softs^$all
+||sites.google.com/view/brewapp$doc
 ||sites.google.com/view/codex-desktop-app$doc
 ||sites.google.com/view/drcheats6|$doc
 ||sites.google.com/view/easylaunch|$doc
@@ -52115,6 +52196,7 @@ zuketcreation.net##.cente-1
 ||smmnclhggakto.website^
 ||smmnukhmkbffv.site^
 ||smniumcylko.com^
+||smnycidaiyygj.site^
 ||smoggyfeed.com^
 ||smokedmeekdub.com^
 ||smokerglum.com^
@@ -52461,6 +52543,7 @@ zuketcreation.net##.cente-1
 ||sortuneven.com^
 ||sosalkebab.com^
 ||sotervastyacture.cyou^
+||sotzfabkmdzwt.space^
 ||soucvnbylfpxu.online^
 ||soudandondine.shop^
 ||soudansslushedocypete.cfd^
@@ -54375,6 +54458,7 @@ zuketcreation.net##.cente-1
 ||sultrymomentarily.com^
 ||sumatoad.com^
 ||sumatuma.com^$doc
+||sumcdmkbznict.site^
 ||sumetrika.com^
 ||summaspence.cyou^
 ||summerleftover.com^
@@ -54635,6 +54719,7 @@ zuketcreation.net##.cente-1
 ||swagehowdie.cyou^
 ||swailsrecoal.com^
 ||swak-adguard.pro^
+||swakyvthujqxx.space^
 ||swalessidi.com^
 ||swallow.pelias.io^
 ||swamplots.com^
@@ -54797,12 +54882,14 @@ zuketcreation.net##.cente-1
 ||syehsmzxfaspp.space^
 ||syeniteexodoi.com^
 ||syfcuabbmpcbl.online^
+||sygvwadaxjesn.space^
 ||syh-imp.cdnjtzy.com^
 ||syh.zybang.com^
 ||syhnohomkjzth.website^
 ||syigfmoeoaono.space^
 ||syinga.com^
 ||syjdybprospmg.site^
+||syjpyfglqztin.space^
 ||sylfaczvioejj.site^
 ||sylmyar.pw^
 ||sylphondrippedallonge.cyou^
@@ -55511,6 +55598,7 @@ zuketcreation.net##.cente-1
 ||tbtophs.cyou^
 ||tburybrcvclih.online^
 ||tbuujyqojwgrz.site^
+||tbvfghdqzfgkm.website^
 ||tbvmhjkmplbgo.site^
 ||tbwqvufmxnyst.space^
 ||tc-clicks.com^
@@ -56308,6 +56396,7 @@ zuketcreation.net##.cente-1
 ||tiredamazingly.com^
 ||tiredelection.com^
 ||tiresomesolemnly.com^
+||tiretalmud.cyou^
 ||tiswingoings.cfd^
 ||titanads1.com^
 ||titanads2.com^
@@ -57374,7 +57463,6 @@ zuketcreation.net##.cente-1
 ||tracker.ranker.com^
 ||tracker.realclearpolitics.com^
 ||tracker.relaido.jp^
-||tracker.remp-beam.golem.de^
 ||tracker.remp.sme.sk^
 ||tracker.samplicio.us^
 ||tracker.secretescapes.com^
@@ -58142,6 +58230,7 @@ zuketcreation.net##.cente-1
 ||ttnjzfmlupknf.site^
 ||ttoc8ok.com^
 ||ttoejmxwlecin.site^
+||ttoqvluihdcbr.site^
 ||ttowi6zx72gxz33c8xh4to8njl3q.cfd^
 ||ttpbpjxcpdcep.website^
 ||ttpsdk.info^
@@ -58307,6 +58396,7 @@ zuketcreation.net##.cente-1
 ||tusslertorpify.qpon^
 ||tussorekamba.cfd^
 ||tutenagemodins.qpon^
+||tutmenafb.qpon^
 ||tutoads.tv^
 ||tutorsshrover.qpon^
 ||tuttolocal.cfd^
@@ -59039,6 +59129,7 @@ zuketcreation.net##.cente-1
 ||um.merinfo.se^
 ||um2lnz.evjk5ftl2l2cz54cl.cyou^
 ||umagccwbbjlne.space^
+||umahvvivrpbfx.online^
 ||umamix.fadunews.in^
 ||umauirfyhaepr.online^
 ||umbel.com^
@@ -59075,6 +59166,7 @@ zuketcreation.net##.cente-1
 ||umqosmlnjdrwl.site^
 ||umrd62a7zy.com^
 ||umrgdvvdgxjto.store^
+||umsbpofguwypv.space^
 ||umsgpfloirafp.site^
 ||umsns.com^
 ||umspecrek.ru^
@@ -59444,6 +59536,7 @@ zuketcreation.net##.cente-1
 ||uofddaueodbeq.space^
 ||uogmaufnar.com^
 ||uohsqzovikvyr.online^
+||uoizyoqicwwyo.space^
 ||uojcqkdr.com^
 ||uokaxbyfrkmnb.website^
 ||uokctomaimarn.site^
@@ -59459,6 +59552,7 @@ zuketcreation.net##.cente-1
 ||uoutube.com^
 ||uoutube.com^$all
 ||uovveljjaoxfe.store^
+||uovvobtfxeekw.site^
 ||uoxocwxakddyq.space^
 ||uoydzaom.xyz^
 ||uozbwocqypahe.site^
@@ -61915,6 +62009,7 @@ zuketcreation.net##.cente-1
 ||wcydtrbulrgob.online^
 ||wcyvjdpduqxym.site^
 ||wdaybyzzjnpri.online^
+||wdbbnerscjscs.space^
 ||wdbecodqxlyuu.site^
 ||wdczlavbweeby.online^
 ||wde0a1qrm.com^
@@ -62344,6 +62439,7 @@ zuketcreation.net##.cente-1
 ||whale.camera^
 ||whale.gdebrauwer.dev^
 ||whaleads.com^
+||whamiqbjdzzcj.space^
 ||whamsdesorb.qpon^
 ||whankdeedeed.com^
 ||whapdroit.shop^
@@ -63263,6 +63359,7 @@ zuketcreation.net##.cente-1
 ||writhhilloed.qpon^
 ||wrjflweehsync.space^
 ||wrjqrggjydtgr.site^
+||wrjrlxaihazpk.space^
 ||wrkztlfslriit.space^
 ||wrlhhgeyh.com^
 ||wrndclbaha.com^
@@ -63274,6 +63371,7 @@ zuketcreation.net##.cente-1
 ||wrouitslhznhn.online^
 ||wrpqqnurjtljv.space^
 ||wrqywyffqfpnf.online^
+||wrqziykmythxm.space^
 ||wrrqigpzmekcd.space^
 ||wrsmcehsvfgjmc.com^
 ||wrsmnqmpopund.net^
@@ -63557,6 +63655,7 @@ zuketcreation.net##.cente-1
 ||wyujsbwlvzhqp.website^
 ||wyvcioftcidpi.space^
 ||wyvlllooalwlj.top^
+||wyvqbmlssvuda.site^
 ||wyvtoicgngifo.website^
 ||wywdtudphanbt.store^
 ||wywgohkuukfin.online^
@@ -63699,6 +63798,7 @@ zuketcreation.net##.cente-1
 ||xbasugigqiuegiwqdbsx.s3.ap-northeast-1.amazonaws.com^$all
 ||xbbuafyizlkov.space^
 ||xbbxljge.com^
+||xbbznszm.com^
 ||xbdthxmpmygwd.space^
 ||xbdvfcqdo.com^
 ||xbeaspolzddtc.space^
@@ -65041,6 +65141,7 @@ zuketcreation.net##.cente-1
 ||xpbrqqmdttbyg.space^
 ||xpdgvlxwn.icu^
 ||xpeivrvqckryo.store^
+||xpejigor.in^
 ||xperuhwo.com^
 ||xpffdxzsaqfhs.website^
 ||xpfpctnclgruq.online^
@@ -65256,6 +65357,7 @@ zuketcreation.net##.cente-1
 ||xuwmylm697.com^
 ||xuxeji5h8qmkhnk1e7eifi774v8he4w9kq.cfd^
 ||xuxtzbczsxcrs.website^
+||xuzkqjhnleqoq.space^
 ||xv2kkg.zqzjjzyllvi7lf4z2.cyou^
 ||xv62yli8iz.com^
 ||xvbwjd.icu^
@@ -65290,6 +65392,7 @@ zuketcreation.net##.cente-1
 ||xvwurhwbe.com^
 ||xvyaytgqrduup.website^
 ||xwafyzovqu.icu^
+||xwavuyzxzansy.website^
 ||xwdsofoflwimy.website^
 ||xweaczbjyftvd.site^
 ||xwfafjiihnpmy.space^
@@ -65564,6 +65667,7 @@ zuketcreation.net##.cente-1
 ||ybtdxfqdnwzly.space^
 ||ybtevzivkqolm.website^
 ||ybtyvbzvxpvex.store^
+||ybuimwfyzkzzf.space^
 ||ybx.yahoo.co.jp^
 ||ybycgilqhqyib.website^
 ||yc-ads.s3.amazonaws.com^
@@ -65581,6 +65685,7 @@ zuketcreation.net##.cente-1
 ||ycencliqriclu.space^
 ||ycglik.icu^
 ||ych.asia^
+||ychbtmxkrxojk.website^
 ||ychk4uf7rp.96frpqxyo29998hrz.cyou^
 ||ychnaatlpvghv.site^
 ||ycjhwnqmlchll.space^
@@ -65635,6 +65740,7 @@ zuketcreation.net##.cente-1
 ||yecytiqior.net^
 ||yedftrwashosh.space^
 ||yeesshh.com^
+||yeeumgjxfifku.space^
 ||yefhhuanqlbky.site^
 ||yegprnemph.creativelandings.xyz^
 ||yegtaizxtftpo.online^
@@ -65813,6 +65919,7 @@ zuketcreation.net##.cente-1
 ||yjigiv1ic.com^
 ||yjiqwytzluwhs.site^
 ||yjjfvcbzbrppe.store^
+||yjjolfvavjvff.space^
 ||yjonbxthuxllt.website^
 ||yjonspllguxz.com^
 ||yjopmnjbxlgys.site^
@@ -65891,6 +65998,7 @@ zuketcreation.net##.cente-1
 ||ylog.nimo.tv^
 ||ylogepubxynzu.space^
 ||ylr1xn2b4i.com^
+||yltbizyrsenze.online^
 ||yluezdmctyiuj.site^
 ||yluxevvjtbbzj.website^
 ||ylx-1.com^
@@ -65964,6 +66072,7 @@ zuketcreation.net##.cente-1
 ||ynossspikirow.online^
 ||ynpkjip43x.com^
 ||ynppqrvsmwfpz.space^
+||yntaegulwgqur.site^
 ||yntkpkwykfooj.site^
 ||yntvrgqkwlwag.site^
 ||ynuvfmgqymxbmd.com^
@@ -66139,6 +66248,7 @@ zuketcreation.net##.cente-1
 ||yqgwaodkf.com^
 ||yqgyfmjmtnace.online^
 ||yqjsyabpzegzd.space^
+||yqkpihoutfeef.website^
 ||yqkyaxdt.net^
 ||yqlm5il7p.com^
 ||yqmczwseuyjck.site^
@@ -66866,6 +66976,7 @@ zuketcreation.net##.cente-1
 ||zipnzz.icu^
 ||zipperstorta.cfd^
 ||ziqi462ni.com^
+||zirducwpedro.in^
 ||zireemilsoude.net^
 ||zirkitecantelrussine.qpon^
 ||zisu.cn.com^
@@ -67231,6 +67342,7 @@ zuketcreation.net##.cente-1
 ||zsvgzjokrypla.online^
 ||zsxc.zcuhsa.life^
 ||zsxlvqcwdpmto.online^
+||zsyzmsvvbkmex.site^
 ||zsz8xljo8y.top^
 ||zt.me.zing.vn^
 ||zt1.me.zing.vn^
