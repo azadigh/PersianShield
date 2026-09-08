@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.09.07
-! Last modified: 2026-09-07 03:16:46 UTC
+! Version: 2026.09.08
+! Last modified: 2026-09-08 03:24:20 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 355,388
+! Total rules: 355,381
 ! File size: 10.8 MB
 ! License: MIT
 !
@@ -429,6 +429,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 .buyandship.com.sg%2Fopn%2F$image
 .buyandship.com.sg/opn/$image
 .cf/gif/impression?
+.cineflix.st/api/script.js|
 .cineplex.de%2Fq%2F*$image
 .cineplex.de/q/$image
 .cloudfront.net/br?tid=
@@ -8152,6 +8153,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||cdn.heapanalytics.com^$script,domain=libertymutual.com
 @@||cdn.intellimize.co/snippet/$script,domain=talkspace.com
 @@||cdn.jsdelivr.net/npm/@thumbmarkjs/$domain=dienynas.tamo.lt
+@@||cdn.jsdelivr.net/npm/@thumbmarkjs/thumbmarkjs/dist/thumbmark.umd.js$domain=archive.is
 @@||cdn.jsdelivr.net/npm/fingerprintjs2$domain=wannadep.com
 @@||cdn.jsdelivr.net^*/fp.min.js$script,domain=cuevana2.io
 @@||cdn.kaizenplatform.net^$script,domain=navi.onamae.com
@@ -8424,10 +8426,10 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||custhelp.com/owda/*/Tealeaf.js$domain=custhelp.com
 @@||custojusto.pt/smarttag.js
 @@||cvs.com/shop-assets/js/VisitorAPI.js$~third-party
-@@||cxense.com/cx.cce.js$domain=bizjournals.com|businessinsider.de|cxpublic.com|diamond.jp|handelsblatt.com|hochi.news|inquirer.com|j-cast.com|mainichi.jp|marketwatch.com|nikkansports.com|shueisha.co.jp|tarzanweb.jp|tn.com.ar|tvnet.lv|wsj.com
+@@||cxense.com/cx.cce.js$domain=bizjournals.com|businessinsider.de|cxpublic.com|diamond.jp|handelsblatt.com|harpersbazaar.com|hochi.news|inquirer.com|j-cast.com|mainichi.jp|marketwatch.com|nikkansports.com|shueisha.co.jp|tarzanweb.jp|tn.com.ar|tvnet.lv|wsj.com
 @@||cxense.com/cx.cce.js$domain=tarzanweb.jp
 @@||cxense.com/cx.cce.js$domain=tn.com.ar
-@@||cxense.com/cx.js$domain=13.cl|bizjournals.com|businessinsider.de|businessinsider.jp|computerbild.de|cyclestyle.net|diamond.jp|gizmodo.jp|handelsblatt.com|hochi.news|inquirer.com|j-cast.com|journaldequebec.com|ksml.fi|mainichi.jp|marketwatch.com|nikkansports.com|nippon.com|savonsanomat.fi|shueisha.co.jp|str.toyokeizai.net|tarzanweb.jp|tn.com.ar|tv-tokyo.co.jp|tvnet.lv|wsj.com
+@@||cxense.com/cx.js$domain=13.cl|bizjournals.com|businessinsider.de|businessinsider.jp|computerbild.de|cyclestyle.net|diamond.jp|gizmodo.jp|handelsblatt.com|harpersbazaar.com|hochi.news|inquirer.com|j-cast.com|journaldequebec.com|ksml.fi|mainichi.jp|marketwatch.com|nikkansports.com|nippon.com|savonsanomat.fi|shueisha.co.jp|str.toyokeizai.net|tarzanweb.jp|tn.com.ar|tv-tokyo.co.jp|tvnet.lv|wsj.com
 @@||cxense.com/cx.js$domain=mainichi.jp
 @@||cxense.com/cx.js$domain=nlab.itmedia.co.jp
 @@||cxense.com/cx.js$domain=shueisha.co.jp
@@ -8436,7 +8438,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||cxense.com/cx.js$script,domain=tv-tokyo.co.jp
 @@||cxense.com/document/search?
 @@||cxense.com/persisted/execute$domain=nippon.com
-@@||cxense.com/public/widget/$domain=bizjournals.com|businessinsider.de|businessinsider.jp|computerbild.de|cxpublic.com|cyclestyle.net|diamond.jp|friday.gold|friday.kodansha.co.jp|handelsblatt.com|hochi.news|inquirer.com|j-cast.com|journaldequebec.com|ksml.fi|mainichi.jp|marketwatch.com|nikkansports.com|nippon.com|rikejo.jp|savonsanomat.fi|shueisha.co.jp|tn.com.ar|tvnet.lv|wsj.com
+@@||cxense.com/public/widget/$domain=bizjournals.com|businessinsider.de|businessinsider.jp|computerbild.de|cxpublic.com|cyclestyle.net|diamond.jp|friday.gold|friday.kodansha.co.jp|handelsblatt.com|harpersbazaar.com|hochi.news|inquirer.com|j-cast.com|journaldequebec.com|ksml.fi|mainichi.jp|marketwatch.com|nikkansports.com|nippon.com|rikejo.jp|savonsanomat.fi|shueisha.co.jp|tn.com.ar|tvnet.lv|wsj.com
 @@||cxense.com^$domain=ikea.com
 @@||cxense.com^$domain=thelocal.fr
 @@||cxpublic.com/ToyoKeizai.js$domain=str.toyokeizai.net
@@ -214027,6 +214029,7 @@ techradar.com##+js(href-sanitizer, a[href^="https://go.redirectingat.com/?id="],
 telegraph.co.uk##.more-stories
 telegraph.co.uk##.onward-journey
 telex.hu##+js(set-constant, pp_gemius_hit, noopFunc)
+tellows.jp/ping.php?p=
 temail.22bet.com$image
 temail.realreviews.io$image
 temu.com##+js(set-local-storage-item, _nano_fp, $remove$)
@@ -218740,7 +218743,6 @@ zonedirector.avadacom.com$image
 ||110.93.143.144^$3p
 ||11959579.fun.joyrun.com^
 ||11b6n4ty2x3.taxliencode.com^
-||11nux.com^$third-party
 ||11st.co.kr/emw.st?
 ||11st.co.kr/js/*/RakeData.js
 ||11st.co.kr/js/*/reviewLog.js
@@ -218856,9 +218858,7 @@ zonedirector.avadacom.com$image
 ||2.amssurveys.co.uk^
 ||2.wantsext.me^
 ||20.edge46.testandtarget.omniture.com^
-||200summit.com^$third-party
 ||2026.dailytrendsbd.com^
-||204st.us^$third-party
 ||206solutions.com^$3p
 ||206solutions.com^$third-party
 ||20bd.pandasuite.io^
@@ -218950,7 +218950,6 @@ zonedirector.avadacom.com$image
 ||360direct.qualfon.com^
 ||360i.com^$3p
 ||360i.com^$third-party
-||360tag.com^$third-party
 ||360tag.net^$third-party
 ||365dmp.com^$third-party
 ||3889082.dev.att.llabs.io^
@@ -219165,12 +219164,10 @@ zonedirector.avadacom.com$image
 ||771fnypadw0j.pt.themoneytizer.com^
 ||777.triple7towing.co^
 ||7794933491.transcribetotext.ai^
-||77tracking.com^$third-party
 ||78.46.19.203^$third-party,domain=~sprueche-zitate.net.ip
 ||78rkcgj4i8c6.www.cefirates.com^
 ||79.125.117.123^$3p
 ||7bet.sevenbets.com.br^
-||7bpeople.com^$third-party
 ||7c2vd9kr4pt.assugrin.ch^
 ||7days.ru/ajax/route/browser
 ||7days.ru/statistics/*/hit?id=
@@ -220275,6 +220272,7 @@ zonedirector.avadacom.com$image
 ||a2.americasavingsexperts.com^
 ||a2.avomeen.com^
 ||a2.borgentech.com^
+||a2.cineflix.st^
 ||a2.slotxbros.com^
 ||a20022.actonservice.com^
 ||a20204.actonservice.com^
@@ -223680,7 +223678,6 @@ zonedirector.avadacom.com$image
 ||abcompteur.com^$3p
 ||abcompteur.com^$third-party
 ||abcotvs.net^*/fban_
-||abcstats.com^$third-party
 ||abdelrhman.gherasstore.com^
 ||abdpac.williamsshoes.com.au^
 ||abdrjm.eurostarshotels.de^
@@ -223980,7 +223977,6 @@ zonedirector.avadacom.com$image
 ||accenture.epoise.com^
 ||accenturetest.epoise.com^
 ||acceptcards.americanexpress.co.uk^
-||access-analyze.org^$third-party
 ||access.acspubs.org^
 ||access.hikaritv.net^
 ||access.ipro.net^
@@ -224040,7 +224036,6 @@ zonedirector.avadacom.com$image
 ||acendas.actonservice.com^
 ||acesse.tc.com.br^
 ||acesso.imobiliariarspicarras.com.br^
-||acetrk.com^$third-party
 ||acexedge.com^$3p
 ||acexedge.com^$third-party
 ||acfoin.deppoavantaj.com^
@@ -224288,7 +224283,6 @@ zonedirector.avadacom.com$image
 ||acwbzb.compagniedesspas.fr^
 ||acweb.clog.jp^$3p
 ||acxajt.jimmykey.com^
-||acxiom-online.com^$third-party
 ||acxiomapac.com^$third-party
 ||aczoh.myhealth-lifestyle.com^
 ||ad*.ettoday.net^
@@ -241257,7 +241251,6 @@ zonedirector.avadacom.com$image
 ||csvtt.bmolife.com^
 ||csvtu.bmolending.com^
 ||csymrm.24mx.fr^
-||csyqts.tmon.co.kr^
 ||ct-dev.taskhuman.com^
 ||ct-errs.cartrawler.com^
 ||ct.beslist.nl^
@@ -248028,7 +248021,6 @@ zonedirector.avadacom.com$image
 ||dc01p-net-sslvpn0-ra.net.jumia.com.gh^
 ||dc2.credit-suisse.com^
 ||dc8na2hxrj29i.cloudfront.net^
-||dc8xl0ndzn2cb.cloudfront.net^
 ||dcard.tw/v1/events
 ||dcb.dannyclosetboutique.com.br^
 ||dcbpm.suning.cn^
@@ -271444,6 +271436,7 @@ zonedirector.avadacom.com$image
 ||jamexport.com^
 ||jandm.maitea.de^
 ||jangomail.com^*?UID$third-party
+||janitorai.com/jstats/
 ||jannat.hayaofmuslimah.com^
 ||jansatta.com/api/capture/ua
 ||janzoz.1001pneus.fr^
@@ -281305,7 +281298,6 @@ zonedirector.avadacom.com$image
 ||logger-*.vty.dailymotion.com/dm/
 ||logger-test.mno.link^
 ||logger.applovefrom.com^
-||logger.bzu.kr^
 ||logger.cloudmobi.net^
 ||logger.co.kr^$3p
 ||logger.co.kr^$third-party
@@ -294261,6 +294253,8 @@ zonedirector.avadacom.com$image
 ||otr.kaspersky.se^
 ||otrack.workday.com^
 ||otracks.workday.com^
+||otrium.*/measure/
+||otrium.*/static/newrelic.js
 ||otrnww.pipingrock.com^
 ||otsuka-shokai.co.jp/_rtbcn/rt_track.js
 ||otsxfr.fabletics.co.uk^
@@ -298203,7 +298197,6 @@ zonedirector.avadacom.com$image
 ||publisher-event.ads.prd.ie.internal.unity3d.com^
 ||publisher-event.unityads.unity3d.com^
 ||publisher-services.amazon.dev/v1/recordVendorsLoaded
-||publishflow.com^$third-party
 ||publytics.net^$third-party
 ||pubperf.com^$3p
 ||pubperf.com^$third-party
@@ -301057,7 +301050,6 @@ zonedirector.avadacom.com$image
 ||rnengage.com^$3p
 ||rnengage.com^$third-party
 ||rnet.plus^$third-party
-||rnffgv.wemakeprice.com^
 ||rnfytdve.batteribyen.dk^
 ||rnfytdve.batterionline.no^
 ||rnfytdve.batterionline.se^
@@ -304984,7 +304976,6 @@ zonedirector.avadacom.com$image
 ||selphiu.com^
 ||selvi.viessmann.com.tr^
 ||sem.tkc-biyou.jp^
-||semanticverses.com^$third-party
 ||semantiqo.com^$third-party
 ||semasio.net^$3p
 ||semasio.net^$third-party
@@ -317913,6 +317904,7 @@ zonedirector.avadacom.com$image
 ||sogoucdn.com/hhytrace/
 ||sogtm.academy.org.il^
 ||sogtm.colman.ac.il^
+||sogu.tripster.ru^
 ||sohan.sodaibari.com^
 ||sohiuc.sheego.de^
 ||sohu.com/adgtr/
@@ -338859,6 +338851,7 @@ zonedirector.avadacom.com$image
 ||tellapart.com^$third-party
 ||telldt.israelbiblicalstudies.com^
 ||tellerreport.com/react/pixel
+||tellows.jp/ping.php
 ||tellystick-ss.checkoutera.com^
 ||telsmith.actonservice.com^
 ||telstraphonewords.actonservice.com^
@@ -344717,7 +344710,6 @@ zonedirector.avadacom.com$image
 ||trackingeloqua.tec.mx^
 ||trackinginternal.hcltech.com^
 ||trackinginternal.ti.com^
-||trackinglabs.com^$third-party
 ||trackinglibrary.prodperfect.com^
 ||trackinglrus.wolterskluwer.com^
 ||trackingmms.accenture.com^
@@ -353852,6 +353844,7 @@ zonedirector.avadacom.com$image
 ||yak.auclantis.com^
 ||yak.gregsullivan.com^
 ||yak.juicydevils.gr^
+||yalispor.com.tr/u966/
 ||yamanoha.com^$3p
 ||yamanoha.com^$third-party
 ||yamlgv.cinziarocca.com^
