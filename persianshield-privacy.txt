@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.09.08
-! Last modified: 2026-09-08 03:24:20 UTC
+! Version: 2026.09.09
+! Last modified: 2026-09-09 03:27:50 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 355,381
+! Total rules: 355,395
 ! File size: 10.8 MB
 ! License: MIT
 !
@@ -7922,6 +7922,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||assets.fyers.in/Lib/analytics/Analytics.js$~third-party
 @@||assets.msn.com/staticsb/statics/latest/adboxes/$script,~third-party
 @@||assets.yasno.live/packs/assets/analytics-events-$script,~third-party
+@@||assetsconfigcdn.org/v1/initialize?k=$domain=bloomberg.com
 @@||astatic.ccmbg.com/fc/js/prebid?v=$domain=journaldunet.com
 @@||at.vodafone.de/rest/$domain=vodafone.de
 @@||atdmt.com/ds/yusptsprtspr/
@@ -8153,7 +8154,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||cdn.heapanalytics.com^$script,domain=libertymutual.com
 @@||cdn.intellimize.co/snippet/$script,domain=talkspace.com
 @@||cdn.jsdelivr.net/npm/@thumbmarkjs/$domain=dienynas.tamo.lt
-@@||cdn.jsdelivr.net/npm/@thumbmarkjs/thumbmarkjs/dist/thumbmark.umd.js$domain=archive.is
+@@||cdn.jsdelivr.net/npm/@thumbmarkjs/thumbmarkjs/dist/thumbmark.$domain=archive.is|archive.today|archive.ph
 @@||cdn.jsdelivr.net/npm/fingerprintjs2$domain=wannadep.com
 @@||cdn.jsdelivr.net^*/fp.min.js$script,domain=cuevana2.io
 @@||cdn.kaizenplatform.net^$script,domain=navi.onamae.com
@@ -8354,7 +8355,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||collect.igodigital.com/collect.js$domain=wilsonparking.com.au
 @@||collect.igodigital.com^$domain=m.harborfreight.com
 @@||collections.archives.govt.nz/combo/*/gtag.js$script,~third-party
-@@||collector.appconsent.io/hello$domain=lachainemeteo.com|lefigaro.fr
+@@||collector.appconsent.io/hello$domain=lachainemeteo.com|lefigaro.fr|meteoconsult.fr
 @@||collector.leaddyno.com/shopify.js$script,domain=s4l.us
 @@||collector.wawlabs.com/mediamarkt.js$domain=mediamarkt.com.tr
 @@||collector.wawlabs.com/mmsearch.js$domain=mediamarkt.com.tr
@@ -205755,6 +205756,7 @@ gwcsbalid3.click.s11.sfmc-osl.com$image
 gwirebalid3.click.s11.sfmc-osl.com$image
 hannah.teamspotlite.com$image
 harmony.click.s11.sfmc-osl.com$image
+harpersbazaar.com##div[aria-labelledby="recirc-heading"]
 hasppartnerpicker-files.happycustomer.io$image
 healf.com##+js(remove-cookie, /^ig-|ph_phc_/, when, scroll keydown)
 healf.com##+js(set-local-storage-item, /^ph_phc_/, $remove$)
@@ -210552,6 +210554,7 @@ mykitsch.com##+js(remove-cookie, _shopify_y, when, scroll keydown)
 mykitsch.com##+js(set-local-storage-item, /lc_anon_user_id|_constructorio_search_client_id/, $remove$)
 mysites.click.s11.sfmc-osl.com$image
 n11.com##+js(addEventListener-defuser, click, ownerDocument, elements, a.product-card[href])
+na2ka4.blog.fc2.com###inner2 > div.section2:has(> div.ninja-recommend-block)
 nanjpride.blog.jp##div[class^="article-outer"] > div.recommend:has(> div.ninja-recommend-block)
 naszemiasto.pl##+js(trusted-set-cookie, _sharedid, , 0, , domain, .naszemiasto.pl)
 natgeotv.com##+js(no-xhr-if, /VisitorAPI|AppMeasurement/)
@@ -214029,7 +214032,6 @@ techradar.com##+js(href-sanitizer, a[href^="https://go.redirectingat.com/?id="],
 telegraph.co.uk##.more-stories
 telegraph.co.uk##.onward-journey
 telex.hu##+js(set-constant, pp_gemius_hit, noopFunc)
-tellows.jp/ping.php?p=
 temail.22bet.com$image
 temail.realreviews.io$image
 temu.com##+js(set-local-storage-item, _nano_fp, $remove$)
@@ -229496,6 +229498,7 @@ zonedirector.avadacom.com$image
 ||api.liaconsorcios.com.br^
 ||api.liberostyle.com.br^
 ||api.lifetimenumber.com^
+||api.lightyear.com/v1/web-visit/pixel.png
 ||api.liloforte.com.br^
 ||api.limbik.com^$3p
 ||api.lisoideal.com^
@@ -235494,6 +235497,8 @@ zonedirector.avadacom.com$image
 ||bvxvwb.miniwebshop.hu^
 ||bvz5.destinia.com.tr^
 ||bwapi.bikerumor.com^
+||bwapi.irunfar.com/event/
+||bwapi.irunfar.com/log/
 ||bwb101.goo.ne.jp^
 ||bwbwye.klarstein.hu^
 ||bwbx.io/s3/javelin/public/hub/js/abba/$script,domain=bloomberg.co.jp|bloomberg.com
@@ -250232,7 +250237,7 @@ zonedirector.avadacom.com$image
 ||duk.devolkitchens.co.uk^
 ||dukea.alice.camera^
 ||dukho.store.thehistorylist.com^
-||dulo.tv/api/ping
+||dulo.*/api/ping
 ||dumbingofage.com/?feed-stats-post-id=
 ||dumfpn.bremer-jobanzeiger.de^
 ||dumjz.wearswoody.com^
@@ -257415,7 +257420,6 @@ zonedirector.avadacom.com$image
 ||gd-stats.jpush.cn^
 ||gdbei.oakessentials.com^
 ||gde.ru/isapi/tracker.dll?
-||gdebenz.ru/api/rum
 ||gdeslon.ru^$third-party
 ||gdezflfz.modern-music.org^
 ||gdfkrt.cartorionobrasil.com.br^
@@ -294111,6 +294115,7 @@ zonedirector.avadacom.com$image
 ||oropz.ultimatelinings.com^
 ||orpggb.esprit.at^
 ||orqhz.alexandrebirman.com^
+||orsdls.di.runestone.samsung.com^
 ||orsds.ziavia.com^
 ||orsmfg.notino.de^
 ||ortkrq.damyller.com.br^
@@ -301472,6 +301477,7 @@ zonedirector.avadacom.com$image
 ||rta.redhomestore.com^
 ||rta2.inews.co.uk^
 ||rta2.metro.co.uk^
+||rta2.newscientist.com^
 ||rta2.newzit.com^
 ||rtactivate.com^
 ||rtag.farmers.com^
@@ -311820,6 +311826,7 @@ zonedirector.avadacom.com$image
 ||shazzat.prinush.com^
 ||shbtjz.directours.com^
 ||shdid.me^
+||shealth-analytics-api.samsunghealth.com^
 ||sheargovernor.com^
 ||sheba.dhakapharmachy.com^
 ||sheego.de/ar/$third-party
@@ -332952,6 +332959,7 @@ zonedirector.avadacom.com$image
 ||stats.drypers.com.ph^
 ||stats.dt-esthetique.ch^
 ||stats.duetcode.io^
+||stats.dulo.
 ||stats.dupress.com^
 ||stats.dwermke.com^
 ||stats.earlygame.com^
@@ -335174,6 +335182,7 @@ zonedirector.avadacom.com$image
 ||sunios.de^$3p
 ||sunios.de^$third-party
 ||sunlightmetrics.b-cdn.net^
+||sunnylettings.com^
 ||suno.com/9i3s/
 ||suno.com/metrics/
 ||suno.com/monitoring
@@ -335285,6 +335294,7 @@ zonedirector.avadacom.com$image
 ||surveywriter.com^$third-party
 ||survicate.com^$3p
 ||survicate.com^$third-party
+||sushivolant.com^
 ||sustainability.ricoh.ch^
 ||sustainability.ricoh.co.za^
 ||sustainable.optum.com^
@@ -338680,6 +338690,7 @@ zonedirector.avadacom.com$image
 ||tech.wellbots.fr^
 ||techads.nazifshop.com^
 ||techadv.actonservice.com^
+||techcatcher.com^
 ||techconverter.com^
 ||techcrunch.com/wp-json/wp/v*/tc_events
 ||techdrivethru.com^
@@ -338687,6 +338698,7 @@ zonedirector.avadacom.com$image
 ||techlab-cdn.com^$3p
 ||techlab-cdn.com^$third-party
 ||techlore.tech/public/ghost-stats.min.js
+||techmix.net^
 ||technical-service.net^$3p
 ||technical-service.net^$third-party
 ||technical.kyzen.com^
@@ -338852,6 +338864,7 @@ zonedirector.avadacom.com$image
 ||telldt.israelbiblicalstudies.com^
 ||tellerreport.com/react/pixel
 ||tellows.jp/ping.php
+||tellows.jp/ping.php?p=
 ||tellystick-ss.checkoutera.com^
 ||telsmith.actonservice.com^
 ||telstraphonewords.actonservice.com^
@@ -347741,6 +347754,7 @@ zonedirector.avadacom.com$image
 ||urcaq.eberjey.com^
 ||urdam.hillcrestmemorialgarden.com^
 ||urdap.forever21.com^
+||ureca.samsungapps.com^
 ||urehgr.halekulani.com^
 ||ureoaw.netthandelen.no^
 ||ureruadebis.papawash.com^
