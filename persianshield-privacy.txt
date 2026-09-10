@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.09.09
-! Last modified: 2026-09-09 03:27:50 UTC
+! Version: 2026.09.10
+! Last modified: 2026-09-10 03:26:17 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 355,395
+! Total rules: 355,408
 ! File size: 10.8 MB
 ! License: MIT
 !
@@ -8471,7 +8471,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||datadoghq-browser-agent.com/*/datadog-logs.js$domain=crosset.onward.co.jp
 @@||datadoghq-browser-agent.com/datadog-logs-v*.js$domain=radiotimes.com
 @@||datadoghq-browser-agent.com/datadog-logs.js$domain=linktr.ee
-@@||datadoghq-browser-agent.com^$script,domain=bbcgoodfood.com|cdn.spatialbuzz.com|dashboard.getdriven.app|espn.com|goindigo.in|hungryroot.com|usa.experian.com
+@@||datadoghq-browser-agent.com^$script,domain=bbcgoodfood.com|cdn.spatialbuzz.com|dashboard.getdriven.app|espn.com|goindigo.in|hungryroot.com|usa.experian.com|wirecutterstore.nytimes.com
 @@||datadoghq-browser-agent.com^$script,domain=hungryroot.com
 @@||datadome.garena.com.first-party-js.datadome.co^$script,xmlhttprequest,domain=auth.garena.com
 @@||datadome.monster.com.first-party-js.datadome.co^$script,domain=monster.com
@@ -8636,6 +8636,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||fdi.fiduciarydecisions.com/a/lib/gtag/gtag.js$script,~third-party
 @@||fdi.fiduciarydecisions.com/v/app/components/*/Analytics.js$script,~third-party
 @@||fdj.fr/oad/js/xiti/xtcore.js
+@@||featureassets.org/v1/initialize?k=$domain=bloomberg.com
 @@||feedback.userreport.com/*/*.csb.app$domain=csb.app
 @@||feliz-web.data.tm-awx.com/smile-web.min.js$domain=examinerlive.co.uk
 @@||feliz-web.data.tm-awx.com/smile-web.min.js$domain=liverpoolecho.co.uk|mirror.co.uk|birminghammail.co.uk|dailystar.co.uk|manchestereveningnews.co.uk
@@ -210601,6 +210602,8 @@ newslink.reuters.com$image
 newslink.sandbox.reuters.com$image
 newslink.theinsurer.com$image
 newslink.uk.reuters.com$image
+newsnow.com##+js(set-session-storage-item, nfPageCount, $remove$)
+newsnow.com##+js(set-session-storage-item, pageCount, $remove$)
 newsweekjapan.jp##.taboola-below-article-thumbnails-desktop-2-wrap
 newton.by##+js(set-constant, ga, noopFunc)
 newton.by##+js(set-constant, yaCounter22339861.reachGoal, noopFunc)
@@ -238710,6 +238713,7 @@ zonedirector.avadacom.com$image
 ||clouds.stapepeople.com^
 ||cloudtracer101.com^$third-party
 ||cloudwp.io^
+||cloudx.io^
 ||cloudzilla.ai/ingest/
 ||clover.luckycharmgold.com^
 ||cloverkeys.com^
@@ -249484,6 +249488,7 @@ zonedirector.avadacom.com$image
 ||dmqykw.thirtymall.com^
 ||dmrs.shwapnoghar.com^
 ||dms.aryandmaan.com^
+||dmt.fidelity.com/prod/meas/
 ||dmt1-img.canon.jp^
 ||dmtag.jp^$3p
 ||dmtag.jp^$third-party
@@ -275765,6 +275770,7 @@ zonedirector.avadacom.com$image
 ||ln.loudnoise.nl^
 ||lndata.com^$3p
 ||lndata.com^$third-party
+||lndrsapi.com^
 ||lnezkw.iturbo.fr^
 ||lnfqk.showerenvy.com^
 ||lng.xiaohongshu.com^
@@ -296663,6 +296669,7 @@ zonedirector.avadacom.com$image
 ||pla.atlasos.net/api/event
 ||pla.fwdcdn.com^
 ||pla.pearlinsurance.com^
+||pla.uqload.vc^
 ||pla.wigglepixel.nl^
 ||placeframe.com^
 ||placemypixel.com^$3p
@@ -301759,6 +301766,7 @@ zonedirector.avadacom.com$image
 ||runconverge.com^$third-party
 ||runnzk.pch-shop.de^
 ||runtime.fivem.net/counts.json
+||runtimewire.com/api/analytics/*/events|
 ||ruovq.rarecarat.com^
 ||rup5.destinia.ru^
 ||ruralrobin.com^
@@ -339128,6 +339136,7 @@ zonedirector.avadacom.com$image
 ||text.mitarbeiterangebote.at^
 ||text.mitarbeiterangebote.de^
 ||text.rahmenvereinbarungen.de^
+||texturehunt.com^
 ||texturetrick.com^
 ||teyourmarketing.trungaleegan.com^
 ||teyvmb.moniquelhuillier.com^
@@ -340311,6 +340320,7 @@ zonedirector.avadacom.com$image
 ||tophitbit.com^$third-party
 ||tophits4u.de^$3p
 ||topicalcartel.com^
+||topicjungle.com^
 ||topix.net/t6track/
 ||topiz.ru^$3p
 ||toplist.cz^$3p
@@ -346658,6 +346668,7 @@ zonedirector.avadacom.com$image
 ||tusk-us.happymammoth.com^
 ||tutbc1.www.tapmyback.com^
 ||tutorials.karachitutor.com^
+||tutorshelf.com^
 ||tutti.ch/api/v10/clientmetrics/report-metric
 ||tuttocagliari.net/pixel
 ||tuttogratis.it/gopix.php?
@@ -346794,6 +346805,7 @@ zonedirector.avadacom.com$image
 ||two.tracedock.com^
 ||twochihuahuas.com^
 ||twoeej.carrefour.fr^
+||twofishweb.com^
 ||twowheeler.policybazaar.com/js/GTMgoogleAnalytics.js
 ||twpcbx.ullapopken.at^
 ||twptxs.teknikhouse.se^
@@ -347750,6 +347762,7 @@ zonedirector.avadacom.com$image
 ||uralweb.ru^$third-party
 ||urbanairship.com^
 ||urbanlaurel.com^
+||urbanopus.net^
 ||urbtix.hk/api/internet/log/add?
 ||urcaq.eberjey.com^
 ||urdam.hillcrestmemorialgarden.com^
