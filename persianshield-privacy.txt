@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.09.10
-! Last modified: 2026-09-10 03:26:17 UTC
+! Version: 2026.09.11
+! Last modified: 2026-09-11 03:22:47 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 355,408
+! Total rules: 355,423
 ! File size: 10.8 MB
 ! License: MIT
 !
@@ -965,7 +965,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /^https?:\/\/(?:[^.]+\.){2}(?:com|io|net)\/c(?:\/\d+){3}\/?\?.*?&?u=http/$doc,to=com|io|net,urlskip=?u
 /^https?:\/\/(?:[^.]+\.){2}(?:com|io|net)\/c(?:\/\d+){3}\/?\?.*?&?url=http/$doc,to=com|io|net,match-case,urlskip=?url
 /^https?:\/\/(?:www\.anrdoezrs\.net|cj\.dotomi\.com)\/links(?:-t)?\/\d+\/sid\/[^\/]+\/http/$doc,to=cj.dotomi.com|www.anrdoezrs.net,urlskip=/\/sid\/[^\/]+\/(http[^?]+)/
-/^https?:\/\/(android\.com\.pl|biznesenter\.pl)\/[a-z0-9]{1,4}\/$/$script,~3p,domain=android.com.pl|biznesenter.pl
+/^https?:\/\/(android\.com\.pl|biznesenter\.pl|invezz\.com)\/[a-z0-9]{1,4}\/$/$script,~3p,domain=android.com.pl|biznesenter.pl|invezz.com
 /^https?:\/\/chatgpt\.com\/ces\/v1\/[a-z]$/$xhr,domain=chatgpt.com|openai.com|sora.com,method=post
 /^https?:\/\/fdts\.ebay-kleinanzeigen\.de\/[a-z0-9]{13,18}\.js\?/$script,domain=kleinanzeigen.de
 /^https?:\/\/pov\.spectrum\.net\/[a-zA-Z0-9]{14,}\.js/$script,domain=spectrum.net
@@ -9969,6 +9969,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||prra.spxl.socy.es/pixel/js/$domain=cadenaser.com
 @@||pruefernavi.de/vendor/elasticsearch/elastic-apm-rum.umd.min.js$~third-party
 @@||ps.w.org/wp-slimstat/$domain=wordpress.org
+@@||pub-static.fotor.com/static/web/lib/sensors/sensorsdata.min.js
 @@||pub.pixels.ai/prebid_standard.js$script,domain=standard.co.uk
 @@||public.fbot.me/events/$domain=casper.com
 @@||public.profitwell.com^$domain=adblockplus.org|getadblock.com
@@ -11348,7 +11349,6 @@ campaign.auspost.com.au$image
 campusfrance.org##+js(set-constant, pa, {})
 campusfrance.org##+js(set-constant, pa.sendEvent, noopFunc)
 canadiantire.ca##+js(set-local-storage-item, signifydSessionIdInfo, $remove$)
-candytm.pl,biznesenter.pl##+js(abort-current-script, document.createElement, /gtm\.start|dataLayer/)
 capital.fr,voici.fr,gala.fr##+js(set-constant, DD_RUM.addTiming, noopFunc)
 capitalvertexsignalexactaccess.xyz$image
 careermap.co.uk##+js(set-constant, trackEvent, noopFunc)
@@ -206074,6 +206074,7 @@ investing.com##+js(trusted-set-cookie, inudid, , 0, , domain, .investing.com)
 investing.com##+js(trusted-set-cookie, smd, , 0, , domain, .investing.com)
 investing.com##+js(trusted-set-cookie, udid, , 0, , domain, .investing.com)
 investor-web.hdfcfund.com##+js(set-constant, smartech, noopFunc)
+invezz.com,candytm.pl,biznesenter.pl##+js(abort-current-script, document.createElement, /gtm\.start|dataLayer/)
 ioemail.sumoquote.com$image
 ipay.ztgame.com##+js(prevent-fetch, beacon.ztgame.com)
 iplobalid3.click.s11.sfmc-osl.com$image
@@ -213464,6 +213465,8 @@ rnd-email.xandwhy.co.uk$image
 rnd-email.yukonstruct.com$image
 roblox.com##+js(href-sanitizer, a[href^="https://cts.businesswire.com/ct/CT?"][href*="url=http"], ?url)
 rollout1.click.s11.sfmc-osl.com$image
+roomie.jp##.r-article ~ .r-section:has(> div[id^="logly-lift-"])
+roomie.jp##.r-sidesection[data-google-interstitial]
 route.northstepgear.com$image
 route.pepsboost.com$image
 rs.realself.com$image
@@ -225199,6 +225202,7 @@ zonedirector.avadacom.com$image
 ||advertisertape.com/stat/
 ||advertising.amazon.dev/v1/ad-events/
 ||advertising.com^$third-party
+||adverts.ie/5g8u/
 ||advgo.net/hits/
 ||advgo.net/mushroom/
 ||advise.gallup.com^
@@ -229589,6 +229593,8 @@ zonedirector.avadacom.com$image
 ||api.mhred.com.br^
 ||api.michellemanfroi.com.br^
 ||api.mimarbaby.com^
+||api.mindbox.ru/*/customer/track-visit?
+||api.mindbox.ru/*/js/operations/async?*&trackerName
 ||api.mindbox.ru/scripts/*/tracker.js
 ||api.minhabibliaeuvouler.com.br^
 ||api.minhaclinicalucrativa.com.br^
@@ -233504,6 +233510,7 @@ zonedirector.avadacom.com$image
 ||beck.met.vgwort.de^
 ||becomemummy.com^
 ||bed.bedkingdom.co.uk^
+||beddingdownbaby.com^
 ||beddn.gundrymd.com^
 ||bedmz.mercimamanboutique.com^
 ||bedrop.marketing-tech.io^
@@ -233982,6 +233989,7 @@ zonedirector.avadacom.com$image
 ||bigmining.com^$third-party
 ||bigmir.net^$third-party
 ||bignutty.xyz^$third-party
+||bigpicframing.com^
 ||bigreal.org^$third-party
 ||bigsauron.ru^$3p
 ||bigstats.net^$3p
@@ -233993,6 +234001,7 @@ zonedirector.avadacom.com$image
 ||bigwetbrush.com^
 ||bigworldfashion.com^
 ||bijkep.hotelesestelar.com^
+||bijouxbee.com^
 ||bike.turbobd.com^
 ||bikeexerciser.com^
 ||bikemag.com/.api/admiral
@@ -234069,6 +234078,7 @@ zonedirector.avadacom.com$image
 ||biophysicsgroup.actonservice.com^
 ||biosolutions.tv/audience-proxy/
 ||biot.byads.co^
+||biotechnologysciences.com^
 ||bipog.perfectwhitetee.com^
 ||biqizo.vixpaulahermanny.com^
 ||bird.brondby.com^
@@ -249234,6 +249244,7 @@ zonedirector.avadacom.com$image
 ||distributiontomatoes.com^
 ||distributors.balluff.com^
 ||disturbedquiet.com^
+||disutgh7q0ncc.cloudfront.net^
 ||dit.whatsapp.net.iberostar.com^
 ||dit.whatsapp.net^
 ||divatoon.com/api/analytics
@@ -253955,6 +253966,7 @@ zonedirector.avadacom.com$image
 ||events.pickrr.com^
 ||events.plumbv.com^
 ||events.plus.yandex.net^
+||events.plutus.ninja^
 ||events.popinfo.jp^
 ||events.practo.com^
 ||events.prd.api.discomax.com^
@@ -274262,6 +274274,7 @@ zonedirector.avadacom.com$image
 ||leo.play.tv^
 ||leo.tridge.com^
 ||leo1.leon-de-bruxelles.fr^
+||leolist.cc/static/min/js/modules/bam-impressions-
 ||leopard.davidlindahlphoto.com^
 ||leopard.joytotheworld.info^
 ||leopard.laszlo.cloud^
@@ -286833,6 +286846,7 @@ zonedirector.avadacom.com$image
 ||metrics.dunkindonuts.com^
 ||metrics.e-abbott.com^
 ||metrics.e-wie-einfach.de^
+||metrics.earlygame.com^
 ||metrics.earrieta.dev^
 ||metrics.eascanada.com^
 ||metrics.eastcentral.aaa.com^
@@ -300429,6 +300443,7 @@ zonedirector.avadacom.com$image
 ||request.verisign.com^
 ||requestmetrics.com^$3p
 ||requestmetrics.com^$third-party
+||rer4.com^
 ||rerjk.bugmd.com^
 ||rertrc.abc-mart.net^
 ||res-ga.smzdm.com/gtm.js
