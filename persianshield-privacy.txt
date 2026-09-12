@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.09.11
-! Last modified: 2026-09-11 03:22:47 UTC
+! Version: 2026.09.12
+! Last modified: 2026-09-12 03:28:18 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 355,423
+! Total rules: 355,443
 ! File size: 10.8 MB
 ! License: MIT
 !
@@ -2272,6 +2272,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /geov2.js
 /get/*/inventory|
 /get/*/live/_/jts.js
+/get/live/web/_/*$script,~3p
 /get/live/web/_/*$script,~third-party
 /get_cdns?$3p,xhr
 /get_geoip?
@@ -16253,6 +16254,8 @@ dokonline.com###Counters + div[class="block"]
 dominos.jp###_vis_opt_path_hides
 donanimhaber.com##+js(href-sanitizer, a[href^="/ExternalLinkRedirect?"], ?url)
 donanimhaber.com##+js(href-sanitizer, body a[href^="/ExternalLinkRedirect?"][href*="url=http"], ?url)
+donaukurier.de##+js(set-local-storage-item, glomexUser, $remove$)
+donaukurier.de##.landing-page__block:has(> .container > div[id^="piano_"] > .tp-cxense-placeholder-inline)
 doorblog.jp,pachinkopachisro.com,blog.livedoor.jp,blog.jp##.plugin-memo > div.side > div.ninja-recommend-block:upward(2)
 doralobalid3.click.s11.sfmc-osl.com$image
 douban.com##+js(href-sanitizer, body a[href^="https://www.douban.com/link2/?url=http"], ?url)
@@ -205064,6 +205067,7 @@ fr.de##.bottom-footer > .dossier
 franchiseemail.scooterscoffee.com$image
 freecodecamp.org##+js(abort-current-script, Function, b9kEBAW)
 freeconsultationlobalid3.click.s11.sfmc-osl.com$image
+friday.kodansha.co.jp##div[class^="common_mobileInner"] > section:has(> div[style="margin-top:20px"] > #taboola-below-article-thumbnails-sp)
 frmemail.focusbrands.com$image
 frogogo.ru##+js(aopw, ADMITAD)
 fs1globalid3.click.s11.sfmc-osl.com$image
@@ -213465,7 +213469,7 @@ rnd-email.xandwhy.co.uk$image
 rnd-email.yukonstruct.com$image
 roblox.com##+js(href-sanitizer, a[href^="https://cts.businesswire.com/ct/CT?"][href*="url=http"], ?url)
 rollout1.click.s11.sfmc-osl.com$image
-roomie.jp##.r-article ~ .r-section:has(> div[id^="logly-lift-"])
+roomie.jp##.r-section:has(> div[id^="logly-lift-"])
 roomie.jp##.r-sidesection[data-google-interstitial]
 route.northstepgear.com$image
 route.pepsboost.com$image
@@ -219186,6 +219190,7 @@ zonedirector.avadacom.com$image
 ||7hdl8dlfjm4g.www.cybernetman.com^
 ||7info.deshshoppingmart.com^
 ||7lbd4.armandthiery.fr^
+||7lzwgj.donaukurier.de^
 ||7mx.eider.com^
 ||7mx.eidershop.com^
 ||7phsx1bxhf.execute-api.*.amazonaws.com/collect|
@@ -232145,6 +232150,7 @@ zonedirector.avadacom.com$image
 ||atdmt.com^$3p
 ||atelier.atelierxterieur.com^
 ||atencion.banrural.com.gt^
+||atendimen.to^$third-party
 ||ateveq.street-beat.ru^
 ||atfcj.buypetals.com^
 ||atgsvcs.com/js/atgsvcs.js
@@ -233947,6 +233953,7 @@ zonedirector.avadacom.com$image
 ||biberukalap.com^
 ||bibglj.timberland.fr^
 ||bicp-analytics.postscript.io^
+||bid.ctv.house^
 ||bid.run^$3p
 ||bid.run^$third-party
 ||bidbpo.dr-10.com^
@@ -234406,6 +234413,8 @@ zonedirector.avadacom.com$image
 ||blue.bpsdepot.nl^
 ||blue.nbc4i.com^
 ||blue.unitedbyblue.com^
+||bluebellbooks.com^
+||bluebirdteam.com^
 ||bluebusiness.actonservice.com^
 ||bluecava.com^$3p
 ||bluecava.com^$third-party
@@ -235129,6 +235138,7 @@ zonedirector.avadacom.com$image
 ||broadcastbed.com^
 ||broaddoor.com^
 ||broadstreet.ai^
+||broflask.com^
 ||broker.datazoom.io^
 ||brominer.com^$third-party
 ||bronto.com^$3p
@@ -257810,6 +257820,7 @@ zonedirector.avadacom.com$image
 ||get4click.ru^$third-party
 ||getaawp.com^$third-party
 ||getadblock.com/js/log.js
+||getads.ru^
 ||getaliveblue-ss.olladeals.com^
 ||getambassador.com^$third-party
 ||getapp.eltiempo.es^
@@ -269083,6 +269094,8 @@ zonedirector.avadacom.com$image
 ||indeed.com/rpc/timing?logEvent=
 ||indeed.com/rpc/vjslog?
 ||independence.americanportfolios.com^
+||independent.co.uk/Agent/GA/
+||independent.co.uk/_build/prebid_
 ||independent.co.uk/iframe/native-cookiesync-frames.html
 ||index.hr/api/Stats/
 ||index.hr/tracking-beacon
@@ -281097,6 +281110,7 @@ zonedirector.avadacom.com$image
 ||log.bloodppressure.info^
 ||log.bloodsugars.live^
 ||log.bunjang.co.kr^
+||log.calomeal.com^
 ||log.china.cn^
 ||log.cizion.com^
 ||log.classting.com^
@@ -290638,6 +290652,7 @@ zonedirector.avadacom.com$image
 ||mycounter.ua^$3p
 ||mycounter.ua^$third-party
 ||mydario.actonservice.com^
+||mydatascript.bubbleup.com^
 ||mydeze.croisierenet.com^
 ||mydirtyhobby.de/tracker
 ||myecmz.gruener.at^
@@ -294209,6 +294224,7 @@ zonedirector.avadacom.com$image
 ||ostrovok.ru/hc/static/master/funnel.js
 ||ostrovok.ru/hotel/api/report-web-vitals/
 ||ostsee-zeitung.de/viewlog_receiver.php?
+||osuper.com.br/beta/bundles/analytics/analytics-$script
 ||osur.dell.com^
 ||osurmo.thebrubaker.com^
 ||osuwzo.oyunfor.com^
@@ -297234,6 +297250,7 @@ zonedirector.avadacom.com$image
 ||pornhub.com/_i?
 ||pornhub.com/js/eht.js
 ||pornhub.com/pix.php?s=
+||pornhub.com/utils/reportTimeWatched
 ||pornhub.com/video/category_tracker?e=$important
 ||pornhublive.com/api/metrics
 ||pornoenspanish.es^$ping,1p
@@ -335275,6 +335292,7 @@ zonedirector.avadacom.com$image
 ||support.theguardian.com/*/guardian-ad-lite?returnAddress=http$doc,urlskip=?returnAddress
 ||support2.flex.com^
 ||support3.flex.com^
+||supportecom.ru/server.php?rqst=track
 ||supportmetrics.apple.com^
 ||supports.amputee-coalition.org^
 ||supportwaves.com^
@@ -340148,7 +340166,7 @@ zonedirector.avadacom.com$image
 ||tnpfv.iconiclondoninc.com^
 ||tnpubr.trendhim.ie^
 ||tnqdqs.nusolbio.co.kr^
-||tns-counter.ru^$3p
+||tns-counter.ru^
 ||tns-counter.ru^$third-party
 ||tns-cs.net^$3p
 ||tns-cs.net^$third-party
@@ -347458,6 +347476,7 @@ zonedirector.avadacom.com$image
 ||um.merinfo.se^
 ||um.viuapi.io/loggingservice/
 ||umai.labinno-construction.ch^
+||umami-*.sufrah.net^
 ||umami.
 ||umami.*/script.js|$script
 ||umami.dev^
@@ -348783,6 +348802,7 @@ zonedirector.avadacom.com$image
 ||vanityfair.com/user-context?referrer
 ||vanlifehunt.com^
 ||vanmh.bestbullysticks.com^
+||vannacci.gay/~flock.js
 ||vanqrf.pcrichard.com^
 ||vantage-media.net^$3p
 ||vantastic-foods.com/dlyx/tms.js
