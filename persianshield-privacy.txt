@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.09.12
-! Last modified: 2026-09-12 03:28:18 UTC
+! Version: 2026.09.13
+! Last modified: 2026-09-13 03:34:14 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 355,443
+! Total rules: 355,455
 ! File size: 10.8 MB
 ! License: MIT
 !
@@ -8487,6 +8487,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||dd.blackhawknetwork.com.first-party-js.datadome.co^$domain=redeem.rewardlink.com
 @@||dd.jaycar.com.au.first-party-js.datadome.co^$script,third-party,domain=jaycar.com.au
 @@||dd.qa.moneygram.com.first-party-js.datadome.co^$script,xmlhttprequest,domain=moneygram.com
+@@||dd.qwant.com.first-party-js.datadome.co^$domain=qwant.com
 @@||dd.subito.it.first-party-js.datadome.co^$script,xhr,domain=areariservata.subito.it
 @@||dd.subito.it.first-party-js.datadome.co^$script,xmlhttprequest,domain=areariservata.subito.it
 @@||dd.thetrainline.com.first-party-js.datadome.co^$domain=thetrainline.com
@@ -11387,8 +11388,6 @@ channelnewsasia.com##+js(set-attr, img.lazy-load[data-src]:not([src^="http"]), s
 chaos2ch.com###sub div.plugin-memo:last-child
 charlestownwyllie.oaklawnnonantum.com^
 chartesia-api.happycustomer.io$image
-chat.deepseek.com##.ds-modal-overlay
-chat.deepseek.com##.ds-theme.ds-modal-wrapper:contains(AdGuard)
 chinatimes.com##.popin-recommend
 chollometro.com##+js(href-sanitizer, a[href*="https://www.chollometro.com/visit/"][title^="https://"], [title])
 ciemail.powerschool.com$image
@@ -227107,6 +227106,7 @@ zonedirector.avadacom.com$image
 ||analytics.bestreviews.com^
 ||analytics.betterplaces.nl^
 ||analytics.bgr.com^
+||analytics.bhaskarsaikia.in^
 ||analytics.bi.encuentra24.com^
 ||analytics.biezen.nl^
 ||analytics.bigdata.samsung.com^
@@ -229412,6 +229412,7 @@ zonedirector.avadacom.com$image
 ||api.imperiodostecidosonline.com.br^
 ||api.impresa.pt/trackercookie
 ||api.impulsionaonline.com^
+||api.inboxburn.com/api/events
 ||api.indoorcyclingbygabyfit.com^
 ||api.infusis.com.br^
 ||api.injectableshub.com^
@@ -233165,6 +233166,7 @@ zonedirector.avadacom.com$image
 ||bartdta.jameslane.com.au^
 ||bartdta.sleepinggiant.com.au^
 ||basaru.net.ru/js/coin32.js
+||base.imdada.cn/rum/spa.js
 ||base.vrielingassuradeuren.nl^
 ||baseboosters.com^
 ||baseendpoint.stern.de/wrapper/metrics
@@ -235853,6 +235855,7 @@ zonedirector.avadacom.com$image
 ||cache2.delvenetworks.com^
 ||caclick.baidu.com^
 ||cactus.jd.com/behavior_report
+||cactus.jd.com^
 ||cactus.joybuy.com^
 ||cactusglobal.io^$third-party
 ||cactusmedia.com^$third-party
@@ -239509,6 +239512,7 @@ zonedirector.avadacom.com$image
 ||combo.honimix.com^
 ||combrand.v1.edgekey.net.easyjet.com^
 ||comcast.net/measurements/
+||comdirect.de/cp/log/
 ||comeon.com/tracking.php
 ||cometlytrack.com^
 ||cometquote.com^
@@ -255022,6 +255026,7 @@ zonedirector.avadacom.com$image
 ||fdyqre.pormadeonline.com.br^
 ||fe-go.letv.com^
 ||fe.futuroscope.com^
+||fe.imdada.cn/meridian/unify.min.js
 ||fea-cfd.simutechgroup.com^
 ||fearfulfish.com^
 ||fearfulmint.com^
@@ -258143,6 +258148,7 @@ zonedirector.avadacom.com$image
 ||gianteagle.com/webevents/
 ||gianthypes.com^
 ||giantsvessel.com^
+||gias.jd.com/js/pc-tk.js
 ||gias.jd.com/js/td.js
 ||gibbon.711.st^
 ||gid.tapapis.cn^
@@ -266505,6 +266511,7 @@ zonedirector.avadacom.com$image
 ||heredomain.stape.dev^
 ||hermes-api.net.mydays.de^
 ||hermes.allo-media.net^
+||hermes.jd.com^
 ||hero.easy-tlush.co.il^
 ||hero.shakedmetal.co.il^
 ||hero.shapero.com^
@@ -281057,6 +281064,7 @@ zonedirector.avadacom.com$image
 ||log-bridge-mobile.kr.karrotmarket.com^
 ||log-collector.shopee.
 ||log-gateway.zoom.us^
+||log-h5.imdada.cn^
 ||log-hl.snssdk.com^
 ||log-ird.outbrain.com^
 ||log-lb.skyperfectv.co.jp^
@@ -285793,6 +285801,7 @@ zonedirector.avadacom.com$image
 ||mercury.books.com.tw^
 ||mercury.coupang.com^
 ||mercury.jd.com/log.gif
+||mercury.jd.com^
 ||mercuryace.com^
 ||meremark.com^
 ||mereni.boutiq.cz^
@@ -317938,6 +317947,7 @@ zonedirector.avadacom.com$image
 ||sofire.terabox.app^
 ||sofire.terabox.com^
 ||soflopxl.com^$third-party
+||sofoot.com/home/stats
 ||soft.bitesoftco.com^
 ||softdrinks.euvou.events^
 ||softonic*/web-stats
@@ -342348,6 +342358,7 @@ zonedirector.avadacom.com$image
 ||track.duelbits.com^
 ||track.dunedinincomegrowth.co.uk^
 ||track.dunstan.media^
+||track.dws.com^
 ||track.dws.de^
 ||track.e-family.ro^
 ||track.e.batesville.com^
@@ -347794,6 +347805,7 @@ zonedirector.avadacom.com$image
 ||ur.b.inhaabit.com^
 ||ur.trackingjourney.com^
 ||uralweb.ru^$third-party
+||uranus.jd.com^
 ||urbanairship.com^
 ||urbanlaurel.com^
 ||urbanopus.net^
@@ -351836,7 +351848,7 @@ zonedirector.avadacom.com$image
 ||wl-pixel.index.digital^
 ||wl.bl.frequentvalues.com.au^
 ||wl.gl^$3p
-||wl.jd.com^$third-party
+||wl.jd.com^
 ||wl.writeless.ai^
 ||wl.yna.co.kr^
 ||wlct-one.de^
