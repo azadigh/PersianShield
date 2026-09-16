@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.09.15
-! Last modified: 2026-09-15 03:44:32 UTC
+! Version: 2026.09.16
+! Last modified: 2026-09-16 03:41:32 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 355,496
+! Total rules: 355,511
 ! File size: 10.8 MB
 ! License: MIT
 !
@@ -659,6 +659,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 .sendpul.se:*/image/ui/$image
 .sharecounter.$third-party
 .simplicitycrm.com/rd/
+.skadsdkless.appsflyersdk.com^
 .smartrmail.co/o/$image
 .smtp.net/o/$image
 .softorbits.com/sendy/t/$image
@@ -1330,6 +1331,8 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /api/v3/getPageVisits
 /api/v3/trackSegmentEvent
 /api/video/stats/*$xmlhttprequest
+/api/videos/*/embed/heartbeat|$xhr
+/api/videos/*/embed/view|$xhr
 /api/web/v1/tracker$ping
 /api_adlog.php?
 /api_ip_info.php
@@ -7543,7 +7546,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 ://email.*/o/$image
 ://emailtracking.$image
 ://fallback.*/collector
-://fathom.$domain=~fathom.care|~fathom.co.za|~fathom.fm|~fathom.info|~fathom.io|~fathom.lib.uchicago.edu|~fathom.news|~fathom.org|~fathom.video|~fathom.world|~fathomdelivers.com|~fathomseo.com|~usesfathom.com
+://fathom.$domain=~fathom.care|~fathom.co.za|~fathom.fm|~fathom.info|~fathom.io|~fathom.lib.uchicago.edu|~fathom.news|~fathom.org|~fathom.services|~fathom.video|~fathom.world|~fathomdelivers.com|~fathomseo.com|~usesfathom.com
 ://gtm.*.js?id=GTM-
 ://gtm.*.js?st=
 ://gtrack.*.com/dye?
@@ -10323,6 +10326,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||static.criteo.net/js/ld/publishertag.js$domain=novayagazeta.ru
 @@||static.foxnews.com^*/VisitorAPI.js$domain=foxbusiness.com|foxnews.com
 @@||static.hotjar.com/c/hotjar-$script,domain=mercadopublico.cl
+@@||static.klaviyo.com/onsite/js/event_adapter.$domain=gear.blizzard.com
 @@||static.knowledgehub.com/global/images/ping.gif?$~third-party
 @@||static.lci.fr/assets/scripts/vendors/smarttag-prod.js
 @@||static.leaddyno.com/js$script,domain=s4l.us
@@ -229547,6 +229551,7 @@ zonedirector.avadacom.com$image
 ||api.lp.thaianepalaro.com^
 ||api.lp.vetcarehospitalveterinario.com.br^
 ||api.lps.vaportec.com.br^
+||api.lrt.lt/pagd/sirens
 ||api.luciovanderlinde.com.br^
 ||api.lumeramadrid.es^
 ||api.lumidashboard.com.br^
@@ -255510,6 +255515,7 @@ zonedirector.avadacom.com$image
 ||firstbank.fmservice.com^
 ||firstendpoint.com^
 ||firstgb.simplysensitivitychecks.com^
+||firsthoughtstudios.com^
 ||firstpac.actonservice.com^
 ||firstparty.accountable.de^
 ||firstparty.accountable.eu^
@@ -257175,6 +257181,7 @@ zonedirector.avadacom.com$image
 ||gaconnector.com^$third-party
 ||gacraft.jp/publish/token.html
 ||gadasource.storage.googleapis.com/ivc.js
+||gadata.motorpresse.de^
 ||gaddet.com/*/event-tracking.js
 ||gadgetboy.net^
 ||gadgets360.com/analytics.js
@@ -269127,6 +269134,7 @@ zonedirector.avadacom.com$image
 ||independent.co.uk/_build/prebid_
 ||independent.co.uk/iframe/native-cookiesync-frames.html
 ||index.hr/api/Stats/
+||index.hr/api/stats/
 ||index.hr/tracking-beacon
 ||index.ru^$3p
 ||index.ru^$third-party
@@ -270322,6 +270330,7 @@ zonedirector.avadacom.com$image
 ||init.voz.party/info_hex.js
 ||inixwg.vibrate.co.kr^
 ||injapan.com/rest/*/track?*&callback=
+||inkcarts.net^
 ||inkcoupon.com^
 ||inkubate.actonservice.com^
 ||inlead.digital/js/script.js
@@ -272381,6 +272390,7 @@ zonedirector.avadacom.com$image
 ||justconfig.com^
 ||justdial.com/jd-trkr
 ||justfordocs.com^
+||justice.maybeoneday.ch^
 ||justicejudo.com^
 ||justid.io^
 ||justlagoon.com^
@@ -273964,6 +273974,7 @@ zonedirector.avadacom.com$image
 ||launch.vypr.it^
 ||launches.appsflyer.com^
 ||launchjack.com^
+||launchkite.com^
 ||launchpad-wrapper.privacymanager.io/*/launchpad-liveramp.js
 ||laura.elements-lighting.fr^
 ||laurel.macrovision.com^
@@ -275601,6 +275612,7 @@ zonedirector.avadacom.com$image
 ||litos.moventashop.com^
 ||litter-robot.com/tag/events/
 ||littlebigsnake.com/event?
+||littlegeese.com^
 ||littlesun.net^
 ||litv.tv/api/generate-device-id
 ||live-st.rldatix.com^
@@ -281602,6 +281614,7 @@ zonedirector.avadacom.com$image
 ||love.vidora.su^
 ||loveeveryday.brighterkind.com^
 ||lovelydrum.com^
+||lovesbooks.com^
 ||loveseashore.com^
 ||low-ya.com/duplicate-ga-cookie
 ||lowendtalk.com/settings/analyticstick.json
@@ -293488,6 +293501,7 @@ zonedirector.avadacom.com$image
 ||ompol.vitrazza.com^
 ||ompx.shopbop.com^
 ||ompxs.shopbop.com^
+||omr.com/reviews/gtm-
 ||oms.1053rock.ca^
 ||oms.1061chez.ca^
 ||oms.1067rock.ca^
@@ -299287,6 +299301,7 @@ zonedirector.avadacom.com$image
 ||quicklyedit.com^
 ||quickmeme.com/tracker/
 ||quickpcfixer.click^
+||quicktattoo.com^
 ||quicktrick.net^
 ||quiddity.goguardian.com^
 ||quidel.actonservice.com^
@@ -312483,6 +312498,7 @@ zonedirector.avadacom.com$image
 ||sitecdn.api.domlenta.ru/assets-dom/scripts/yandex-metrika.js
 ||sitecompass.com^$3p
 ||sitecompass.com^$third-party
+||sitecorecloud.io/v1/events/
 ||sitecounter.site^
 ||sitectlyst.saksfifthavenue.com^
 ||sitedataprocessing.com^
@@ -317946,7 +317962,6 @@ zonedirector.avadacom.com$image
 ||socialtrack.co^$3p
 ||socialtrack.co^$third-party
 ||socialxup.com/api/sale-accounts
-||socialxup.com/api/track
 ||sociaplus.com^$3p
 ||sociaplus.com^$third-party
 ||society.discoverylandco.com^
