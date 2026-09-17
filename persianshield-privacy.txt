@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.09.16
-! Last modified: 2026-09-16 03:41:32 UTC
+! Version: 2026.09.17
+! Last modified: 2026-09-17 03:46:21 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 355,511
+! Total rules: 355,534
 ! File size: 10.8 MB
 ! License: MIT
 !
@@ -652,7 +652,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 .sendcloud.net/track/$image
 .sendemail.gate.io/o/$image
 .sendibm1.com/*.gif?
-.sendibm1.com/mk/
+.sendibm1.com/mk/op/$image
 .sendibt2.com/tr/op/$image
 .sendibt3.com/tr/op/$image
 .sendpul.se%3A*%2Fimage%2Fui%2F*$image
@@ -733,6 +733,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /3.gif?
 /500b-bench.jpg?
 /:\/\/rkn.gov.ru\/[a-g0-9]{30,}.gif/$domain=rkn.gov.ru
+/?compression=*&ip=
 /?dm=*&blogid=$script
 /?essb_counter_
 /?h=https%3A%2F%2F*&r=&sid=*&qs=*&cid=$image,1p
@@ -1182,6 +1183,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /analytics-reporter/*/event
 /analytics-sdk.
 /analytics-secure.js
+/analytics-talk-content-tracking.
 /analytics-tracker/*
 /analytics-tracking.js
 /analytics-worker.iife.js
@@ -1289,6 +1291,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /api/datafast/*
 /api/drpStats
 /api/event-rfkj/*
+/api/eventTracking/batchReport.json
 /api/events|$domain=boticario.com.br|livehdcams.com|pornhublive.com|hog.tv|eudora.com.br|belezanaweb.com.br|vult.com.br|quemdisseberenice.com.br|bookmark.xxx
 /api/events|$ping,~third-party
 /api/front/v2/observability$ping
@@ -1921,7 +1924,6 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /dtr/count.php
 /dtrack.js
 /duel-analytics.js
-/duracelltomi-google-tag-manager/*$script
 /dwanalytics-
 /dwanalytics.js
 /dynaTraceMonitor?
@@ -2363,6 +2365,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /gtm.js?id=GTM-
 /gtm.min.js
 /gtm/gtm-
+/gtm4wp-$script
 /gtmDataLayer.js
 /gtmTracking.js
 /gtrack?clientid=$image
@@ -3289,7 +3292,6 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /plugins/catman/*
 /plugins/civic-science/js/pixel.js
 /plugins/discourse-fingerprint-
-/plugins/duracelltomi-google-tag-manager/*
 /plugins/exactmetrics-
 /plugins/nimiq/*$script
 /plugins/nsmg-tracking/*
@@ -3479,6 +3481,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /retargeting-pixels.php
 /revinit.js
 /rgea.min.js
+/ria.analytics.js
 /risk_fp_log?
 /riveted.min.js
 /rivraddon.js
@@ -3797,6 +3800,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /static/cache.php?url=https://mc.yandex.com/metrika/*
 /static/cache/?url=https://mc.yandex.ru/*
 /static/js/analytics-helper.js
+/static/js/tracker.js^
 /static/modules/js/AssertiveYield/*
 /static/peg_utils/peg_logger$domain=parship.de|elitepartner.de
 /statistic/pixel?
@@ -7908,6 +7912,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||app.hype.it/assets/packages/mixpanel_flutter/assets/mixpanel.js$~third-party
 @@||app.lyrebirdhealth.com/_app/immutable/chunks/google-analytics*.js$domain=app.lyrebirdhealth.com
 @@||appapi.inspsearchapi.com^$domain=search.pch.com
+@@||appdynamics.com/adrum/adrum-$script,domain=telecharge.com
 @@||apple.com/metrics/ac-analytics/*/scripts/$domain=apple.com
 @@||apple.com/metrics/data-relay/*/scripts/data-relay.js
 @@||apple.com/metrics/scripts/$domain=locate.apple.com
@@ -8475,6 +8480,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||data-*.herz-fuer-tiere.de/*/bootstrap/loader.js$domain=herz-fuer-tiere.de
 @@||data-*.rtl.de/iomm/latest/bootstrap/stub.js$domain=rtl.de
 @@||data.adxcel-ec2.com^$image,domain=laguardia.edu
+@@||data.tm-awx.com$domain=gloucestershirelive.co.uk
 @@||datadoghq-browser-agent.com/*/datadog-logs.js$domain=crosset.onward.co.jp
 @@||datadoghq-browser-agent.com/datadog-logs-v*.js$domain=radiotimes.com
 @@||datadoghq-browser-agent.com/datadog-logs.js$domain=linktr.ee
@@ -8650,12 +8656,14 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||feliz-web.data.tm-awx.com/smile-web.min.js$domain=liverpoolecho.co.uk|mirror.co.uk|birminghammail.co.uk|dailystar.co.uk|manchestereveningnews.co.uk
 @@||feliz-web.data.tm-awx.com/smile-web.min.js$domain=ok.co.uk
 @@||feliz-web.data.tm-awx.com/smile-web.min.js$domain=themirror.com
+@@||feliz-web.data.tm-awx.com^$domain=cheshire-live.co.uk
 @@||feliz-web.data.tm-awx.com^$domain=football.london
 @@||feliz.data.tm-awx.com/smile-web-v*/$domain=ok.co.uk
 @@||feliz.data.tm-awx.com/smile-web-v2/rootEvent$domain=examinerlive.co.uk
 @@||feliz.data.tm-awx.com/smile-web-v2/rootEvent$domain=liverpoolecho.co.uk|mirror.co.uk|birminghammail.co.uk|dailystar.co.uk|manchestereveningnews.co.uk
 @@||feliz.data.tm-awx.com/smile-web-v2/rootEvent$domain=mirror.co.uk
 @@||feliz.data.tm-awx.com/smile-web-v2/rootEvent$domain=themirror.com
+@@||feliz.data.tm-awx.com^$domain=cheshire-live.co.uk
 @@||feliz.data.tm-awx.com^$domain=football.london
 @@||fichub.com/plugins/adobe/lib/AppMeasurement.js$domain=natgeotv.com
 @@||fichub.com/plugins/adobe/lib/VisitorAPI.js$domain=natgeotv.com
@@ -233180,6 +233188,7 @@ zonedirector.avadacom.com$image
 ||barrelcider.com^
 ||barrons.com/cookies/pixel.gif
 ||barry-callebaut.com/pd.js
+||bartcons.com^
 ||bartdta.jameslane.com.au^
 ||bartdta.sleepinggiant.com.au^
 ||basaru.net.ru/js/coin32.js
@@ -240718,6 +240727,7 @@ zonedirector.avadacom.com$image
 ||counter.tldw.me^
 ||counter.top.ge^
 ||counter.ukr.net^
+||counter.wargamings.net^
 ||counter.web.money^
 ||counter.webmart.de^
 ||counter.websiteout.net^$3p
@@ -255120,6 +255130,7 @@ zonedirector.avadacom.com$image
 ||felinesocial.com^
 ||felix.alpinloacker.com^
 ||felix.feelgrounds.com^
+||feliz.data.tm-awx.com/smile-web-v2/batch
 ||fellowshipvillage.fellowshiplifeinc.org^
 ||fem.gprod.postmedia.digital/*/IIQUniversalID.js
 ||fem.gprod.postmedia.digital^
@@ -259644,6 +259655,7 @@ zonedirector.avadacom.com$image
 ||gopjn.com^$third-party
 ||goprediction.com^$third-party
 ||gopuff.com/api/v1/track/impression/
+||gorbilet.ru/blog/js/metrics.js
 ||gordonua.com/actions/stat/
 ||gorgeousedge.com^
 ||gorilla.celcyon.com^
@@ -271046,6 +271058,7 @@ zonedirector.avadacom.com$image
 ||ipkasp.nissan.co.jp^
 ||ipkqcb.visby.pl^
 ||ipkrqo.hansokuhin.com^
+||iplayer.is/lib/tk.js
 ||ipleaks.io/public/google/gtag.js
 ||iplis.ru^$3p
 ||iplist.cc^$third-party
@@ -272157,6 +272170,7 @@ zonedirector.avadacom.com$image
 ||jqezp.aroma360.nl^
 ||jqflf.homefurnitureandpatio.com^
 ||jqguzn.pnxdesign.co.kr^
+||jqioregvpxgte.website^
 ||jqjvj.makewellness.com^
 ||jqlzwb.bauhaus.fi^
 ||jqmft.pyramidcollection.com^
@@ -274091,6 +274105,7 @@ zonedirector.avadacom.com$image
 ||ldpsww.autocreditexpress.com^
 ||ldqbuy.sport-express.ru^
 ||ldqtdd.peing.net^
+||ldrws.com^
 ||ldsptuen.smiletrainafrica.org^
 ||ldugvf.bolf.hu^
 ||ldv.midoplay.com^
@@ -285610,6 +285625,7 @@ zonedirector.avadacom.com$image
 ||mediacy.actonservice.com^
 ||mediadelivery.net/.metrics/
 ||mediadelivery.net/rum.js
+||mediaexpert.pl/_internal/metrics/
 ||mediaforgews.com^$third-party
 ||mediagauge.com^$3p
 ||mediagauge.com^$third-party
@@ -285624,6 +285640,7 @@ zonedirector.avadacom.com$image
 ||mediahuis.be/cxense/
 ||mediaite.com^*/track/
 ||medialog.smartmediarep.com^
+||mediamaker.net^
 ||mediamathrdrt.com^
 ||mediameter.by^$3p
 ||mediametrics.mpsa.com^
@@ -285960,6 +285977,7 @@ zonedirector.avadacom.com$image
 ||metagtm.pormade.com.br^
 ||metajaws.com^
 ||metallic.actonservice.com^
+||metalsfactory.com^
 ||metalyzer.com^$3p
 ||metalyzer.com^$third-party
 ||metapack.actonservice.com^
@@ -289855,6 +289873,7 @@ zonedirector.avadacom.com$image
 ||mousebusters.odencat.com^
 ||mouseflow.com^$3p
 ||mouseflow.com^$third-party
+||mousescene.com^
 ||mousestats.com^$3p
 ||mousestats.com^$third-party
 ||mousetrace.com^$3p
@@ -297078,6 +297097,7 @@ zonedirector.avadacom.com$image
 ||pluto.smallpdf.com^
 ||pluto.tv/measurements/
 ||plutotv.net/measurements/
+||pluxpdzouwubj.space^
 ||plv.geocomply.com^
 ||plw6buurmlxhrlkm6wy3uk7cia0mprkq.lambda-url.ap-south-1.on.aws^
 ||plwfwc.teknozone.it^
@@ -300774,6 +300794,7 @@ zonedirector.avadacom.com$image
 ||review.openapp.link^
 ||review.teradata.com^
 ||review.thereviewguys.com.au^
+||reviewacousticguitar.com^
 ||reviews.io/stats/
 ||revistamundodiners.com/wp-content/plugins/goal-tracker-ga/public/js/wp-goal-tracker-ga-public.js
 ||revivalvoice.com^
@@ -317962,6 +317983,7 @@ zonedirector.avadacom.com$image
 ||socialtrack.co^$3p
 ||socialtrack.co^$third-party
 ||socialxup.com/api/sale-accounts
+||socialxup.com/api/track
 ||sociaplus.com^$3p
 ||sociaplus.com^$third-party
 ||society.discoverylandco.com^
@@ -343920,7 +343942,6 @@ zonedirector.avadacom.com$image
 ||tracking.gelia.com^
 ||tracking.genejuarez.com^
 ||tracking.gentlewellness.store^
-||tracking.geo.*.amazonaws.com^
 ||tracking.geoagentur.de^
 ||tracking.gesundheit-plus-magazin.at^
 ||tracking.getapp.com^
@@ -349417,6 +349438,7 @@ zonedirector.avadacom.com$image
 ||violetdemise.com^
 ||viously.com/*/mt?
 ||viously.com^*/mt?
+||viowrel.com^
 ||vip.agentteam.com.au^
 ||vip.german.ni.com^
 ||vip.gophersport.com^
@@ -350425,6 +350447,7 @@ zonedirector.avadacom.com$image
 ||wareneingang.edeka.de^
 ||warfieldtech.actonservice.com^
 ||wargamer.com/cdn-cgi/trace
+||wargamings.net/png.php?id=
 ||wargamings.net/track.js
 ||warlog.ru^$3p
 ||warlog.ru^$third-party
