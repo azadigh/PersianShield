@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.09.17
-! Last modified: 2026-09-17 03:46:21 UTC
+! Version: 2026.09.18
+! Last modified: 2026-09-18 03:32:57 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 355,534
+! Total rules: 355,544
 ! File size: 10.8 MB
 ! License: MIT
 !
@@ -179,6 +179,7 @@ $removeparam=ymclid
 $removeparam=ysclid
 $third-party,xmlhttprequest,domain=opensubtitles.org
 $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
+$xhr,~3p,method=post,domain=srnky.com|aii.sh|intercelestial.com|lnbz.la|clksz.com
 %2Frw%2Fbeacon_
 &&sub19=undefined&sub20=undefined
 &EventType=DataDealImpression&
@@ -206144,6 +206145,7 @@ kanaloco.jp##.tab_wrap:has(> #recomm_tab1)
 kanobu.ru##a[href^="https://www.liveinternet.ru/click"]
 kari.com##+js(set-local-storage-item, device_id, $remove$)
 kari.com##+js(set-local-storage-item, rees46_device_id, $remove$)
+karofilm.ru,cinemastar.ru##+js(set-local-storage-item, device_uuid, $remove$)
 kartkingdom.verwin.com$image
 katu.com##+js(remove-cookie, /^_pubcid|sbgtvNonce|SUID/)
 katu.com##+js(set-local-storage-item, /^uw-/, $remove$)
@@ -218585,6 +218587,7 @@ wwwstg.click.s11.sfmc-osl.com$image
 x.com##+js(prevent-fetch, /i/api/1.1/flow/viewer.json)
 x.com##+js(prevent-xhr, /i/api/1.1/flow/timeline.json)
 x.com##+js(prevent-xhr, /i/api/1.1/flow/viewer.json)
+x.com##+js(prevent-xhr, /i/api/1.1/graphql/viewer_context.json)
 x.com##+js(proxy-apply-config, {"skipToString":true})
 xda-developers.com##+js(href-sanitizer, a[href^="https://redirect.viglink.com/?"][href*="ourl=http"], ?ourl)
 xda-developers.com##+js(href-sanitizer, a[href^="https://shop-links.co/link/?"][href*="&url=http"], ?url)
@@ -225810,7 +225813,6 @@ zonedirector.avadacom.com$image
 ||agorahtag.tech^$3p
 ||agorahtag.tech^$third-party
 ||agrak.mojo.shop^
-||agrau.aii.sh^
 ||agreeablearch.com^
 ||agreeabletouch.com^
 ||agreeabletouch.com^$3p
@@ -228448,6 +228450,7 @@ zonedirector.avadacom.com$image
 ||analyticsehnwe.servicebus.windows.net^
 ||analyticsengine.s3.amazonaws.com^
 ||analyticshipaa.cloud.coveo.com^
+||analyticsindiamag.com/~api/analytics|
 ||analyticsip.net^$third-party
 ||analyticsmumbai.abbeyroadinstitute.in^
 ||analyticsnarc.ro.ing.net^
@@ -235187,6 +235190,7 @@ zonedirector.avadacom.com$image
 ||browser-fp.production.linktr.ee^
 ||browser-intake-*-datadoghq.com^
 ||browser-intake-datadoghq.com^
+||browser-intake-datadoghq.eu^
 ||browser-intake-datadoghq.eu^$third-party
 ||browser-statistik.de^$3p
 ||browser-statistik.de^$third-party
@@ -255547,6 +255551,7 @@ zonedirector.avadacom.com$image
 ||fishhoo.com^$3p
 ||fishing.bucketbro.com.au^
 ||fishing.daigostudio.com^
+||fishingrodsgalore.com^
 ||fishingtoolsbox.com^
 ||fishingtoolsbox.com^$redirect=noop.js,script
 ||fishki.net/counter/
@@ -270752,7 +270757,6 @@ zonedirector.avadacom.com$image
 ||interakt.ru^$third-party
 ||interaktiv-net.de^$3p
 ||interaktiv-net.de^$third-party
-||intercelestial.com/*/api/v1/event|
 ||interceptum.com^$3p
 ||interceptum.com^$third-party
 ||intercom.io/messenger/web/page_view_events
@@ -281482,7 +281486,6 @@ zonedirector.avadacom.com$image
 ||logs.animaapp.com^
 ||logs.appsource.microsoft.com^
 ||logs.betterstack.com^
-||logs.browser-intake-datadoghq.eu^
 ||logs.chatboost-cv.algoage.co.jp^
 ||logs.classdojo.com^
 ||logs.collector.*.cloud.solarwinds.com^
@@ -290367,6 +290370,7 @@ zonedirector.avadacom.com$image
 ||mud4.destinia.com.eg^
 ||muddledaftermath.com^
 ||muddledmemory.com^
+||muddlingthroughcode.com^
 ||muehldorf.patientenformular.info^
 ||mueoh.besynchro.com^
 ||mugapi.lazzarionline.com^
@@ -291226,6 +291230,7 @@ zonedirector.avadacom.com$image
 ||negocios.com/assets/js/onm/onm-stats.
 ||nehalist.io^
 ||nehcj.tryprodenta.com^
+||neighborhoodbiketours.com^
 ||neighborlywatch.com^
 ||neighbourly.co.nz/event-tracking
 ||nejmqianyan.cn^$third-party
@@ -291703,6 +291708,7 @@ zonedirector.avadacom.com$image
 ||newstm.in/static/ase/at/at.js
 ||newstm.in/stats?
 ||newsuccesssecret.com^
+||newsvehicles.com^
 ||newsweek.com/www/js/mar2015/counter.js
 ||newt.javier.dev^
 ||newtest.wunderman-email.cjm.adobe.com^
@@ -294335,6 +294341,7 @@ zonedirector.avadacom.com$image
 ||otioqs.srcasino.es^
 ||otisxx.sullyn.com^
 ||otkhyc.bueromarkt-ag.de^
+||otl.minefun.io^
 ||otlhn.fentybeauty.com^
 ||otlp-http-production.shopifysvc.com/v1/logs|
 ||otlp-http-production.shopifysvc.com/v1/metrics|
@@ -294942,7 +294949,6 @@ zonedirector.avadacom.com$image
 ||paginegialle.it/cgi-bin/jimpres.cgi?
 ||paginegialle.it/engagement.js
 ||pagoda56.com^$third-party
-||pahe.plus/*/api/v1/event|
 ||pahkjm.subtypestore.com^
 ||pahtag.tech^$3p
 ||pahtag.tech^$third-party
@@ -300132,6 +300138,7 @@ zonedirector.avadacom.com$image
 ||redistats.com^$3p
 ||redistats.com^$third-party
 ||redlion.actonservice.com^
+||redmillgroup.com^
 ||redretarget.com^$third-party
 ||redstatcounter.com^$3p
 ||redstatcounter.com^$third-party
@@ -300458,6 +300465,7 @@ zonedirector.avadacom.com$image
 ||repdata.ydr.com^
 ||repdata.yorkdispatch.com^
 ||repeatsweater.com^
+||repfineart.com^
 ||repixel.co^$3p
 ||repixel.co^$third-party
 ||replaceroute.com^
@@ -302102,6 +302110,7 @@ zonedirector.avadacom.com$image
 ||s.chatie.ai^
 ||s.cirasync.com^
 ||s.click.aliexpress.com/af_pixel.htm
+||s.click.aliexpress.com/deep_link.*^dl_target_url=http$doc,urlskip=?dl_target_url
 ||s.clickiocdn.com^$3p
 ||s.clicktex.ru^$3p
 ||s.clientes.construrama.com^
@@ -302382,6 +302391,7 @@ zonedirector.avadacom.com$image
 ||s.ofertren.com^
 ||s.officialnanosparkle.com^
 ||s.olyc.nl^
+||s.omsolution.net/omStatApi/
 ||s.opensend.com^
 ||s.orangeville.com^
 ||s.orgatex.com^
