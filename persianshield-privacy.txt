@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.09.19
-! Last modified: 2026-09-19 03:30:08 UTC
+! Version: 2026.09.20
+! Last modified: 2026-09-20 03:46:13 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 355,557
+! Total rules: 355,580
 ! File size: 10.8 MB
 ! License: MIT
 !
@@ -229683,6 +229683,7 @@ zonedirector.avadacom.com$image
 ||api.nvidia.partners/telemetry/
 ||api.nxtnbrasil.com.br^
 ||api.oacertocritico.com.br^
+||api.oaistatsig.com/v1/sdk_exception^$xmlhttprequest,domain=chatgpt.com
 ||api.obentopet.com.br^
 ||api.ocarinhadogoogle.com.br^
 ||api.odontologiasinfronteras.com^
@@ -230201,6 +230202,7 @@ zonedirector.avadacom.com$image
 ||apm-log-upload-os.hoyoverse.com^
 ||apm-native.redbascket.com^
 ||apm-native.xiaohongshu.com^
+||apm-rum.inf.miui.com^
 ||apm-track.xiaohongshu.com^
 ||apm.infoldgames.com/v1/log/sendtlog
 ||apm.qwant.com^
@@ -237797,7 +237799,9 @@ zonedirector.avadacom.com$image
 ||chat.vica.gov.sg/api/v1/unleash/proxy/client/metrics
 ||chata.quickcep.com/im/behavior/visitor/update
 ||chatfuel.com/cf-analytics/
+||chatgpt.com/awe/api/v2/rum^$ping,xmlhttprequest
 ||chatgpt.com/backend-api/beacons/
+||chatgpt.com/backend-api/codex/app-download-signal^$xmlhttprequest
 ||chatgpt.com/backend-api/sentinel/ping
 ||chatgpt.com/ces/*/b|$xhr
 ||chatgpt.com/ces/statsc/
@@ -237809,6 +237813,8 @@ zonedirector.avadacom.com$image
 ||chatgpt.com/ces/v1/t
 ||chatgpt.com/ces/v1/t$xhr,redirect=noop.json
 ||chatgpt.com/ces/v1/telemetry/
+||chatgpt.com/ces/v1/telemetry/intake^$ping,xmlhttprequest
+||chatgpt.com/unauth-mweb/events/$ping,xmlhttprequest
 ||chatgpt4.gymmembersnow.co^
 ||chatroll.com/t.gif
 ||chaturbate.com/api/adblocker/
@@ -242915,6 +242921,7 @@ zonedirector.avadacom.com$image
 ||dankjbdw.xelvin.nl^
 ||danorenius.com^$third-party
 ||danv01ao0kdr2.cloudfront.net^
+||dap-cn.c.hihonor.com/dap/jssdk.js
 ||dap.amsterdam.nl^
 ||dap.digitalgov.gov/Universal-Federated-Analytics-Min.js
 ||dap.dmm.co.jp/imp?
@@ -249548,6 +249555,7 @@ zonedirector.avadacom.com$image
 ||dmpcdn.el-mundo.net^
 ||dmpcloud.net^$3p
 ||dmpcounter.com^$third-party
+||dmplog.qq.com^
 ||dmpmetrics.rcsmetrics.it^
 ||dmpprof.com^$third-party
 ||dmpxs.com^
@@ -274302,7 +274310,9 @@ zonedirector.avadacom.com$image
 ||leggo.it/index.php?$image
 ||leghe.tappycard.com^
 ||legitscript.com/seals/$script
+||lego-tech.zhuanzhuan.com^
 ||lego.com/api/dl-event-ingest
+||lego.zhuanzhuan.com^
 ||legolas-media.com^$3p
 ||legolas-media.com^$third-party
 ||legolas.monotote.com^
@@ -281502,6 +281512,7 @@ zonedirector.avadacom.com$image
 ||logs.dradis.netflix.com^
 ||logs.dynamicauth.com^
 ||logs.gaana.com^
+||logs.game.qq.com^
 ||logs.getfiddler.com^
 ||logs.gshopper.com^
 ||logs.hotstar.com^
@@ -282435,6 +282446,7 @@ zonedirector.avadacom.com$image
 ||m0mentum.net^$third-party
 ||m1.flooringsuperstore.com^
 ||m1.homeofgolf.com^
+||m1.lefile.cn/le_sdk/le-shop-track-sdk.js
 ||m1.stadiumgoods.com^
 ||m1.tourtalbot.org^
 ||m13k11t20.sn.nl^
@@ -289029,6 +289041,7 @@ zonedirector.avadacom.com$image
 ||mi.miliboo.lu^
 ||miadates.com^$third-party
 ||mialbj6.com^$third-party
+||miao.baidu.com/abdr?
 ||miao.baidu.com/abdr?$image
 ||miaozhen.com^$third-party
 ||mibatech.com/track/
@@ -293364,6 +293377,9 @@ zonedirector.avadacom.com$image
 ||omgthink.com^
 ||omguk.com^$3p
 ||omguk.com^$third-party
+||omgup.didiglobal.com^
+||omgup.xiaojukeji.com^
+||omgup1.xiaojukeji.com^
 ||omieuz.razer.ru^
 ||omiki.com^$third-party
 ||omine.org^$third-party
@@ -300744,6 +300760,7 @@ zonedirector.avadacom.com$image
 ||retail-client-events-service.internal.salsify.com/events
 ||retail-client-events-service.internal.salsify.com^
 ||retail-test.oci.veikkaus.fi^
+||retail.hihonor.com/survey/base/analysis/
 ||retailads.net^$third-party
 ||retailleaders.rila.org^
 ||retailrocket.ru/content/javascript/tracking.js
@@ -318890,6 +318907,7 @@ zonedirector.avadacom.com$image
 ||special.janbari.com/a/js/a.js
 ||special.kvetinyexpres.cz^
 ||specialevent.informaengage.com^
+||specialreview.net^
 ||specialscissors.com^
 ||specialstat.com^$3p
 ||specialstat.com^$third-party
@@ -328666,6 +328684,7 @@ zonedirector.avadacom.com$image
 ||st-azkaban.saikoo.ai^
 ||st-nlyss.plala.or.jp^
 ||st-nlyss1.plala.or.jp^
+||st-sentinel.vivo.com.cn^
 ||st-wzb.clarin.com/weizenbock/amazon/min.js
 ||st.7figureofferformula.com^
 ||st.aformuladaloja.com.br^
@@ -334692,6 +334711,7 @@ zonedirector.avadacom.com$image
 ||stpanalyzis.fernandonunes.co^
 ||stpbraurora.unycosmos.com^
 ||stpbt.softminkyblankets.com^
+||stpc.vivo.com.cn^
 ||stpcadoro.unycosmos.com^
 ||stpcbiblia.cacoelhopersonalizados.com.br^
 ||stpcld.academiadeautomacoes.com.br^
@@ -339893,6 +339913,7 @@ zonedirector.avadacom.com$image
 ||tk.cadeaux.com^
 ||tk.conforama.fr^
 ||tk.criandosemcrise.com.br^
+||tk.d.mi.com^
 ||tk.dietbon.fr^
 ||tk.domitys.fr^
 ||tk.dossier.co^
@@ -342725,6 +342746,7 @@ zonedirector.avadacom.com$image
 ||track.learningwiththedetailist.com^
 ||track.lemmatechnologies.com^
 ||track.lendcapital.com.br^
+||track.lenovo.com.cn^
 ||track.leregoledelmanzo.com^
 ||track.lesmills.com^
 ||track.leticiazarowny.com.br^
@@ -353687,6 +353709,7 @@ zonedirector.avadacom.com$image
 ||xp.allianz.de^
 ||xp.apple.com/config/*/report/
 ||xp.apple.com/report/
+||xp.atlassian.com^
 ||xp.audience.io/sdk.js$third-party
 ||xp2023-pix.s3.amazonaws.com/px_rgKuV.js
 ||xp2023-pix.s3.amazonaws.com^
