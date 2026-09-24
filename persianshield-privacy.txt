@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.09.23
-! Last modified: 2026-09-23 03:39:33 UTC
+! Version: 2026.09.24
+! Last modified: 2026-09-24 03:30:25 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 355,641
+! Total rules: 355,656
 ! File size: 10.8 MB
 ! License: MIT
 !
@@ -8975,7 +8975,7 @@ $xhr,~3p,method=post,domain=srnky.com|aii.sh|intercelestial.com|lnbz.la|clksz.co
 @@||googletagmanager.com/gtag/$domain=usnews.com
 @@||googletagmanager.com/gtag/destination$script,domain=musinsa.com
 @@||googletagmanager.com/gtag/destination?$domain=sloways.eu
-@@||googletagmanager.com/gtag/js$domain=17track.net|9to5mac.com|academy.com|acornonline.com|aena.es|afisha.timepad.ru|aliexpress.com|app.joinhandshake.com|carhartt-wip.com|cbslocal.com|checkout.ao.com|cmoa.jp|cnet.com|cram.com|devclass.com|dholic.co.jp|ecmweb.com|ejgiftcards.com|enmotive.com|espressif.com|euronics.ee|factory.pixiv.net|fanpage.it|farmaciabolli1833.it|game.anymanager.io|gamelog.apexlegends-leaksnews.com|globo.com|gmanetwork.com|herculesstands.com|homeinspector.org|honeystinger.com|hostingvergelijker.nl|huion.com|inforesist.org|kawasaki.com|kinepolis.be|kinepolis.ch|kinepolis.es|kinepolis.fr|kinepolis.lu|kinepolis.nl|liene-life.com|livongo.com|m.putlocker.how|malegislature.gov|mall.heiwa.jp|mirrativ.com|modehasen.de|mond.how|montcopa.org|mopar.com|nihontsushin.com|o2.co.uk|oko.sh|oxylabs.io|panflix.com.br|papajohns.com|plex.tv|pptvhd36.com|proxyorb.com|radiosarajevo.ba|redstoneonline.jp|rhbgroup.com|rintraccialamiaspedizione.it|royalcams.com|schwab.com|seatmaps.com|showroom-live.com|skylar.com|slink.ptit.edu.vn|sloways.eu|square-enix.com|starblast.io|supplementmart.com.au|ticketmaster.com|timparty.tim.it|toptal.com|trespa.info|truckspring.com|virginmedia.com|virginplus.ca|webstatus.dev|winefolly.com|winhappy.com|wps.com|xl-bygg.no|zf1.tohoku-epco.co.jp|zipair.net
+@@||googletagmanager.com/gtag/js$domain=17track.net|9to5mac.com|academy.com|acornonline.com|aena.es|afisha.timepad.ru|aliexpress.com|app.joinhandshake.com|carhartt-wip.com|cbslocal.com|checkout.ao.com|cmoa.jp|cnet.com|cram.com|devclass.com|dholic.co.jp|ecmweb.com|ejgiftcards.com|enmotive.com|espressif.com|euronics.ee|factory.pixiv.net|fanpage.it|farmaciabolli1833.it|game.anymanager.io|gamelog.apexlegends-leaksnews.com|globo.com|gmanetwork.com|herculesstands.com|homeinspector.org|honeystinger.com|hostingvergelijker.nl|huion.com|inforesist.org|kawasaki.com|kinepolis.be|kinepolis.ch|kinepolis.es|kinepolis.fr|kinepolis.lu|kinepolis.nl|liene-life.com|livongo.com|m.putlocker.how|malegislature.gov|mall.heiwa.jp|mirrativ.com|modehasen.de|mond.how|montcopa.org|mopar.com|msm-wroclaw.pl|nihontsushin.com|o2.co.uk|oko.sh|oxylabs.io|panflix.com.br|papajohns.com|plex.tv|pptvhd36.com|proxyorb.com|radiosarajevo.ba|redstoneonline.jp|rhbgroup.com|rintraccialamiaspedizione.it|royalcams.com|schwab.com|seatmaps.com|showroom-live.com|skylar.com|slink.ptit.edu.vn|sloways.eu|square-enix.com|starblast.io|supplementmart.com.au|ticketmaster.com|timparty.tim.it|toptal.com|trespa.info|truckspring.com|virginmedia.com|virginplus.ca|webstatus.dev|winefolly.com|winhappy.com|wps.com|xl-bygg.no|zf1.tohoku-epco.co.jp|zipair.net
 @@||googletagmanager.com/gtag/js$domain=av01.tv|javhd.com
 @@||googletagmanager.com/gtag/js$domain=battlestick2.net
 @@||googletagmanager.com/gtag/js$domain=bihann.com|nehannn.com
@@ -11129,6 +11129,7 @@ app.happycustomer.io$image
 app.mellstroy.website$image
 app.midiavip.com$image
 app.petersonscandies.com$image
+app.socios.com##+js(set-local-storage-item, deviceId, $remove$)
 app.spectacularacademy.com$image
 app.tirelocator.ca##+js(set-constant, googleAnalyticsEnhancedTrackEvent, noopFunc)
 app.tirelocator.ca##+js(set-constant, googleAnalyticsEnhancedTrackPageview, noopFunc)
@@ -205249,6 +205250,7 @@ gamespot.com##+js(set-local-storage-item, ppid, $remove$)
 gamma1-0.cloud.s11.sfmc-osl.com$image
 gate.happycustomer.io$image
 gateway.masquefuerte.happycustomer.io$image
+gazeta.press,gazeta.ru,rambler.ru##+js(trusted-replace-fetch-response, /#rcmrclid=[a-zA-Z0-9]+/g, '', rcm.rambler.ru)
 gazetadopovo.com.br##section[class^="pianoRecommender"]
 gcdsdk.appsflyersdk.com^
 gd-link.bugyounotpest.com$image
@@ -228163,6 +228165,7 @@ zonedirector.avadacom.com$image
 ||analytics.spark.co.nz^
 ||analytics.spearly.com^
 ||analytics.sportera.fans^
+||analytics.sportigio.com^
 ||analytics.sports.ru^
 ||analytics.sposadeste.com^
 ||analytics.spun.com.br^
@@ -233531,6 +233534,7 @@ zonedirector.avadacom.com$image
 ||beam.mjhlifesciences.com^
 ||beam.remp.impresa.pt^
 ||beam.remp.nv.ua^
+||beam.telegram.hr^
 ||beam.telex.hu^
 ||beamanalytics.b-cdn.net^
 ||beampulse.com^$third-party
@@ -236069,6 +236073,7 @@ zonedirector.avadacom.com$image
 ||campaign.shl.com^
 ||campaign.ssab.com^
 ||campaign.tandemdiabetes.com^
+||campaign.telegram.hr^
 ||campaign.viessmann-cold.com^
 ||campaigncog.com^$3p
 ||campaigncog.com^$third-party
@@ -250369,6 +250374,7 @@ zonedirector.avadacom.com$image
 ||duthc.drshumardworkshop.com^
 ||dutils.com^
 ||duu8lzqdm8tsz.cloudfront.net^
+||duvkog4eyegl0.cloudfront.net^
 ||duyxvw.finntrail.ru^
 ||dv.chemie.de^
 ||dv59b.montecarlomeeting.com^
@@ -271298,6 +271304,7 @@ zonedirector.avadacom.com$image
 ||isnet.habrokathletics.com^
 ||isoplexis.actonservice.com^
 ||isovav.akomeya.jp^
+||ispazio.net/wp-content/plugins/wc-site-stats/
 ||isprq.lovesweatfitness.com^
 ||isqkd.newbeauty.com^
 ||isrug.dermstreet.com^
@@ -299729,7 +299736,6 @@ zonedirector.avadacom.com$image
 ||ralf.curvo.eu^
 ||ralphlauren.com^*/init.js
 ||ralphs.com/resources/*/collect?
-||rambler.ru/*#rcmrclid=$uritransform=/#rcmrclid=.*/#/
 ||rambler.ru/counter.js
 ||rambler.ru/metrics/
 ||rambler.ru/ts-metrics/
@@ -300890,6 +300896,7 @@ zonedirector.avadacom.com$image
 ||revprotect.com^$3p
 ||revprotect.com^$third-party
 ||revuyt.misako.com^
+||rewardangels.com^
 ||rewards-my.greateasternlife.com^
 ||rewards-sg.greateasternlife.com^
 ||rewards.parago.com^
@@ -323242,6 +323249,7 @@ zonedirector.avadacom.com$image
 ||ssl.appliedclinicaltrialsonline.com^
 ||ssl.brandlicensing.eu^
 ||ssl.cbinet.com^
+||ssl.ceneo.pl/ct/
 ||ssl.citgo.com^
 ||ssl.directferries.com/secure/ws/adtracking.asmx/
 ||ssl.findpharma.com^
@@ -336577,6 +336585,7 @@ zonedirector.avadacom.com$image
 ||t.fiteg2.com^
 ||t.fitpolostore.com^
 ||t.flexiwork.se^
+||t.flickr.com^
 ||t.flix360.com^
 ||t.foapom.com^
 ||t.fordidahocenter.com^
@@ -340540,6 +340549,7 @@ zonedirector.avadacom.com$image
 ||topicjungle.com^
 ||topix.net/t6track/
 ||topiz.ru^$3p
+||toplaunch.net^
 ||toplist.cz^$3p
 ||toplist.cz^$third-party
 ||toplist.eu^$3p
@@ -343499,6 +343509,7 @@ zonedirector.avadacom.com$image
 ||tracker.stileo.it^
 ||tracker.str-nrg.com^
 ||tracker.swedish.org^
+||tracker.telegram.hr^
 ||tracker.thinkermail.com^
 ||tracker.thinkermail.com^$3p
 ||tracker.thinkindot.com^
@@ -345224,6 +345235,7 @@ zonedirector.avadacom.com$image
 ||training.hager.co.uk^
 ||training.indigobusiness.co.uk^
 ||training.thunderhead.com^
+||trainingreality.com^
 ||traka8.crypto-mall.org^
 ||traker.fundacoessemcomplicacoes.com.br^
 ||traker.karenrosebusiness.com.br^
@@ -349168,6 +349180,7 @@ zonedirector.avadacom.com$image
 ||ventivmedia.com^$third-party
 ||ventunotech.com/beacon/
 ||venture-365-inspired.com^
+||venturemen.com^
 ||venusgloria.com^
 ||venusrevival.com^
 ||veoci.actonservice.com^
@@ -350505,6 +350518,7 @@ zonedirector.avadacom.com$image
 ||walbusch.de^$ping
 ||walgreens.digital.nuance.com/tagserver/incrementality/onEvent
 ||walgreens.sc.omtrdc.net^
+||walkourworld.com^
 ||walla.co.il/CountsHP.asp?
 ||walla.co.il/impression/
 ||walla.co.il/stats/
@@ -351139,6 +351153,7 @@ zonedirector.avadacom.com$image
 ||webcare.byside.com/agent/usert_agent.php
 ||webcasts.de.ni.com^
 ||webcasts.partnermcafee.com^
+||webclarion.com^
 ||webclicktracker.com^$3p
 ||webclicktracker.com^$third-party
 ||webcompteur.com^$3p
