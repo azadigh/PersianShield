@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.09.24
-! Last modified: 2026-09-24 03:30:25 UTC
+! Version: 2026.09.25
+! Last modified: 2026-09-25 03:47:37 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 355,656
+! Total rules: 355,667
 ! File size: 10.8 MB
 ! License: MIT
 !
@@ -180,7 +180,7 @@ $removeparam=ymclid
 $removeparam=ysclid
 $third-party,xmlhttprequest,domain=opensubtitles.org
 $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
-$xhr,~3p,method=post,domain=srnky.com|aii.sh|intercelestial.com|lnbz.la|clksz.com
+$xhr,~3p,method=post,domain=srnky.com|aii.sh|lnbz.la|clksz.com
 %2Frw%2Fbeacon_
 &&sub19=undefined&sub20=undefined
 &EventType=DataDealImpression&
@@ -8015,6 +8015,7 @@ $xhr,~3p,method=post,domain=srnky.com|aii.sh|intercelestial.com|lnbz.la|clksz.co
 @@||bolha.com/clicktracker/
 @@||bookmate.com^*/impressions?$~third-party,xmlhttprequest
 @@||bookoffonline.co.jp/files/tracking/ac/clicktag.js$~third-party
+@@||bookshop.org/astro-assets/google-analytics.*.js$domain=bookshop.org
 @@||bose.tt.omtrdc.net/*/bose/mbox/json?$domain=bose.fr
 @@||bostonglobe.com/login/js/lib/AppMeasurement.js$~third-party
 @@||boxberry.ru/tracking.service^
@@ -8165,6 +8166,7 @@ $xhr,~3p,method=post,domain=srnky.com|aii.sh|intercelestial.com|lnbz.la|clksz.co
 @@||cdn.dimml.io/dimml.js$domain=consumentenbond.nl
 @@||cdn.dimml.io/static/*.js$domain=consumentenbond.nl
 @@||cdn.dynamicyield.com^$domain=dafiti.com.co
+@@||cdn.engagement.coremedia.cloud^$domain=flytap.com
 @@||cdn.evgnet.com/beacon/homedepotofcainc/engage/scripts/evergage.min.js$script,domain=homedepot.ca
 @@||cdn.facil-iti.app/tags/faciliti-tag.min.js$script,domain=apec.fr|kyoto.travel
 @@||cdn.georiot.com/snippet.js$domain=techadvisor.co.uk
@@ -227246,6 +227248,7 @@ zonedirector.avadacom.com$image
 ||analytics.claudelog.com^
 ||analytics.cleantech.training^
 ||analytics.clic2buy.com^
+||analytics.click-or-die.ru^
 ||analytics.clientify.net^
 ||analytics.climatizer.cz^
 ||analytics.climatizerplus.cz^
@@ -232240,7 +232243,6 @@ zonedirector.avadacom.com$image
 ||atlanticlabequipment.actonservice.com^
 ||atlas.rambler.ru/metrics
 ||atlas1.krone.at^
-||atlassian.com/gateway/api/*/batch
 ||atlastravel.actonservice.com^
 ||atlasworldusa.actonservice.com^
 ||atlihk.dukeanddexter.com^
@@ -241327,7 +241329,6 @@ zonedirector.avadacom.com$image
 ||cst.chalkys.com^
 ||cst.docciatime.it^
 ||cst.maracarol.it^
-||cstaticdun.126.net^
 ||cstats.sankakucomplex.com^
 ||cstm.baidu.com^
 ||cstream.wi-fi.ru/csc-event$domain=wi-fi.ru
@@ -253817,6 +253818,7 @@ zonedirector.avadacom.com$image
 ||eventlog.inspsearchapi.com^
 ||eventlog.jackpot.de^
 ||eventlog.outbrain.com^
+||eventlog.setka.ru^
 ||eventlogger.soundcloud.com^
 ||eventos.abastur.com^
 ||eventos.cihac.com^
@@ -255597,7 +255599,6 @@ zonedirector.avadacom.com$image
 ||fishing.bucketbro.com.au^
 ||fishing.daigostudio.com^
 ||fishingrodsgalore.com^
-||fishingtoolsbox.com^
 ||fishingtoolsbox.com^$redirect=noop.js,script
 ||fishki.net/counter/
 ||fishspies.com^
@@ -257963,6 +257964,7 @@ zonedirector.avadacom.com$image
 ||getloomax-ss.getspyfocus.com^
 ||getloomax-ss.zavydeals.com^
 ||getlumiwarm-ss.shopperlo.com^
+||getmail.tech/api/track
 ||getme.akupanelgigant.nl^
 ||getme.badovo.nl^
 ||getme.grivola.nl^
@@ -272455,7 +272457,7 @@ zonedirector.avadacom.com$image
 ||justconfig.com^
 ||justdial.com/jd-trkr
 ||justfordocs.com^
-||justice.maybeoneday.ch^
+||justice.hls.lol^
 ||justicejudo.com^
 ||justid.io^
 ||justlagoon.com^
@@ -282157,6 +282159,7 @@ zonedirector.avadacom.com$image
 ||lumbu.naturallife.com^
 ||lumen.nanoni.pl^
 ||lumenera.actonservice.com^
+||lumengaming.com^
 ||lumhdco.mykitsch.com/*/js|$script
 ||lumhdco.mykitsch.com^
 ||luminate.com/track/
@@ -288549,6 +288552,7 @@ zonedirector.avadacom.com$image
 ||metrics.telenet.be^
 ||metrics.telenor.se^
 ||metrics.teletoon.com^
+||metrics.temptcdn.com^
 ||metrics.termofit.com.br^
 ||metrics.terra-saar.com^
 ||metrics.tescobank.com^
@@ -294753,6 +294757,7 @@ zonedirector.avadacom.com$image
 ||p2trc.emv2.com^
 ||p2xe0.ekukka.fi^
 ||p30rank.ir^$third-party
+||p3ter.fr/modules/statistics/
 ||p3tq.pandasuite.io^
 ||p543.inquirer.com^
 ||p593.seattlepi.com^
@@ -295096,6 +295101,7 @@ zonedirector.avadacom.com$image
 ||paqkp.alignmedbrasil.com.br^
 ||paqqlk.motatos.de^
 ||paradehomeandgarden.com/.api/admiral
+||paradepets.com/.api/admiral
 ||parakeet.jorenvanhocht.be^
 ||parakeet.kenleyar.ai^
 ||parakeet.phantomphone.net^
@@ -318156,6 +318162,7 @@ zonedirector.avadacom.com$image
 ||solarislabyrinth.com^
 ||solarrecharge.net^
 ||solarwinds.com/ra-$script
+||soldoutstubs.com^
 ||sole.bkosmetik.com^
 ||sole.pretto.fr^
 ||sole.riverwalkdental.com.au^
@@ -334343,6 +334350,7 @@ zonedirector.avadacom.com$image
 ||statuncore.com^$third-party
 ||status.acutx.org^
 ||status.langnite.pl^
+||status.tbank-online.com/front/log/
 ||statuscake.com^$3p
 ||statusinside.com^
 ||statuspage.io/embed/frame
@@ -335403,6 +335411,7 @@ zonedirector.avadacom.com$image
 ||sunios.de^$3p
 ||sunios.de^$third-party
 ||sunlightmetrics.b-cdn.net^
+||sunlong.net^
 ||sunnylettings.com^
 ||suno.com/9i3s/
 ||suno.com/metrics/
@@ -351413,6 +351422,7 @@ zonedirector.avadacom.com$image
 ||websitewelcome.com^$3p
 ||websitewelcome.com^$third-party
 ||websolutions.it/statistiche/
+||webspa.net^
 ||webspectator.com^$3p
 ||webspectator.com^$third-party
 ||webspires.net^
@@ -351620,6 +351630,7 @@ zonedirector.avadacom.com$image
 ||weeb.weebystitches.com^
 ||weedmaps.com/pixel?
 ||weekand.com/413gkwMT/init.js
+||weeklycurrents.com^
 ||weem.weemco.com^
 ||weg.de/etc/designs/comvel/clientlibs/tracking
 ||weg.weegallery.com^
