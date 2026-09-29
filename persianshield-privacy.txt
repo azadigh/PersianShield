@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.09.28
-! Last modified: 2026-09-28 04:04:17 UTC
+! Version: 2026.09.29
+! Last modified: 2026-09-29 04:37:35 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 355,692
+! Total rules: 355,696
 ! File size: 10.8 MB
 ! License: MIT
 !
@@ -5908,7 +5908,7 @@ $xhr,~3p,method=post,domain=srnky.com|aii.sh|lnbz.la|clksz.com
 20990.sock-qa1.marketingcloudqaops.com$image
 20998.connector-qa1.marketingcloudqaapis.com$image
 20998.editor-qa1.marketingcloudqaapis.com$image
-20min.ch##+js(set-local-storage-item, clientId, $remove$)
+20min.ch,lessentiel.lu##+js(set-local-storage-item, clientId, $remove$)
 210.ftp-qa1.marketingcloudqaops.com$image
 21013.connector-qa1.marketingcloudqaapis.com$image
 21062.connector-qa1.marketingcloudqaapis.com$image
@@ -8040,6 +8040,7 @@ $xhr,~3p,method=post,domain=srnky.com|aii.sh|lnbz.la|clksz.com
 @@||business.nikkei.com/js/bpcommon/onetag/bpTrackVars.js$domain=business.nikkei.com
 @@||business.nikkei.com/js/bpcommon/onetag/bpTrackVarsCommon.js$domain=business.nikkei.com
 @@||businessclick.ch/index.js$domain=finanzen.ch
+@@||bvr.ast.snva.jp/beaver.js$domain=kojima.net
 @@||c-web.cedyna.co.jp/customer/img/spacer.gif?$~third-party
 @@||c.lytics.io/api/tag/$script,domain=time.com
 @@||c.paypal.com/da/r/fb.js$script
@@ -8219,6 +8220,7 @@ $xhr,~3p,method=post,domain=srnky.com|aii.sh|lnbz.la|clksz.com
 @@||cdn.perfops.net/rom3/rom3.min.js$domain=cdnperf.com
 @@||cdn.permutive.com/*-web.js$domain=independent.co.uk
 @@||cdn.petametrics.com/*-nbc.js$script,domain=bringmethenews.com
+@@||cdn.petametrics.com/*-nbc.js?ts=$domain=bringmethenews.com|athlonsports.com|paulickreport.com|mmaweekly.com
 @@||cdn.petametrics.com/*.js$domain=thestreet.com
 @@||cdn.petametrics.com^$script,domain=mechacomic.jp
 @@||cdn.petametrics.com^$script,domain=meidasnews.com
@@ -10254,7 +10256,6 @@ $xhr,~3p,method=post,domain=srnky.com|aii.sh|lnbz.la|clksz.com
 @@||snapchat.com/static/js/autotrack.js
 @@||snowplow.swm.digital/com.snowplowanalytics.snowplow/$domain=7plus.com.au
 @@||snowplow.swm.digital^$domain=7plus.com.au
-@@||snva.jp/javascripts/reco/$script,domain=abc-mart.net|store.charle.co.jp
 @@||software.seek.intel.com^$document
 @@||sohotheatre.com^*/PageView.js$~third-party
 @@||solr.sas.com/query/$xmlhttprequest,domain=jmp.com
@@ -11390,6 +11391,7 @@ careermap.co.uk##+js(set-constant, trackEvent, noopFunc)
 careers.moseasia.com$image
 careers.samsungena-global.com$image
 carparts.com##+js(set-local-storage-item, optimizely-vuid, $remove$)
+carparts.com,kupibilet.ru##+js(set-local-storage-item, optimizely-vuid, $remove$)
 cartune.me##.contents-inner > div > div#taboola-alternating-thumbnails-a:upward(1)
 casecontrol.collections.breyta.nl$image
 cats.recruitingroom.com$image
@@ -16101,7 +16103,6 @@ cnn.com##.zn-story-bottom
 codemy.de$image
 colab.research.google.com##+js(href-sanitizer, a[href^="https://colab.research.google.com/corgiredirector?site=http"], ?site)
 college.click.s11.sfmc-osl.com$image
-colliers.com##+js(set-local-storage-item, visitorId, $remove$)
 coloradoan.com##+js(set-local-storage-item, user_insights, $remove$)
 columbian.com,pagesix.com,theverge.com##+js(cookie-remover, /^blaize_/, when, scroll keydown)
 com-com-i-sub-demo-p-pro-bhyktzus.email.rycofilters.com$image
@@ -205079,7 +205080,7 @@ fmkorea.com##+js(set-constant, link_url, '')
 focus.de##+js(set-constant, trackIVWFOL, noopFunc)
 follow.notifications.vitall.co.uk$image
 followup.axa.co.jp$image
-food4less.com##+js(set-local-storage-item, analytics-device, $remove$)
+food4less.com,ralphs.com,smithsfoodanddrug.com,frysfood.com,fredmeyer.com##+js(set-local-storage-item, analytics-device, $remove$)
 foodtolove.e.bauermedia.co.nz$image
 football-ukraine.com###reachMedia
 football-ukraine.com###shadowMedia
@@ -205251,7 +205252,6 @@ fw1.isnyop.us$image
 gala.com##+js(set-local-storage-item, _gal1, $remove$)
 galaxus.de##+js(remove-cookie, /^\.(b|s|xp|ub\.)id/, when, scroll keydown)
 gamer.com.tw##+js(href-sanitizer, body a[href^="https://ref.gamer.com.tw/redir.php?url=http"], ?url)
-gamespot.com##+js(set-local-storage-item, ppid, $remove$)
 gamma1-0.cloud.s11.sfmc-osl.com$image
 gate.happycustomer.io$image
 gateway.masquefuerte.happycustomer.io$image
@@ -206056,8 +206056,8 @@ immo.helvetia.ch$image
 indianexpress.com##+js(set-local-storage-item, ev_did, $remove$)
 indianexpress.com##+js(set-local-storage-item, ev_sid, $remove$)
 indonesia.click.s11.sfmc-osl.com$image
-inet.se##+js(set-local-storage-item, visitorId, $remove$)
 inet.se##+js(set-local-storage-item, visitorInfo, $remove$)
+inet.se,colliers.com##+js(set-local-storage-item, visitorId, $remove$)
 infinity.magicalcredit.ca$image
 influemail.biolor.swiss$image
 influemail.cliacreations.com$image
@@ -206189,7 +206189,6 @@ kr.verwin.com$image
 kt.com##+js(set-constant, KT_trackClicks, noopFunc)
 kuow.org##.story-content-wrapper > div.embed_block:has(> div[ub-in-page])
 kuow.org##.story-content-wrapper > div.embed_block:has(> script:contains(window.usabilla))
-kupibilet.ru##+js(set-local-storage-item, optimizely-vuid, $remove$)
 kuruma-news.jp##.recommend-container
 l.deindeal.ch$image
 l.food52.com$image
@@ -206213,7 +206212,6 @@ leave.experienciasbolivar.segurosbolivar.com.cdn.cloudflare.net$image
 lemail.becrashfree.com$image
 lemail.fpacademy.ca$image
 lemail.hetetschoolofmaoriart.com$image
-lessentiel.lu##+js(set-local-storage-item, clientId, $remove$)
 letterboxd.com##+js(href-sanitizer, a[href^="https://click.justwatch.com/"], ?r)
 letterboxd.com,justwatch.com##+js(href-sanitizer, 'a[href*=".justwatch.com/a?"][href*="&r=http"]', ?r)
 lexpress.fr##+js(set-local-storage-item, etx-settings, $remove$)
@@ -209924,8 +209922,8 @@ meritgiftcards.shopmygiftcards.com$image
 messages.coreandmain.com$image
 messages.pawjourr.com$image
 meta.happycustomer.io$image
-metacritic.com##+js(set-local-storage-item, ppid, $remove$)
 metacritic.com##+js(set-local-storage-item, uds_anon_id, $remove$)
+metacritic.com,gamespot.com##+js(set-local-storage-item, ppid, $remove$)
 metager.org##+js(href-sanitizer, a[href^="https://metager.org/partner/r?link=http"], ?link)
 metrics.mail.account.mathworks.com$image
 metrics.recruiting.mathworks.com$image
@@ -213322,7 +213320,6 @@ radioprofusion.com##.revolvermaps
 radioprofusion.com##footer > div.counter
 raisely.petermac.org$image
 raiselymail.starlight.org.au$image
-ralphs.com,smithsfoodanddrug.com,frysfood.com,fredmeyer.com##+js(set-local-storage-item, analytics-device, $remove$)
 ranker.com##+js(aost, HTMLElement.prototype.insertBefore, /[A-Z] .+chunks\/\d{4}\./)
 raycast.com##+js(set-local-storage-item, /ph_phc_/, $remove$)
 raycast.com##+js(set-session-storage-item, /ph_phc_/, $remove$)
@@ -224617,6 +224614,7 @@ zonedirector.avadacom.com$image
 ||addfreestats.com^$3p
 ||addfreestats.com^$third-party
 ||addictedattention.com^
+||addmoves.com^
 ||addressfriend.com^
 ||addthis.com/*/addthis_widget.js$script
 ||addthis.com/at/
@@ -231741,6 +231739,7 @@ zonedirector.avadacom.com$image
 ||arthurbrent.kindencoludens.nl^
 ||arthurbrent.vandervelden.com^
 ||arthurbrent.werkenbijambiq.nl^
+||arthustler.net^
 ||articledemon.com^
 ||articles.usa-savings-journal.com^
 ||articles2.marketrealist.com/aptrk^
@@ -233213,6 +233212,7 @@ zonedirector.avadacom.com$image
 ||barkfactor.com^
 ||barkin.jubileescents.co.uk^
 ||barks.jp/v1/stats
+||barmer.de/proxy/tealium/event-stream/
 ||barnacle.big-in-japan.com^
 ||barnacle.natalieandmikeyb.com^
 ||barnacle.viewsource.io^
@@ -233720,6 +233720,7 @@ zonedirector.avadacom.com$image
 ||besucherzaehler-zugriffszaehler.de^$third-party
 ||besucherzaehler.org^$3p
 ||besucherzaehler.org^$third-party
+||bet365.com.au/analyticsapi/
 ||bet365.de/Members/*&affiliate=$subdocument,third-party
 ||beta-link.liilix.com^
 ||beta.elitemalewellness.com^
@@ -234688,6 +234689,7 @@ zonedirector.avadacom.com$image
 ||boilingbeetle.com^
 ||boilingcredit.com^
 ||boilingmadsoup.com^
+||boingo.jp/analytics.php
 ||boingtv.fr/track_view
 ||bok.sklepmedic.pl^
 ||bokbk.apothekary.co^
@@ -250381,6 +250383,7 @@ zonedirector.avadacom.com$image
 ||dustaclean-ss.checkoutera.com^
 ||dustapro-ss.topashopo.com^
 ||dustavacuum-ss.checkoutera.com^
+||dusthorses.com^
 ||dustydime.com^
 ||dustyhammer.com^
 ||dutchie.com/telemetry|
@@ -252681,6 +252684,7 @@ zonedirector.avadacom.com$image
 ||endeavorbusinessmedia.actonservice.com^
 ||endgl.cgenetool.com^
 ||endhairfall.com^
+||endhairfall.com^$redirect=noop.json,xhr
 ||endjb.trendozashop.com^
 ||endlesstrust.com^
 ||endljp.168chasa.bg^
@@ -291096,6 +291100,7 @@ zonedirector.avadacom.com$image
 ||native.ai^$third-party
 ||nativesdks.mparticle.com^
 ||nativesubscribe.pro^$third-party
+||natom.app^$third-party
 ||natpal.com^$3p
 ||natpal.com^$third-party
 ||nats.xing.com^
@@ -291545,6 +291550,8 @@ zonedirector.avadacom.com$image
 ||netgraviton.net^$3p
 ||netgraviton.net^$third-party
 ||netinsight.actonservice.com^
+||netkeiba.com/*/ndtracker/
+||netkeiba.com/img.dir//ndtracker/
 ||netlify-rum.netlify.app^
 ||netlog.ru^$third-party
 ||netmarbleslog.netmarble.com^
@@ -302891,7 +302898,6 @@ zonedirector.avadacom.com$image
 ||s3.amazonaws.com/downloads.mailchimp.com/$script,domain=confection.io
 ||s3.amazonaws.com/hcluster4^
 ||s3.amazonaws.com/hcluster5^
-||s3.amazonaws.com/icontracker/
 ||s3.amazonaws.com/maropost/
 ||s3.amazonaws.com/www.audiencenetwork.ai/
 ||s3.ap-northeast-2.amazonaws.com/adpick.co.kr/apis/apTracker.v*.js
@@ -312198,7 +312204,6 @@ zonedirector.avadacom.com$image
 ||shop.post.japanpost.jp/js/analytics_cookie.js
 ||shop.propbd.com^
 ||shop.purple-bd.com^
-||shop.rewe.de/api/xrd/performance
 ||shop.rewe.de/api/xrd/web-vitals
 ||shop.semsem.me^
 ||shop.shop.china-martbd.com^
@@ -318043,7 +318048,6 @@ zonedirector.avadacom.com$image
 ||snuk.icebikesuk.com^
 ||snva.jp/api/bcon/$image
 ||snva.jp/api/bcon/basic?
-||snva.jp/javascripts/reco/
 ||snva.jp^*/beacon.js
 ||snvbhd.weltbild.at^
 ||snvkl.bulksupplements.com^
@@ -339605,6 +339609,7 @@ zonedirector.avadacom.com$image
 ||thesoulbrand.com^
 ||thesource.black.news^
 ||thesportsrush.com/_axiom/web-vitals
+||thespun.com/.api/admiral
 ||thespyfocus-ss.checkoutera.com^
 ||thestat.net^$3p
 ||thestat.net^$third-party
@@ -350550,7 +350555,6 @@ zonedirector.avadacom.com$image
 ||waixpa.supriagora.com.br^
 ||wal.wolfram.com^
 ||walbusch.de^$ping
-||walgreens.digital.nuance.com/tagserver/incrementality/onEvent
 ||walgreens.sc.omtrdc.net^
 ||walkourworld.com^
 ||walla.co.il/CountsHP.asp?
