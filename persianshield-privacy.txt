@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.09.29
-! Last modified: 2026-09-29 04:37:35 UTC
+! Version: 2026.09.30
+! Last modified: 2026-09-30 04:21:21 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 355,696
+! Total rules: 355,703
 ! File size: 10.8 MB
 ! License: MIT
 !
@@ -180,7 +180,6 @@ $removeparam=ymclid
 $removeparam=ysclid
 $third-party,xmlhttprequest,domain=opensubtitles.org
 $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
-$xhr,~3p,method=post,domain=srnky.com|aii.sh|lnbz.la|clksz.com
 %2Frw%2Fbeacon_
 &&sub19=undefined&sub20=undefined
 &EventType=DataDealImpression&
@@ -946,6 +945,7 @@ $xhr,~3p,method=post,domain=srnky.com|aii.sh|lnbz.la|clksz.com
 /^https:\/\/[0-9a-z]{7,25}\.net\/(?:assets|build|bundles|chunks|dist|files|j|public|scripts|static)?\/?(?:js\/)?[0-9_a-z]{6,16}\/?[0-9_a-z]{5,120}(?:[-.](?:app|bundle|ma?in|module|prod|index|v\d|vendor))?(?:\.js)?(?:\?r=\d)?$/$script,3p,match-case,header=etag:/^W\/"[0-9a-f]{64}"$/
 /^https:\/\/[0-9a-z]{7,25}\.net\/(?:assets|build|bundles|chunks|dist|files|j|public|scripts|static)?\/?(?:js\/)?[0-9_a-z]{6,16}\/?[0-9_a-z]{5,120}(?:[-.](?:app|bundle|ma?in|module|prod|index|v\d|vendor))?(?:\.js)?(?:\?r=\d)?$/$script,3p,match-case,header=via:/, 1\.1 google$/
 /^https:\/\/[a-z][0-9][0-9][0-9]\.[a-z]+\.com\/script\.js$/$script,1p,match-case,domain=com,redirect=noopjs
+/^https:\/\/[a-z][a-z][a-z]+\.[a-z][a-z]+\/[a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9]\/[a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9]$/$~3p,method=post,domain=srnky.com|aii.sh|lnbz.la|clksz.com
 /^https:\/\/anon1.gt\d{6}.com/
 /^https:\/\/cdn\.jsdelivr\.net\/npm\/([a-z]|-|_){4,22}@latest\/dist\/script\.min\.js$/$domain=mlbpark.donga.com
 /^https:\/\/cdn\.jsdelivr\.net\/npm\/[-a-z_]{4,22}@latest\/dist\/script\.min\.js$/$script,3p,match-case
@@ -4903,7 +4903,7 @@ $xhr,~3p,method=post,domain=srnky.com|aii.sh|lnbz.la|clksz.com
 10dkim1._domainkey.pichincha.com$image
 10dkim1._domainkey.ridewith.justeattakeaway.com$image
 10dkim1._domainkey.shopeepay.co.id$image
-10tv.com,11alive.com,12news.com,12newsnow.com,13newsnow.com,13wmaz.com,5newsonline.com,9news.com,abc10.com,al.com,aol.com,apnews.com,artforum.com,artnews.com,billboard.com,birdsandblooms.com,calgaryherald.com,calgarysun.com,cbs19.tv,cbs8.com,cleveland.com,crooksandliars.com,deadline.com,dpreview.com,driving.ca,edmontonjournal.com,edmontonsun.com,familyhandyman.com,financialpost.com,firstcoastnews.com,fox43.com,fox61.com,futbin.com,goldderby.com,golfdigest.com,gulflive.com,hollywoodreporter.com,indiewire.com,kare11.com,kcentv.com,kens5.com,kgw.com,khou.com,kiiitv.com,king5.com,krem.com,ktvb.com,kvue.com,lehighvalleylive.com,lfpress.com,localmemphis.com,masslive.com,myfoxzone.com,nationalpost.com,nbcsports.com,newscentermaine.com,newswest9.com,nj.com,oregonlive.com,ottawacitizen.com,ottawasun.com,rd.com,robbreport.com,rollingstone.com,sherdog.com,sidereel.com,superherohype.com,syracuse.com,tasteofhome.com,techcrunch.com,thehealthy.com,thv11.com,torontosun.com,twinfinite.net,vancouversun.com,variety.com,vibe.com,wbir.com,wcnc.com,weareiowa.com,weather.com,wfaa.com,wfmynews2.com,wgrz.com,whas11.com,windsorstar.com,wkyc.com,wltx.com,wnep.com,wqad.com,wthr.com,wtol.com,wtsp.com,wusa9.com,wwd.com,wwltv.com,wzzm13.com##+js(acs, document.getElementsByTagName, .pubads)
+10tv.com,11alive.com,12news.com,12newsnow.com,13newsnow.com,13wmaz.com,5newsonline.com,9news.com,abc10.com,al.com,aol.com,apnews.com,artforum.com,artnews.com,billboard.com,birdsandblooms.com,calgaryherald.com,calgarysun.com,cbs19.tv,cbs8.com,cleveland.com,crooksandliars.com,deadline.com,dpreview.com,driving.ca,edmontonjournal.com,edmontonsun.com,familyhandyman.com,financialpost.com,firstcoastnews.com,fox43.com,fox61.com,futbin.com,goldderby.com,golfdigest.com,gulflive.com,hollywoodreporter.com,indiewire.com,kare11.com,kcentv.com,kens5.com,kgw.com,khou.com,kiiitv.com,king5.com,krem.com,ktvb.com,kvue.com,lehighvalleylive.com,lfpress.com,localmemphis.com,masslive.com,mlive.com,myfoxzone.com,nationalpost.com,nbcsports.com,newscentermaine.com,newswest9.com,nj.com,oregonlive.com,ottawacitizen.com,ottawasun.com,rd.com,robbreport.com,rollingstone.com,sherdog.com,sidereel.com,superherohype.com,syracuse.com,tasteofhome.com,techcrunch.com,thehealthy.com,thv11.com,torontosun.com,twinfinite.net,vancouversun.com,variety.com,vibe.com,wbir.com,wcnc.com,weareiowa.com,weather.com,wfaa.com,wfmynews2.com,wgrz.com,whas11.com,windsorstar.com,wkyc.com,wltx.com,wnep.com,wqad.com,wthr.com,wtol.com,wtsp.com,wusa9.com,wwd.com,wwltv.com,wzzm13.com##+js(acs, document.getElementsByTagName, .pubads)
 11005.sock-qa1.marketingcloudqaops.com$image
 11018.sock-qa1.marketingcloudqaops.com$image
 11055.connector-qa1.marketingcloudqaapis.com$image
@@ -232615,6 +232615,7 @@ zonedirector.avadacom.com$image
 ||avqymy.you.gr^
 ||avrqa.estellabartlett.com^
 ||avs.adpinfo.com^
+||avscan.cc/analytics/
 ||avsjo.stickley.com^
 ||avsplow.com^
 ||avsplow.com^$third-party
@@ -232704,6 +232705,7 @@ zonedirector.avadacom.com$image
 ||axkwyf.edinos.pl^
 ||axljfv.therosebay.co.kr^
 ||axnskz.power-stones.jp^
+||axonsite.com^
 ||axoqjt.gommadiretto.it^
 ||axoqvl.daf-shoes.com^
 ||axp.2822news.com^
@@ -240710,7 +240712,6 @@ zonedirector.avadacom.com$image
 ||counter-kostenlos.info^$3p
 ||counter-kostenlos.net^$3p
 ||counter-kostenlos.net^$third-party
-||counter-mdpr.freetls.fastly.net^
 ||counter-treff.de^$3p
 ||counter-treff.de^$third-party
 ||counter-zaehler.de^$third-party
@@ -257303,6 +257304,7 @@ zonedirector.avadacom.com$image
 ||game8.jp/logs^
 ||gameanalytics.com^$third-party
 ||gamebounty.world/api/logVisit
+||gamedaily.com/.api/admiral
 ||gamedistribution.com/collect?
 ||gamedistribution.com/event?
 ||gamedock.io/gamemonkey-web-tracker/
@@ -267754,6 +267756,7 @@ zonedirector.avadacom.com$image
 ||hypercounter.com^$third-party
 ||hyperdisk.actonservice.com^
 ||hyperdx.io^$third-party
+||hyperfrost.net^
 ||hyperlegend.com^
 ||hypestat.com^$3p
 ||hypestat.com^$third-party
@@ -271150,6 +271153,7 @@ zonedirector.avadacom.com$image
 ||ipogh.magicmolecule.com^
 ||ipokabu.net/js/analytics.js
 ||iportal.ru/static/mediadash/tracker.iife.min.js
+||ippen.space/api/metrics
 ||ippen.space/idat
 ||ipqualityscore.com/api/$third-party
 ||ipral.wearmntd.com^
@@ -282900,6 +282904,7 @@ zonedirector.avadacom.com$image
 ||mapp.jysk.nl^
 ||mapp.peacocks.co.uk^
 ||mapp.yesstyle.com^
+||mapple.fun/api/ui/sync/track
 ||mapquest.com/logger
 ||maps.googleapis.com/*/stats.js
 ||maptrackpro.com/track/
@@ -291056,7 +291061,6 @@ zonedirector.avadacom.com$image
 ||nala.headuplabs.com^
 ||nalook.com^$3p
 ||namcah.alipearlhair.com^
-||namethatporn.com/assets/imgs/1x1.gif
 ||nametraff.com^$third-party
 ||namnak.com/act/stats.json
 ||namnak.com/ga.js
@@ -335340,6 +335344,7 @@ zonedirector.avadacom.com$image
 ||substrate.office.com/search/api/v1/events
 ||subx.alpinawein.de^
 ||suc.aliqrashop.com^
+||succeedscene.com^$domain=theguardian.com
 ||success.act-on.com^
 ||success.azzure-it.com^
 ||success.benico.com^
@@ -343970,6 +343975,7 @@ zonedirector.avadacom.com$image
 ||tracking.dominanteladies.de^
 ||tracking.donnemagazine.it^$script
 ||tracking.doyoulovesalt.com^
+||tracking.dpmlol.com^
 ||tracking.dpstampede.com^
 ||tracking.dr-10.com^
 ||tracking.dr-8.com^
@@ -348217,6 +348223,7 @@ zonedirector.avadacom.com$image
 ||users.videasy.*/api/track
 ||users.videasy.to/api/track
 ||users.videasy.to^
+||users.vidy.st^$3p
 ||usersegment.wpdigital.net^
 ||usersonline.org/ping.php?
 ||userstatics.com/get/script.js
