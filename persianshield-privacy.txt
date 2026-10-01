@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.09.30
-! Last modified: 2026-09-30 04:21:21 UTC
+! Version: 2026.10.01
+! Last modified: 2026-10-01 04:33:05 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 355,703
+! Total rules: 355,731
 ! File size: 10.8 MB
 ! License: MIT
 !
@@ -954,7 +954,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /^https:\/\/grabify\.org\/[A-Z0-9]+$/$doc
 /^https:\/\/kick\.com\/[0-9A-z]{16}\/[0-9A-z]{16}\?apiKey=/$script,1p,match-case,domain=kick.com
 /^https:\/\/korea\.epsilonsoft\.to/[a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9].js$/$script,domain=epsilonsoft.to
-/^https:\/\/link\.theverge\.com\/click\/[0-9]+\.[0-9]+\/aHR0c/$doc,urlskip=/(aHR0c[a-zA-Z0-9%_-]+)/ -base64
+/^https:\/\/link\.theverge\.com\/click\/[0-9]+\.[0-9]+\/aHR0c/$doc,urlskip=/(aHR0c[a-zA-Z0-9%_-]+)/ -safebase64
 /^https:\/\/mudah\.my\/[a-zA-Z0-9]{16}\/[a-zA-Z0-9]{16}\?apiKey=/$script,1p,domain=mudah.my
 /^https:\/\/robota\.ua\/[a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9]\/$/$script,domain=robota.ua
 /^https:\/\/www\.[a-z0-9]{8}\.com\/i\/[A-Z0-9]{5}\/[A-Z0-9]{6}\/$/$image,3p,match-case,to=com
@@ -1130,6 +1130,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /akamai/*/mediaanalytics/Mediaanalytics.min.js
 /alog.min.js
 /alog.mobile.min.js
+/alog/dp.min.js
 /amazon_linker.min.js
 /amp-access/cta/*
 /amp-access/cta?
@@ -4903,7 +4904,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 10dkim1._domainkey.pichincha.com$image
 10dkim1._domainkey.ridewith.justeattakeaway.com$image
 10dkim1._domainkey.shopeepay.co.id$image
-10tv.com,11alive.com,12news.com,12newsnow.com,13newsnow.com,13wmaz.com,5newsonline.com,9news.com,abc10.com,al.com,aol.com,apnews.com,artforum.com,artnews.com,billboard.com,birdsandblooms.com,calgaryherald.com,calgarysun.com,cbs19.tv,cbs8.com,cleveland.com,crooksandliars.com,deadline.com,dpreview.com,driving.ca,edmontonjournal.com,edmontonsun.com,familyhandyman.com,financialpost.com,firstcoastnews.com,fox43.com,fox61.com,futbin.com,goldderby.com,golfdigest.com,gulflive.com,hollywoodreporter.com,indiewire.com,kare11.com,kcentv.com,kens5.com,kgw.com,khou.com,kiiitv.com,king5.com,krem.com,ktvb.com,kvue.com,lehighvalleylive.com,lfpress.com,localmemphis.com,masslive.com,mlive.com,myfoxzone.com,nationalpost.com,nbcsports.com,newscentermaine.com,newswest9.com,nj.com,oregonlive.com,ottawacitizen.com,ottawasun.com,rd.com,robbreport.com,rollingstone.com,sherdog.com,sidereel.com,superherohype.com,syracuse.com,tasteofhome.com,techcrunch.com,thehealthy.com,thv11.com,torontosun.com,twinfinite.net,vancouversun.com,variety.com,vibe.com,wbir.com,wcnc.com,weareiowa.com,weather.com,wfaa.com,wfmynews2.com,wgrz.com,whas11.com,windsorstar.com,wkyc.com,wltx.com,wnep.com,wqad.com,wthr.com,wtol.com,wtsp.com,wusa9.com,wwd.com,wwltv.com,wzzm13.com##+js(acs, document.getElementsByTagName, .pubads)
+10tv.com,11alive.com,12news.com,12newsnow.com,13newsnow.com,13wmaz.com,5newsonline.com,9news.com,abc10.com,al.com,aol.com,apnews.com,artforum.com,artnews.com,billboard.com,birdsandblooms.com,calgaryherald.com,calgarysun.com,cbs19.tv,cbs8.com,cleveland.com,crooksandliars.com,deadline.com,dpreview.com,driving.ca,edmontonjournal.com,edmontonsun.com,familyhandyman.com,financialpost.com,firstcoastnews.com,fox43.com,fox61.com,futbin.com,goldderby.com,golfdigest.com,gulflive.com,hollywoodreporter.com,indiewire.com,kare11.com,kcentv.com,kens5.com,kgw.com,khou.com,kiiitv.com,king5.com,komonews.com,krem.com,ktvb.com,kvue.com,lehighvalleylive.com,lfpress.com,localmemphis.com,masslive.com,mlive.com,myfoxzone.com,nationalpost.com,nbcsports.com,newscentermaine.com,newswest9.com,nj.com,oregonlive.com,ottawacitizen.com,ottawasun.com,rd.com,robbreport.com,rollingstone.com,sherdog.com,sidereel.com,superherohype.com,syracuse.com,tasteofhome.com,techcrunch.com,thehealthy.com,thv11.com,torontosun.com,twinfinite.net,vancouversun.com,variety.com,vibe.com,wbir.com,wcnc.com,weareiowa.com,weather.com,wfaa.com,wfmynews2.com,wgrz.com,whas11.com,windsorstar.com,wkyc.com,wltx.com,wnep.com,wqad.com,wthr.com,wtol.com,wtsp.com,wusa9.com,wwd.com,wwltv.com,wzzm13.com##+js(acs, document.getElementsByTagName, .pubads)
 11005.sock-qa1.marketingcloudqaops.com$image
 11018.sock-qa1.marketingcloudqaops.com$image
 11055.connector-qa1.marketingcloudqaapis.com$image
@@ -205281,6 +205282,7 @@ ghmail.iemfg.com$image
 giga.chat##+js(set-local-storage-item, /DEVICE_ID/, $remove$)
 gio.com.au##+js(set-constant, webAnalytics, {})
 gio.com.au##+js(set-constant, webAnalytics.publish, noopFunc)
+glam.jp##.yarpp-related
 glaptestalid3.click.s11.sfmc-osl.com$image
 glbellbalid3.click.s11.sfmc-osl.com$image
 glconsultingalid3.click.s11.sfmc-osl.com$image
@@ -210853,6 +210855,7 @@ ohmynews.com##+js(set-constant, GA_Event, noopFunc)
 oilprice.com##+js(remove-cookie, ga_store_user_id)
 okazuch.site###custom_html-30
 okko.tv##+js(set-local-storage-item, sbid_logUid, $remove$)
+oklivetv.com##+js(no-fetch-if, method:POST body:tracker)
 okteve.com##+js(no-fetch-if, method:POST body:tracker)
 old.integratedailabs.com$image
 old.nexus-agency.hu$image
@@ -214853,6 +214856,7 @@ tourister.ru##+js(href-sanitizer, a[href*="/go?"], ?url)
 tourister.ru##.nt-foot-item[style="overflow:hidden;"]
 tousatu-ch.net##.widget_custom_html:has(> div.textwidget > div[style^="width: 100%;"] > div.ninja-recommend-block)
 tousatu-club.com###text-9
+toyokeizai.net##.--recommend
 tr.email.donjr.com$image
 tr.email.schoolism.com$image
 tr.mailing.alhudood.net$image
@@ -230037,6 +230041,7 @@ zonedirector.avadacom.com$image
 ||api.userstyles.org/tic/stats
 ||api.useshuris.com.br^
 ||api.usestoryteller.com/api/app/activity/recordActivity?
+||api.useunloq.com/event_management/
 ||api.usevess.com.br^
 ||api.usevoe.com.br^
 ||api.vagadeempregosp.com.br^
@@ -235251,6 +235256,7 @@ zonedirector.avadacom.com$image
 ||browserling.com/api/stats-browsing
 ||browsermine.com^$third-party
 ||browserpusher.com^$third-party
+||browsertdidticket.m.qq.com^
 ||browsing.doamore.com^
 ||brpayless.eccocar.com^
 ||brpdu.lovefitnessapparel.com^
@@ -237491,6 +237497,7 @@ zonedirector.avadacom.com$image
 ||cdn.xlear.com^
 ||cdn.xpozer.com^
 ||cdn.yottaa.com/rapid.security.min.*.js$script,redirect=noop.js,domain=northerntool.com
+||cdn.zeroclick.io/scripts/badge.js
 ||cdn.zg-api.com/a/z/js/v1/analytics.js
 ||cdn.zx-adnet.com^$3p
 ||cdn00.sanko.ac.jp^
@@ -241180,6 +241187,7 @@ zonedirector.avadacom.com$image
 ||crsspxl.com^$3p
 ||crta.and.co.uk^
 ||crta.dailymail.co.uk^
+||crta.dailymail.com^
 ||crta.metro.co.uk^
 ||crtx.info^$third-party
 ||cruiok.cavage.com.br^
@@ -241939,7 +241947,6 @@ zonedirector.avadacom.com$image
 ||cyberanalytics.nl^
 ||cyberanalytics.nl^$third-party
 ||cybernews.com/clientfpid/
-||cybernews.com/fxq4/
 ||cyberpedia.su/count.php
 ||cycling.voicycling.com.br^
 ||cycling74.com/web/matomo/
@@ -242925,6 +242932,7 @@ zonedirector.avadacom.com$image
 ||dailymail.co.uk/geo/edgedata.html
 ||dailymail.co.uk/rta2/
 ||dailymail.co.uk/tracking/
+||dailymail.com/zephr/features
 ||dailymotion.com/gravity/report
 ||dailymotion.com/logger/
 ||dailymotion.com/logger/*?session_id=
@@ -251560,6 +251568,7 @@ zonedirector.avadacom.com$image
 ||edrone.me^$3p
 ||edrone.me^$third-party
 ||edsawa.simplynursery.com^
+||edshowpigs.com^
 ||edt02.net^$3p
 ||edt02.net^$third-party
 ||edtp.de^$3p
@@ -254109,6 +254118,7 @@ zonedirector.avadacom.com$image
 ||events.s4long.com^
 ||events.santander.co.uk^
 ||events.sd-nbb.de^
+||events.searchtap.net^
 ||events.sevenfiguresecrets.com^
 ||events.shareably.net^
 ||events.shirrts.com^
@@ -254822,6 +254832,7 @@ zonedirector.avadacom.com$image
 ||faris.stape.monster^
 ||farmergoldfish.com^
 ||farmersjournal.ie/js/detectIncognito.min.js
+||faro-collector-*.grafana-ops.net^
 ||faro-collector-prod-*.grafana.net^
 ||faro-sportybet.sportydog.net/collect|$xhr,redirect=noop.json
 ||faro.civitai.
@@ -257430,6 +257441,7 @@ zonedirector.avadacom.com$image
 ||gateway1.ashleyshaw.ca^
 ||gather.donga.com^
 ||gatherer.m.qq.com/event/
+||gatherer.m.qq.com^
 ||gator.volces.com/list$xhr,method=post
 ||gator.volces.com^
 ||gatorleads.co.uk^$third-party
@@ -258386,6 +258398,7 @@ zonedirector.avadacom.com$image
 ||gksqdt.reitmans.com^
 ||gktrlv.oryany.co.kr^
 ||gkupv.theconsumerdigest.org^
+||gkx.gokwik.co^
 ||gkxaay.tontarellishop.com^
 ||gkxeea.ssamitbeauty.com^
 ||gkxkvp.tumi.co.jp^
@@ -258617,7 +258630,6 @@ zonedirector.avadacom.com$image
 ||gnrnc.intermobilifurniture.ro^
 ||gnsdp.toms.com^
 ||gnshwf.room-park.ru^
-||gnsnpaw.com^
 ||gnuavcpc.woods.se^
 ||gnwiwc.store.lapine.co.jp^
 ||gnzcmh.sangishop.jp^
@@ -272655,6 +272667,7 @@ zonedirector.avadacom.com$image
 ||kaefwe.faol.it^
 ||kaf.kaffebrus.com^
 ||kaffeeschwarz.paarzeit.de^
+||kagane.to/nao.js
 ||kaggle.com/api/i/diagnostics.MetricsService
 ||kaghyg.alpina-water.co.jp^
 ||kagjin.bottegaverde.it^
@@ -281327,6 +281340,7 @@ zonedirector.avadacom.com$image
 ||log.mmstat.com^
 ||log.mofa.go.kr^
 ||log.musical.ly^
+||log.news.baidu.com^
 ||log.newsvine.com^
 ||log.nordot.jp^
 ||log.nordot.jp^$~script
@@ -291072,6 +291086,7 @@ zonedirector.avadacom.com$image
 ||nanostatistics.net/api/event^
 ||nanostats.nanopress.it^
 ||nanthealth.actonservice.com^
+||nao.kagane.to^
 ||naoforge.net.jumia.com.ng^
 ||nappyattack.com^
 ||nappyneck.com^
@@ -292612,6 +292627,7 @@ zonedirector.avadacom.com$image
 ||nstat.magazines.com^
 ||nstclj.rubylane.com^
 ||nsteq.queensland.com^
+||nstool.netease.com/info.js
 ||nstp.notesik.com.br^
 ||nstracking.com^$3p
 ||nstracking.com^$third-party
@@ -293283,6 +293299,8 @@ zonedirector.avadacom.com$image
 ||okioz.livingooddaily.com^
 ||okjdfgmr.snusdiscount.de^
 ||oklink.com/jsstat/
+||oklivetv.com/p/e
+||oklivetv.com/xplay/embed-beacon.php
 ||oknjv.nucific.com^
 ||okomp.rubbertree.co.nz^
 ||okqmc.bloomnu.com^
@@ -294736,6 +294754,7 @@ zonedirector.avadacom.com$image
 ||p.raasnet.com^$third-party
 ||p.redipiufitness.it^
 ||p.ryanhalliday.com^
+||p.sa7eer.com^
 ||p.sadoc.com.br^
 ||p.sfx.ms/is/invis.gif
 ||p.skimresources.com^
@@ -295985,6 +296004,7 @@ zonedirector.avadacom.com$image
 ||pdmsmrt.chevrolet.com^
 ||pdmsmrt.gmc.com^
 ||pdmsmrt.gmccanada.ca^
+||pdp.gokwik.co/cart-get-tokens.html
 ||pdrl.fm^$urlskip=/pdrl\.fm\/\w+\/([^?]+)/ +https
 ||pdrnetwork.112.2o7.net/b/ss/pdrnetworkpdrnetprod/$image,redirect=2x2.png,important
 ||pds.auction.co.kr^
@@ -298563,6 +298583,7 @@ zonedirector.avadacom.com$image
 ||pulselog.com^$third-party
 ||pulsemaps.com^$3p
 ||pulsemaps.com^$third-party
+||pulsepoint.ideal.house^
 ||puluk.drinkmagicdose.com^
 ||puma.islingtonmecc.org.uk^
 ||pumlmb.netcologne.de^
@@ -304172,6 +304193,7 @@ zonedirector.avadacom.com$image
 ||scout.bergfreunde.nl^
 ||scout.bergfreunde.no^
 ||scout.bergfreunde.se^
+||scout.data.funkedigital.de^
 ||scout.salesloft.com/r?tid=
 ||scout.us2.salesloft.com^$image
 ||scoutanalytics.net^$third-party
@@ -332747,6 +332769,7 @@ zonedirector.avadacom.com$image
 ||static.whatsapp.net.iberostar.com^
 ||static.winefields.com.br^
 ||static.ws.126.net/f2e/products/analysis/
+||static.ws.126.net/utf8/3g/util/antanalysis.min.js$domain=163.com
 ||static.yandex.net/browser-updater/stripe/script.js
 ||static.yarnies.com^
 ||static.zhipin.com/library/js/analytics/
@@ -339521,6 +339544,7 @@ zonedirector.avadacom.com$image
 ||thebestlinks.com^$3p
 ||thebestlinks.com^$third-party
 ||thebestpaints.com^
+||thebicyclehut.com^
 ||thebigvan.com^
 ||theblock.co/api/analytics
 ||thebookseller.com/AfoSiteAnalysis/
@@ -342515,6 +342539,7 @@ zonedirector.avadacom.com$image
 ||track.conesulacademy.com^
 ||track.connectwise.com^
 ||track.contently.com^
+||track.convertfox.com^
 ||track.cordial.io^
 ||track.cornerstonebuildingbrands.com^
 ||track.cosplayware.com^
@@ -345248,6 +345273,7 @@ zonedirector.avadacom.com$image
 ||trafic.ro^$3p
 ||trafic.ro^$third-party
 ||trafico.prensaiberica.es^
+||trafik.koopit.ist^
 ||trafikkfondet.no^$3p
 ||trafit.com^$3p
 ||trafit.com^$third-party
@@ -347126,6 +347152,7 @@ zonedirector.avadacom.com$image
 ||tyafti.ullapopken.se^
 ||tyanqg.backmarket.es^
 ||tybfxw.puma.com^
+||tychy24.net/wp-json/iawp/search
 ||tycollectproxy.tiyalive.com^
 ||tycys.wayfarersd.com^
 ||tygem.com/js/tad/tadlog.min.js
@@ -349187,6 +349214,7 @@ zonedirector.avadacom.com$image
 ||vebed.tennibot.com^
 ||vecer.com/js/remp.js
 ||vechtsportonline.nl/static/*/tracking.js
+||vecteezy.com/dmpu/
 ||vector.co/pixel.js
 ||vectorshirt.com^
 ||vedomosti.ru/boom?
