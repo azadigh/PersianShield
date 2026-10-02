@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.10.01
-! Last modified: 2026-10-01 04:33:05 UTC
+! Version: 2026.10.02
+! Last modified: 2026-10-02 04:25:33 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 355,731
+! Total rules: 355,745
 ! File size: 10.8 MB
 ! License: MIT
 !
@@ -8027,6 +8027,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||brm-core-0.brsrvr.com/api/*/core$domain=dollargeneral.com
 @@||brm-core-0.brsrvr.com/api/*/core/?account_id=$domain=m.toysrus.com
 @@||browser-intake-datadoghq.com^$xmlhttprequest,domain=grubhub.com|mightyape.co.nz
+@@||browser-intake-datadoghq.eu^$xmlhttprequest,domain=sncf-connect.com
 @@||browser.covatic.io/sdk/v1/bauer.js$script,domain=hellorayo.co.uk
 @@||browser.events.data.microsoft.com/onecollector/$script,xmlhttprequest,domain=microsoft.com
 @@||browser.sentry-cdn.com^$domain=acustica-audio.com|alphaxiv.org|dic.pixiv.net|doconcall.com.my|eco-clobber.co.uk|fundhero.io|marshmallow-qa.com|members.bifa.film|menshealth.com|ocado.com|pocketguard.com|podcasty.seznam.cz|roomster.com|shop.dns-net.de|spacemarket.com|timesprime.com|vivareal.com.br|womenshealthmag.com
@@ -11363,6 +11364,7 @@ brillen.de##+js(acs, document.createElement, 'script')
 buildtheearth.net##+js(remove-cookie, /^_pk_id./, when, scroll keydown)
 bulletin.sntba.com##+js(set-constant, returnCitySN, {})
 bunshun.jp##.recommend-articles:has(> div[class^="taboola"])
+bunshun.jp##.recommend:has(> #taboola-below-article-thumbnails-desktop)
 burger-king.by##+js(set-local-storage-item, mindboxDeviceUUID, $remove$)
 business.nikkei.com##.cbCxense
 business.nikkei.com##.l-content_footer.recommendesInfomation:contains(あなたにオススメ)
@@ -228844,6 +228846,7 @@ zonedirector.avadacom.com$image
 ||api-rengine-stg.viva.id/hit
 ||api-router.kaspersky-labs.com/logger2/metrics/
 ||api-router.kaspersky-labs.com/logger2^
+||api-sdk.beaconbank.jp^
 ||api-shrek.net.jumia.com.gh^
 ||api-stage.route.com/*/analytics/
 ||api-staging.sitelytics.tech/pixel/core/api/send-event
@@ -229401,6 +229404,7 @@ zonedirector.avadacom.com$image
 ||api.giraofertas.com.br^
 ||api.gist.ai/v1/analytics/track
 ||api.gitbook.com/v1/orgs/*/insights/events
+||api.github.com/_private/browser/rum?
 ||api.github.com/_private/browser/stats$important
 ||api.gleap.io/sessions/ping
 ||api.globalbunjang.com/api/log/
@@ -232493,6 +232497,7 @@ zonedirector.avadacom.com$image
 ||autoaudience.com^$3p
 ||autoaudience.com^$third-party
 ||autoblog.com/.api/admiral
+||autodoc.dk/securegtm/
 ||autoguide.com/api/posts/*/impressions
 ||autohome.com.cn/impress?
 ||autoid.com^$3p
@@ -282926,6 +282931,7 @@ zonedirector.avadacom.com$image
 ||mar.englishkaku.com^
 ||marathondataco.com^$3p
 ||marblediscussion.com^
+||marbleseeds.com^
 ||marceline.wantsext.me^
 ||march.landing.ni.com^
 ||marche.onward.co.jp/*/sys/top_adobe_analytics.js
@@ -291506,6 +291512,7 @@ zonedirector.avadacom.com$image
 ||net.home24.ch^
 ||net.home24.com^
 ||net.home24.it^
+||net.hr/static/required/js/se_ads.js
 ||net.iberia.com^
 ||net.jockey.de^
 ||net.jumia.com.eg^
@@ -335005,6 +335012,7 @@ zonedirector.avadacom.com$image
 ||streak-link.com/*/http$doc,urlskip=/\bstreak-link\.com\/[^\/]+\/https?%3A%2F%2F([^\/?#]+)/ -uricomponent +https
 ||streaklinks.com/*/http$doc,urlskip=/\bstreaklinks\.com\/[^\/]+\/https?%3A%2F%2F([^\/?#]+)/ -uricomponent +https
 ||stream-log.dditscdn.com^
+||stream-log.profilepassport.jp^
 ||stream.borza.com^
 ||stream.corporatefinanceinstitute.com^
 ||stream.datago.ru^
@@ -339556,6 +339564,7 @@ zonedirector.avadacom.com$image
 ||thecounter.com^$third-party
 ||thecounter.net^
 ||thecrazychili.com^
+||thecrossnet.io/av^
 ||thedailybeast.com/static/js/thirdparty.
 ||thedoc.doctronic.ai^
 ||thedp.exhalewell.com^
@@ -352259,6 +352268,7 @@ zonedirector.avadacom.com$image
 ||worker.science4youtoys.com^
 ||workers.dev/api/event
 ||workers.dev/js/script.js
+||workers.dev/ripa/event|
 ||workforce-optimization.insperity.com^
 ||workforcetrends.advancedtech.com^
 ||workhorsefunds.com^
@@ -354529,6 +354539,7 @@ zonedirector.avadacom.com$image
 ||ymvikp.estadao.com.br^
 ||ymviwl.just4camper.de^
 ||ymvmx.mygrooveguide.com^
+||ymzu9eeo1y.ru^
 ||ynagqs.vidaxl.pl^
 ||yndhi.com^
 ||ynemmp.goertz.de^
@@ -355746,6 +355757,9 @@ zonedirector.avadacom.com$image
 ||zzzoraclecloudsupportp01e10-app-hs.eloquademos.com^
 ||zzzoraclecloudsupportp02e10-app-hs.eloquademos.com^
 ||zzzoraclecloudsupportp07e10-img-enh-cdn.eloquademos.com^
+|||nt-stream-log.profilepassport.jp^
+|||pp3-sdk-api.profilepassport.jp^
+|||pp3-sdkdata-v2-ut.profilepassport.jp^
 ~diary.ru##a[href^="http://www.liveinternet.ru/stat/"]
 ~yandex.by,~yandex.com,~yandex.kz,~yandex.ru##a[href^="http://metrika.yandex.ru/stat/"]
 ~yandex.by,~yandex.com,~yandex.kz,~yandex.ru##a[href^="https://metrika.yandex.ru/stat/"]
