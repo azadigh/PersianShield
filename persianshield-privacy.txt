@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.10.02
-! Last modified: 2026-10-02 04:25:33 UTC
+! Version: 2026.10.03
+! Last modified: 2026-10-03 04:08:08 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 355,745
+! Total rules: 355,762
 ! File size: 10.8 MB
 ! License: MIT
 !
@@ -711,6 +711,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 .zippingcare.com/beacon/$image
 /*JmVu.js?sp=
 /.bootscripts/analytics.min.js
+/.events-handler/*$domain=imore.com|coachweb.com
 /.netlify/scripts/rum
 /.rum/@adobe/helix-
 /.webscale/rum?
@@ -4392,6 +4393,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /visscore.tag.min.js
 /vissense.js
 /visualrevenue.js
+/vite/assets/Viafoura/Core/Events.*.js$domain=imore.com|coachweb.com
 /vjslog?
 /vli-platform/adb-analytics@
 /vp/download/goto/?u=http$doc,urlskip=?u
@@ -10382,6 +10384,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||stats.wp.com/w.js$script,domain=wordpress.com
 @@||staty.portalradiowy.pl/wstats/$script,third-party
 @@||steamstatic.com/steam/apps/$image,domain=store.steampowered.com
+@@||stenger-bike.de/theme/*/js/storefront/google-analytics.plugin.*.js$domain=stenger-bike.de
 @@||stippleit.com/stipple.js$domain=photos.toofab.com
 @@||storage.embluemail.com/pixeltracking^$domain=lavoz.com.ar
 @@||store.storeimages.cdn-apple.com^*/appmeasurement.js$domain=apple.com
@@ -210878,6 +210881,7 @@ openapilobalid3.click.s11.sfmc-osl.com$image
 ops.kdpwizard.app$image
 opstream.fun##+js(set-local-storage-item, opstream:device-id, $remove$)
 orderport.peltzers.com$image
+oregonlive.com,reuters.com##+js(aost, admiral, .js?)
 otekomachi.yomiuri.co.jp###_popIn_right
 otekomachi.yomiuri.co.jp##.p-ads
 out-c.equip.co$image
@@ -213426,7 +213430,6 @@ reservalobalid3.click.s11.sfmc-osl.com$image
 resources.picstudio.ai$image
 response.sungard.com$image
 reuters.com###taboola-recirc
-reuters.com##+js(aost, admiral, .js?)
 reuters.com##+js(set-local-storage-item, ajs_anonymous_id, null)
 reverso.net##+js(set-constant, rumjs.business.setManualConsent, noopFunc)
 revistaoeste.com##.content-aside__taboola
@@ -224312,7 +224315,7 @@ zonedirector.avadacom.com$image
 ||actuallysnake.com^
 ||acuityplatform.com^$3p
 ||acuris.com/wat/v2/data-event
-||acustomizedgift.com^$domain=masslive.com|oregonlive.com|silive.com
+||acustomizedgift.com^$domain=masslive.com|silive.com
 ||acv.au-hikari-kddi.com^
 ||acv.auhikari-norikae.com^
 ||acv.aun-air-wifi.com^
@@ -226775,6 +226778,7 @@ zonedirector.avadacom.com$image
 ||ams.atlashxm.com^
 ||ams.lelong.com.my^
 ||ams.oraclecloud.com^
+||amspbs.com^
 ||amsunsolar.actonservice.com^
 ||amt.audio-mobil.com^
 ||amtmf.alphforge.com^
@@ -226913,6 +226917,7 @@ zonedirector.avadacom.com$image
 ||analytic.hawaii.aaa.com^
 ||analytic.hotelclub.com^
 ||analytic.imlive.com^
+||analytic.is^
 ||analytic.is^$3p
 ||analytic.kim-tetzlaff.dk^
 ||analytic.newmexico.aaa.com^
@@ -237181,6 +237186,7 @@ zonedirector.avadacom.com$image
 ||cdn-te.e-goi.com/egoimmerce.js
 ||cdn-uk.cxix.com^
 ||cdn-v3.conductrics.net^
+||cdn-vitals.com^
 ||cdn-widgetsrepository.yotpo.com/widget-assets/yotpo-pixel/
 ||cdn.1lifefiresafety.com^
 ||cdn.24h.com.vn/js/24hgatracking/
@@ -239113,6 +239119,8 @@ zonedirector.avadacom.com$image
 ||co.vaicore.xyz^
 ||co8386c3.eulerian.io^
 ||co932.coloradopolitics.com^
+||coachweb.com/vite/assets/JwPlayer/Shared/Analytics.*.js
+||coachweb.com/vite/assets/JwPlayer/Shared/TrackingEvents.*.js
 ||coalkitchen.com^
 ||coastersim.com^
 ||coatfood.com^
@@ -255818,6 +255826,7 @@ zonedirector.avadacom.com$image
 ||floodprincipal.com^
 ||flooranddecor.com/v1HqbVho/init.js
 ||floorforce.actonservice.com^
+||floors.dev^
 ||florens.nutriest.eu^
 ||floripa.cursodetti.com.br^
 ||flotech.actonservice.com^
@@ -256733,6 +256742,7 @@ zonedirector.avadacom.com$image
 ||fsqwdj.live-tennis.eu^
 ||fsresidential.actonservice.com^
 ||fsrre.nextiva.com^
+||fsrv.io^
 ||fsst.miniature.com^
 ||fsst.miniature.dk^
 ||fsstrack.tryme.com.bd^
@@ -266221,6 +266231,7 @@ zonedirector.avadacom.com$image
 ||haplessland.com^
 ||hapoz.londontownusa.com^
 ||happen.spkt.io^
+||happierleads.com^$third-party
 ||happiness.odie.world^
 ||happycow.net/analytics_socket|
 ||happyholidays.coniferhealth.com^
@@ -269112,6 +269123,8 @@ zonedirector.avadacom.com$image
 ||immunocorp.actonservice.com^
 ||imobie.com/js/analytics.js
 ||imonomy.com^$3p
+||imore.com/vite/assets/Newsletter/NewsletterAnalytics.*.js
+||imore.com/vite/assets/analyticHandlers-*.js
 ||imovel.alliancyimobiliaria.com.br^
 ||imp-*.jampp.com^
 ||imp.ad-plus.cn^
@@ -282621,6 +282634,7 @@ zonedirector.avadacom.com$image
 ||macaw.ianmitchell.dev^
 ||macg.co/modules/statistics/statistics.php
 ||machieved.com^$third-party
+||machineryline.ua/*/save-event/
 ||mackaytracking.newyorklifeinvestments.com^
 ||mackaytracking.nylim.com^
 ||mackerel.passiveincome.io^
@@ -294923,6 +294937,7 @@ zonedirector.avadacom.com$image
 ||pagefly.io/pagefly/core/analytics.js
 ||pageid.info^
 ||pageinfo-k8s.motorsport.com/stat/
+||pagemetry.com^$third-party
 ||pagename.care.ummhealth.org^
 ||pagerank-linkverzeichnis.de^$3p
 ||pagerank-linkverzeichnis.de^$third-party
@@ -304108,6 +304123,7 @@ zonedirector.avadacom.com$image
 ||schnee.skiamade.com^
 ||scholar.google.com^$ping
 ||scholarloop.com^
+||scholarsark.com^
 ||school.novakidschool.com/api/*/metrics
 ||schoolpaws.com^
 ||schottenland.de/na/ajax.php?ax=HiT&
@@ -337242,6 +337258,7 @@ zonedirector.avadacom.com$image
 ||t.wowcube.com^
 ||t.wsucougars.com^
 ||t.wvusports.com^
+||t.xfeed.com^
 ||t.xlcenter.com^
 ||t.xolairhcp.com^
 ||t.xoom.com^
