@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.10.05
-! Last modified: 2026-10-05 04:27:06 UTC
+! Version: 2026.10.06
+! Last modified: 2026-10-06 05:14:03 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 355,767
+! Total rules: 355,782
 ! File size: 10.8 MB
 ! License: MIT
 !
@@ -8364,6 +8364,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||cm-widget.nakanohito.jp/cm/$script,stylesheet
 @@||cmn.gyro-n.com/js/gyr.min.js$domain=benesse-style-care.co.jp
 @@||cmoney.tw/follow/js/google_analytics.js
+@@||cmp.optimizely.com/assets/$image,domain=roadscholar.org
 @@||cmp.telerama.fr/js/telerama.min.js$~third-party
 @@||cnet.com/*/video-player/*/lib/tracking/comscore/comscore.streaming.*.min.js
 @@||cnet.com/a/video-player/uvpjs-rv/$script,~third-party
@@ -9200,6 +9201,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||googletagmanager.com/gtm.js$domain=merrell.com|wolverine.com|catfootwear.com|chacos.com|hytest.com|saucony.com
 @@||googletagmanager.com/gtm.js$domain=militaria.pl
 @@||googletagmanager.com/gtm.js$domain=miltonkeynes.co.uk
+@@||googletagmanager.com/gtm.js$domain=mizuhobank.co.jp
 @@||googletagmanager.com/gtm.js$domain=mobile01.com
 @@||googletagmanager.com/gtm.js$domain=moniteurautomobile.be
 @@||googletagmanager.com/gtm.js$domain=muscleandfitness.com
@@ -9208,6 +9210,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||googletagmanager.com/gtm.js$domain=napishem.ru
 @@||googletagmanager.com/gtm.js$domain=nespresso.com
 @@||googletagmanager.com/gtm.js$domain=nestleprofessional.com.tr
+@@||googletagmanager.com/gtm.js$domain=news-postseven.com
 @@||googletagmanager.com/gtm.js$domain=news.tvb.com
 @@||googletagmanager.com/gtm.js$domain=newsarama.com
 @@||googletagmanager.com/gtm.js$domain=nihontsushin.com
@@ -9316,6 +9319,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||googletagmanager.com/gtm.js$domain=ucicinemas.pt
 @@||googletagmanager.com/gtm.js$domain=ucpa-vacances.com
 @@||googletagmanager.com/gtm.js$domain=unbiased.co.uk
+@@||googletagmanager.com/gtm.js$domain=unicef.or.jp
 @@||googletagmanager.com/gtm.js$domain=unity3d.com
 @@||googletagmanager.com/gtm.js$domain=upc.pl
 @@||googletagmanager.com/gtm.js$domain=upwork.com
@@ -9426,6 +9430,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||heatmap.it^$domain=heatmap.com
 @@||heatmap.it^$domain=heatmap.com|heatmap.it|heatmap.me|heatmap.org
 @@||heatmap.it^$domain=heatmap.me
+@@||heimdall.hearstapps.com/voltron$third-party,xmlhttprequest,domain=caranddriver.com
 @@||helix.videotron.com/js/api/fingerprint.js$domain=helix.videotron.com
 @@||helix.videotron.com/js/api/fingerprint.js$~third-party
 @@||hello.myfonts.net/count/$stylesheet,domain=cfr.org
@@ -205261,7 +205266,7 @@ gamer.com.tw##+js(href-sanitizer, body a[href^="https://ref.gamer.com.tw/redir.p
 gamma1-0.cloud.s11.sfmc-osl.com$image
 gate.happycustomer.io$image
 gateway.masquefuerte.happycustomer.io$image
-gazeta.press,gazeta.ru,rambler.ru##+js(trusted-replace-fetch-response, /#rcmrclid=[a-zA-Z0-9]+/g, '', rcm.rambler.ru)
+gazeta.press,gazeta.ru,rambler.ru##+js(trusted-rpfr, /#rcmrclid=[a-zA-Z0-9]+/g, '', rcm.rambler.ru)
 gazetadopovo.com.br##section[class^="pianoRecommender"]
 gcdsdk.appsflyersdk.com^
 gd-link.bugyounotpest.com$image
@@ -206060,6 +206065,7 @@ imdb.com##+js(set-constant, doWithAds, noopFunc)
 img.promio-connect.com$image
 imgur.com##+js(set, Object.prototype.has_opted_out_tracking, trueFunc)
 immo.helvetia.ch$image
+incident.io,ricardocuisine.com,thegentlemansjournal.com,thekrazycouponlady.com,flo.com.tr##+js(set-local-storage-item, __anon_id, $remove$)
 indianexpress.com##+js(set-local-storage-item, ev_did, $remove$)
 indianexpress.com##+js(set-local-storage-item, ev_sid, $remove$)
 indonesia.click.s11.sfmc-osl.com$image
@@ -213443,7 +213449,6 @@ rgrp.digipen.edu$image
 rgrp.fffenterprises.com$image
 rgrp.nypa.gov$image
 rgrp.partners.basf-catalystsmetals.com$image
-ricardocuisine.com,thegentlemansjournal.com,thekrazycouponlady.com,flo.com.tr##+js(set-local-storage-item, __anon_id, $remove$)
 ridgemerino.com##+js(set-local-storage-item, kl-uid, $remove$)
 rm.lsj.com$image
 rmsmail.houstonjamaat.com$image
@@ -229106,6 +229111,7 @@ zonedirector.avadacom.com$image
 ||api.cavalcanticampos.adv.br^
 ||api.cazamba.com^$3p
 ||api.cazehn.com.br^
+||api.cdnlivetv.tv/p2p-stats
 ||api.cenariomag.com^
 ||api.centerimportsoficial.com.br^
 ||api.centralcorretoronline.com.br^
@@ -230248,10 +230254,12 @@ zonedirector.avadacom.com$image
 ||apm.qwant.com^
 ||apm.relationshipone.com^
 ||apm.tnet.nl^
+||apm.volccdn.com^
 ||apm.yahoo.co.jp^
 ||apmplus.ap-southeast-1.volces.com^
 ||apmplus.volces.com/monitor_web/
 ||apmplus.volces.com/monitor_web/collect$xhr,method=post
+||apmplus.volces.com^
 ||apnews.com/blaize/datalayer
 ||apnews.com/newrelic/newrelic.browser.prod.js
 ||apohk.moventashop.com^
@@ -254242,6 +254250,7 @@ zonedirector.avadacom.com$image
 ||evs.data.ciceksepeti.com^
 ||evs.icy-lake.kickstarter.com^
 ||evs.segment.complex.com^
+||evs.segwww.incident.io^
 ||evs.sgmt.loom.com^
 ||evs.sgmt.loom.com^$script
 ||evss.evinyolu.net^
@@ -269249,6 +269258,7 @@ zonedirector.avadacom.com$image
 ||independent.co.uk/Agent/GA/
 ||independent.co.uk/_build/prebid_
 ||independent.co.uk/iframe/native-cookiesync-frames.html
+||independentaustralia.net/_js/realtrack.js
 ||index.hr/api/Stats/
 ||index.hr/api/stats/
 ||index.hr/tracking-beacon
@@ -274525,6 +274535,7 @@ zonedirector.avadacom.com$image
 ||leztr.giantpartners.com^
 ||lf.lelefeminine.com^
 ||lf1-cdn-tos.bytegoofy.com/goofy/ttzz/push.js
+||lf3-data.volccdn.com/obj/data-static/log-sdk/
 ||lfahl.balsamhill.com^
 ||lfapbe.quiksilver.co.jp^
 ||lfawiu.vitaesaude.com.br^
@@ -289336,6 +289347,8 @@ zonedirector.avadacom.com$image
 ||mixproxy.epoch.cloud^$domain=theepochtimes.com
 ||mixxuo.sportys.gr^
 ||mize.scompler.com^
+||mizuhobank.co.jp/bk-common/pc/js/rt_track_event.js
+||mizuhobank.co.jp/common/js/rt_track.js
 ||mj-snowplow-static-js.s3.amazonaws.com^
 ||mj23.eulerian.com^
 ||mjafvw.jungborn.de^
@@ -291705,6 +291718,7 @@ zonedirector.avadacom.com$image
 ||news-events.apple.com^
 ||news-info.gcgfinancial.com^
 ||news-pewuce.com^
+||news-postseven.com/wp-content/common/visitdata.js
 ||news-sports-events.apple.com^
 ||news.aeromarkltd.co.uk^
 ||news.azcapitoltimes.com^
@@ -349809,6 +349823,7 @@ zonedirector.avadacom.com$image
 ||vistanet.it/*/wp-content/plugins/vistanet-plugins/js/category_event.js
 ||vistanet.it^*/category_event.js
 ||visual.ly/track.php?
+||visualcommservices.com^
 ||visualdna.com^$3p
 ||visualdna.com^$third-party
 ||visualrevenue.com^$3p
