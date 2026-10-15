@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.10.14
-! Last modified: 2026-10-14 03:50:21 UTC
+! Version: 2026.10.15
+! Last modified: 2026-10-15 03:31:38 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 378,306
+! Total rules: 378,324
 ! File size: 11.5 MB
 ! License: MIT
 !
@@ -2448,6 +2448,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /i.gif?pageEvent=
 /i.php?i=
 /i.png?id=
+/i/api/kn/afterclick/*$~third-party,xmlhttprequest
 /i2a.js
 /i2yesCounter.js
 /i?aid=*&se_ac=open&$image
@@ -9889,6 +9890,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||livesicilia.it/wp-content/plugins/digistream/digiplayer/js/videojs.ga.js?$script,~third-party
 @@||lk.rt.ru/ruxitagentjs_*.js$domain=lk.rt.ru
 @@||lloydstsb.com/it/xslt/touchclarity/omtr_tc.js
+@@||load.g.essanelle-friseur.de/*.js?$domain=essanelle-friseur.de
 @@||load.sumome.com/$domain=deekit.com
 @@||loader-cdn.azureedge.net/prod/smi/loader.min.js$domain=pressdemocrat.com
 @@||loadus.exelator.com/load/?p=$script,domain=rrstar.com
@@ -224266,6 +224268,7 @@ invoice.avalst.com$image
 invoice.ebuyerassist.com$image
 ioemail.sumoquote.com$image
 ipay.ztgame.com##+js(prevent-fetch, beacon.ztgame.com)
+iphoneincanada.ca##+js(acs, document.createElement, __apNoHold)
 iplobalid3.click.s11.sfmc-osl.com$image
 ipr.edison.com$image
 iprmail.ipressroom.com$image
@@ -245213,6 +245216,8 @@ zonedirector.avadacom.com$image
 ||allo-media.net^$third-party
 ||allo.cdnlbox.club/stat
 ||allocine.fr/_/geolocalize
+||alloha.yani.tv/errors
+||alloha.yani.tv/events
 ||alloutdubstep.com^
 ||alloy-rap.reclameaqui.com.br^
 ||alloy-web.zvuk.com^
@@ -248822,7 +248827,6 @@ zonedirector.avadacom.com$image
 ||api.ssai.ftven.fr/v1/tracking/
 ||api.stahlhart.com.br^
 ||api.startbeglobal.com^
-||api.statsig.com^
 ||api.statsigcdn.com^
 ||api.staydepot.com.br^
 ||api.stelariss.com.br^
@@ -251009,6 +251013,7 @@ zonedirector.avadacom.com$image
 ||astralhustle.com^
 ||astro-way.com^$3p
 ||astro-way.com^$third-party
+||astrologyanswers.com/gtmmetrics/
 ||astromed.actonservice.com^
 ||astropeach.com^
 ||asttcp.vatera.hu^
@@ -255974,6 +255979,7 @@ zonedirector.avadacom.com$image
 ||catalove.com/bimp/
 ||catalove.com/ntv/
 ||catawiki.com/ab/s.js
+||catch.dmm.co.jp/newrelic.js
 ||caterpillarsigns.bagsbytheocean.com^
 ||caterpillarsigns.bannerbuzz.ca^
 ||caterpillarsigns.bannerbuzz.co.nz^
@@ -257026,6 +257032,7 @@ zonedirector.avadacom.com$image
 ||chnnlk.sinspot.co.kr^
 ||chocolatine.apexlegendsstatus.com^
 ||choicebump.com^
+||choices.trustarc.com/get?
 ||chomp-staging-pay.net.jumia.com.gh^
 ||choose.adelaide.edu.au^
 ||choose.nu.edu^
@@ -257884,6 +257891,7 @@ zonedirector.avadacom.com$image
 ||cloudfunctions.net/conversionEventCondition|
 ||cloudfunctions.net/export-customizer-data-metrics
 ||cloudfunctions.net/function-record-stream-metric?
+||cloudfunctions.net/goose-track-pageview-prd
 ||cloudfunctions.net/ingest?
 ||cloudfunctions.net/sendwebpush-analytics
 ||cloudfunctions.net/trackEvent
@@ -269213,6 +269221,7 @@ zonedirector.avadacom.com$image
 ||dmkt.solutions.cas.org^
 ||dmlph.sundaycitizen.co^
 ||dmlwvk.sunmaster.co.uk^
+||dmm.co.jp/js/tracking.min.js
 ||dmm.com/analytics/
 ||dmm.com/imp?
 ||dmm.drmarcelomarciano.com^
@@ -269457,6 +269466,7 @@ zonedirector.avadacom.com$image
 ||dormir.dormax.pt^
 ||dormouse.consentkit.com^
 ||dormtherapy.com/jAYekY18/init.js
+||dorsalapp.com^
 ||dossierportal.net.mydays.de^
 ||doswwi.caringlasses.com^
 ||dot-com-stats.sladewatkins.net^
@@ -269659,6 +269669,7 @@ zonedirector.avadacom.com$image
 ||drive2.ru/_api/special/*/view|
 ||driven.actonservice.com^
 ||driveniq.com^$3p
+||drivenmove.com^
 ||driver.dctaxi.com^
 ||driver.jugnoo.in^
 ||drivetrain.gearrista.dk^
@@ -270026,6 +270037,7 @@ zonedirector.avadacom.com$image
 ||duelf.xstanceinsoles.com^
 ||duer.ca/cdn/shopifycloud/media-analytics/
 ||duetcode.com^
+||duetcode.com^$redirect=noop.js,script
 ||dufbut.wtennis.com.br^
 ||dugout.co/das2.js
 ||duhnet.tv/*/*/stats/init.min.js
@@ -274293,6 +274305,7 @@ zonedirector.avadacom.com$image
 ||extole.io^*/core.js
 ||extra.cz/counter.php?id=
 ||extra.wijck.com^
+||extracover.net^
 ||extractobservation.com^
 ||extralocker.com^
 ||extramilefloorcare.ericksonbuilt.com^
@@ -287505,6 +287518,7 @@ zonedirector.avadacom.com$image
 ||hslim.mypicture.com.au^
 ||hslkll.psychic.de^
 ||hslkll.verkehrsuebungsplatz-info.de^
+||hsmoa.com/media/buzzni_rt.min.js
 ||hspqur.happy-size.ch^
 ||hsprzf.shinhwaworld.com^
 ||hssyje.theathletesfoot.com.au^
@@ -303389,6 +303403,7 @@ zonedirector.avadacom.com$image
 ||maling.dn.no^
 ||maling.ue.dn.no^
 ||maliva-mcs.byteoversea.com^
+||mall.hanssem.com/resources/js/log/
 ||mall.tv/bundles/analytics?
 ||mallioras.openapp.link^
 ||mallorcamagazin.com/sfCounter
@@ -322766,6 +322781,7 @@ zonedirector.avadacom.com$image
 ||rt.balletbeautiful.com^
 ||rt.biovitalcorelab.com^
 ||rt.bunte.de^
+||rt.buzzni.com^
 ||rt.cdnmedia.tv^
 ||rt.chip.de/collect
 ||rt.connectprosnow.com^
@@ -354525,6 +354541,7 @@ zonedirector.avadacom.com$image
 ||stat.guiasjuridicas.es^
 ||stat.his-j.com^
 ||stat.hitosara.com^
+||stat.i3.dmm.com/plus/tracking.js
 ||stat.indidata.com^
 ||stat.interestfree.com.au^
 ||stat.ip.sb^
@@ -371921,6 +371938,7 @@ zonedirector.avadacom.com$image
 ||video-library.showheroes.com/player/ad_tag?
 ||video-player.arcpublishing.com/beacon|
 ||video.bzfd.it^
+||video.dmm.co.jp/js/tracking.min.js
 ||video.enautics.com^
 ||video.funnelbox.com^
 ||video.golem.de/download/*&cpxl=$image
