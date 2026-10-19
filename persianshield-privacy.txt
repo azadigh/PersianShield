@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.10.18
-! Last modified: 2026-10-18 03:22:53 UTC
+! Version: 2026.10.19
+! Last modified: 2026-10-19 03:34:08 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 378,646
+! Total rules: 378,650
 ! File size: 11.5 MB
 ! License: MIT
 !
@@ -11007,6 +11007,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||zillowstatic.com/c/*/linktrack.js$domain=zillow.com
 @@||zinro.net/m/log.php
 @@||zoominfo.com/c/amplitude-js$script,~third-party
+@@||zs.com/scripts/analytics/pageview.js$~third-party
 @@||zsp1.luzdelsur.com.pe/*/fingerprint2/fingerprint2.min.js$~3p
 @@||zylom.com/images/site/zylom/scripts/google-analytics.js
 @@||zynga.com/current/iframe/track.php?$domain=apps.facebook.com
@@ -275920,6 +275921,7 @@ zonedirector.avadacom.com$image
 ||flashtexting.com^
 ||flask.us.nextdoor.com^
 ||flaticon.com/_ga?
+||flatpebble.com^
 ||flavg.drinkfreespirits.com^
 ||flavors.firmenich.com^
 ||flcirh.kuvings.jp^
@@ -276783,6 +276785,7 @@ zonedirector.avadacom.com$image
 ||frdoki.weddinghall.work^
 ||frdoki.woodblock.work^
 ||frdoki.woodcut.work^
+||freakywacko.com^
 ||fredlx.skinnypig.xyz^
 ||fredmeyer.com/static/*/collect?
 ||free-counter.co.uk^$3p
@@ -280262,6 +280265,7 @@ zonedirector.avadacom.com$image
 ||gravitykick.com^
 ||gray-csr12.net.abomix.de^
 ||gray.rw.net.rewe.de^
+||graychalk.com^
 ||graylog.prod.cams.run^
 ||grayoranges.com^
 ||grayreceipt.com^
@@ -317437,6 +317441,7 @@ zonedirector.avadacom.com$image
 ||perpetuobrenno.pedrofrade.com.br^
 ||perplexity.ai/rest/event/analytics
 ||perplexity.ai/rest/metrics/collect^$xhr,1p,method=post
+||perplexity.ai/unifyintent.js
 ||perr.h-cdn.com^
 ||perr.hola.org^
 ||perr.l-agent.me^
@@ -318765,7 +318770,6 @@ zonedirector.avadacom.com$image
 ||porngraph.com^$3p
 ||porngraph.com^$third-party
 ||pornhd.com/pinky.gif
-||pornhub.*/redirect/$doc,urlskip=/(https%253A%252F%252F[^?#]+)/ -uricomponent -uricomponent
 ||pornhub.com/_i?
 ||pornhub.com/js/eht.js
 ||pornhub.com/pix.php?s=
