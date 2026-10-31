@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.10.30
-! Last modified: 2026-10-30 04:42:09 UTC
+! Version: 2026.10.31
+! Last modified: 2026-10-31 04:26:27 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 415,828
+! Total rules: 415,847
 ! File size: 12.7 MB
 ! License: MIT
 !
@@ -716,6 +716,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /.rum/@adobe/helix-
 /.webscale/rum?
 /.well-known/private-click-measurement
+/.well-known/shopify/fec/produce
 /.well-known/shopify/monorail
 //t100.ru^$3p
 /0.gif?
@@ -10469,6 +10470,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||nelonenmedia.fi/logger/logger-ini.json$xmlhttprequest,domain=embed.sanoma-sndp.fi|supla.fi
 @@||nemlog-in.dk/resources/js/adrum.js$~third-party
 @@||neo.btrl.ro/Scripts/services/fingerprint2.min.js$~third-party
+@@||neruco-search.ec-optimizer.com^$script,domain=i-office1.net
 @@||netcoresmartech.com/smartechclient.js$domain=cgv.vn
 @@||netcoresmartech.com/smartechclient.js$domain=hdfcfund.com
 @@||netd.com/js/piwik-plugin.js
@@ -253474,7 +253476,6 @@ imdb.com##+js(set-constant, doWithAds, noopFunc)
 img.promio-connect.com$image
 imgur.com##+js(set, Object.prototype.has_opted_out_tracking, trueFunc)
 immo.helvetia.ch$image
-incident.io,ricardocuisine.com,thegentlemansjournal.com,thekrazycouponlady.com,flo.com.tr##+js(set-local-storage-item, __anon_id, $remove$)
 indianexpress.com##+js(set-local-storage-item, ev_did, $remove$)
 indianexpress.com##+js(set-local-storage-item, ev_sid, $remove$)
 indonesia.click.s11.sfmc-osl.com$image
@@ -253608,6 +253609,7 @@ jp.schoolsparrow.com$image
 jr.jr.iconicinfluencers.com$image
 jrhokkaido.co.jp##+js(addEventListener-defuser, DOMContentLoaded, pt_enable)
 jrtgypk6.mg.bulgaro.io$image
+jubilersezam.pl,incident.io,ricardocuisine.com,thegentlemansjournal.com,thekrazycouponlady.com,flo.com.tr##+js(set-local-storage-item, __anon_id, $remove$)
 julekalender.nemlig.com$image
 jump.refinery29.com$image
 jump.refinery29.de$image
@@ -267710,9 +267712,9 @@ www2.mtrl.me$image
 www22.click.s11.sfmc-osl.com$image
 wwwstg.click.s11.sfmc-osl.com$image
 x.com##+js(prevent-fetch, /i/api/1.1/flow/viewer.json)
-x.com##+js(prevent-xhr, /i/api/1.1/flow/timeline.json)
-x.com##+js(prevent-xhr, /i/api/1.1/flow/viewer.json)
-x.com##+js(prevent-xhr, /i/api/1.1/graphql/viewer_context.json)
+x.com##+js(prevent-xhr, /api/1.1/flow/timeline.json)
+x.com##+js(prevent-xhr, /api/1.1/flow/viewer.json)
+x.com##+js(prevent-xhr, /api/1.1/graphql/viewer_context.json)
 x.com##+js(proxy-apply-config, {"skipToString":true})
 xcmi.cmcst.eevitetoday.org$image
 xda-developers.com##+js(href-sanitizer, a[href^="https://redirect.viglink.com/?"][href*="ourl=http"], ?ourl)
@@ -277819,6 +277821,7 @@ zonedirector.avadacom.com$image
 ||analytics.scubadiving.com^
 ||analytics.seagate.com^
 ||analytics.sealdoc.eu^
+||analytics.searchspring.net^
 ||analytics.seatfactory.com^
 ||analytics.securebanklogin.com^
 ||analytics.sedrajewellery.com^
@@ -278586,6 +278589,7 @@ zonedirector.avadacom.com$image
 ||api*.amplitude.com^
 ||api*.moengage.com^
 ||api-*.hismarttv.com^
+||api-abtest-cdn.learnings.ai^
 ||api-access.pangolin-sdk-toutiao1.com^
 ||api-adservices.apple.com^
 ||api-analytics-prd.pelcro.com^
@@ -278962,6 +278966,7 @@ zonedirector.avadacom.com$image
 ||api.contentpass.net/stats^
 ||api.controlenamao.com.br^
 ||api.conversasqueconectam.com^
+||api.cookist.it/views/
 ||api.coolsturando.com.br^
 ||api.corisjulis.com.br^
 ||api.corporatuspharma.com.br^
@@ -283708,6 +283713,7 @@ zonedirector.avadacom.com$image
 ||bestinfo.bluetrustloans.com^
 ||bestpersons.ru/service/visit
 ||bestpornsites.tv/i/js/extra/metrics.js
+||bestpriceonly.com^
 ||bestshoesboot.com^
 ||bestsportsbra.com^
 ||besucher.nona.de^
@@ -284119,6 +284125,7 @@ zonedirector.avadacom.com$image
 ||bienvivre.chartwell.com^
 ||biesn.crossrope.com^
 ||bifrost-api.hotstar.com/v*/events
+||bifrost-api.hotstar.com^
 ||big.vikinghard.online^
 ||big7.com^$3p
 ||bigbag.sandmanden.com^
@@ -287088,6 +287095,7 @@ zonedirector.avadacom.com$image
 ||carfixer.co.kr/log/
 ||cargas.actonservice.com^
 ||cargdk.bakerross.co.uk^
+||cargrasp.com^
 ||cargurus.actonservice.com^
 ||cargurus.com/cars/cganalyticspageview.action
 ||cargurus.com/tr/
@@ -287726,6 +287734,7 @@ zonedirector.avadacom.com$image
 ||cdn.skypack.dev/uuid
 ||cdn.smartgoods.de^
 ||cdn.smlog.co.kr^
+||cdn.snitcher.com^
 ||cdn.sophi.io^$3p
 ||cdn.sorenwatches.com^
 ||cdn.sourcesync.io/open-pixel/source-pixel.js
@@ -288605,6 +288614,7 @@ zonedirector.avadacom.com$image
 ||clavecin.taokids.be^
 ||clavecin.taokids.com^
 ||claycandle.com^
+||claydar.com^
 ||claydar.com^$third-party
 ||claynelsonlifebalance.actonservice.com^
 ||clb.yahoo.co.jp^
@@ -307898,6 +307908,7 @@ zonedirector.avadacom.com$image
 ||fluentco.actonservice.com^
 ||fluff.stape.com.ua^
 ||fluffy-analytics.vercel.app^
+||fluffybirds.com^
 ||fluffyscompleatbouti.net.mydays.de^
 ||fluidsurveys.com^$3p
 ||fluidsurveys.com^$third-party
@@ -319345,6 +319356,7 @@ zonedirector.avadacom.com$image
 ||highered.franklincovey.com^
 ||higherengine.com^$3p
 ||higherengine.com^$third-party
+||higherhub.com^
 ||highfalutinbox.com^
 ||highfalutinhoney.com^
 ||highlight.io^$third-party
@@ -319394,6 +319406,8 @@ zonedirector.avadacom.com$image
 ||hinfogzi.sinful.nl^
 ||hinfogzi.sinful.no^
 ||hinfogzi.sinful.se^
+||hinoki.security/analytics/
+||hinoki.security/ingest/
 ||hinxot.linksoul.com^
 ||hio.alldent-zahnzentrum-stuttgart.de^
 ||hipaa.wellsense.org^
@@ -321967,6 +321981,7 @@ zonedirector.avadacom.com$image
 ||indoeasia.edm.globalsources.com^
 ||indoleads.com/api/pixel-content/
 ||indonesiadefense.com/metrikgtg
+||indscout.com^
 ||industry.statefoodsafety.com^
 ||industry.tafensw.edu.au^
 ||industrystock.de/ajax/track.php
@@ -356804,6 +356819,7 @@ zonedirector.avadacom.com$image
 ||radar.josianamendes.adv.br^
 ||radar.marinhoadvmg.com.br^
 ||radar.rodrigopradomentor.com.br^
+||radar.snitcher.com^
 ||radar.wizzo.media^
 ||radarstats.com^$third-party
 ||radexports.com^
@@ -359244,6 +359260,7 @@ zonedirector.avadacom.com$image
 ||rxhsry.sortiraparis.com^
 ||rxhsry.urbeez.com^
 ||rxkno.bbquality.nl^
+||rxless.com/beacon/
 ||rxliwi.ullapopken.com^
 ||rxqqaq.hollandandbarrett.com^
 ||rxtolo.domiporta.pl^
@@ -392120,6 +392137,7 @@ zonedirector.avadacom.com$image
 ||stats.circularfurniture.dk^
 ||stats.citizenos.com^
 ||stats.clavisaurea.xyz^
+||stats.cleanip.io^
 ||stats.clear-media.com^
 ||stats.cleverdiabetic.com^
 ||stats.clickforknowledge.com^
@@ -413549,6 +413567,7 @@ zonedirector.avadacom.com$image
 ||x.chip.de/linktrack/button/?url=http$doc,urlskip=?url
 ||x.clearbit.com^$3p
 ||x.clearbitjs.com^$3p
+||x.com/*/status/$doc,removeparam=a
 ||x.com/1.1/attribution
 ||x.com/1.1/graphql/app_context.json
 ||x.com/1.1/graphql/error_log.json
