@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.11.03
-! Last modified: 2026-11-03 05:38:15 UTC
+! Version: 2026.11.04
+! Last modified: 2026-11-04 05:07:03 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 436,504
+! Total rules: 436,514
 ! File size: 13.4 MB
 ! License: MIT
 !
@@ -923,6 +923,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /\/js\/[a-z]{3}\d\.js$/$script,~3p,domain=eegg.fun
 /^anon1.gt\d{6}.com$/
 /^https:\/\/(www\.)?[a-z0-9-]+\.[a-z]+(\.[a-z]+)?\/(?:analyticsdata|gemets|gtm[a-z]+|metrics|securegtm)\/?$/$script,1p,match-case
+/^https:\/\/(www\.)?[a-z0-9-]+\.[a-z]+(\.[a-z]+)?\/[A-Z0-9]{6}\/$/$script,1p,match-case
 /^https:\/\/(www\.)?[a-z0-9-]+\.[a-z]+(\.[a-z]+)?\/[a-z0-9][a-z0-9][a-z0-9][a-z0-9]?[a-z0-9]?[a-z0-9]?\/\?id=G(TM)?-[A-Z0-9]+/$script,1p,match-case
 /^https:\/\/(www\.)?[a-z0-9-]+\.[a-z]+(\.[a-z]+)?\/[a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9]?[a-z0-9]?[a-z0-9]?[a-z0-9]?[a-z0-9]?\/\?id=$/$script,1p,match-case,domain=~leagueoflegends.com|~lolesports.com|~playvalorant.com|~riotgames.com|~valorantesports.com
 /^https:\/\/(www\.)?[a-z0-9-]+\.[a-z]+(\.[a-z]+)?\/[a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9]?[a-z0-9]?\/\?id=AW-[0-9]+/$script,1p,match-case
@@ -12337,6 +12338,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||hse24.de^*/emos2.js
 @@||huntress.com/assets/snowplow.tracker-*.js$domain=huntress.com
 @@||hvemder.no/js/hitcount.min.js$~third-party
+@@||hyundaicanada.com/scripts/analytics/analytics.js$script,~third-party
 @@||i.onthe.io^$script,image,stylesheet,domain=nur.kz
 @@||i.snssdk.com/log/sentry/$domain=lv.ulikecam.com
 @@||i.snssdk.com/slardar/sdk$domain=ixigua.com
@@ -287179,8 +287181,6 @@ www.google.*##+js(href-sanitizer, #main a[href^="/url?q=http"], ?q)
 www.google.*##+js(remove-attr, ping, div[id="search"] a[data-ved][ping])
 www.google.*##+js(set, rwt, noopFunc)
 www.google.*##+js(set-attr, c-wiz[data-p] [data-query] a[target="_blank"][role="link"], rlhc, 1)
-www.google.com##+js(aeld, mouseover, b.src, elements, #search #rso div[data-rpos] > div[data-ved])
-www.google.com##+js(rpnt, script, this.gbar_=, `window.addEventListener("mousemove",(()=>{W_jd&&document.querySelectorAll("#search #rso div[data-rpos]").forEach((t=>{let e=t.querySelector('div[data-hveid] span[jsaction^="trigger."] > a[href^="/goto?url="]');if(!e)return;let r=t.querySelector('div[id^="atritem-"]')?.attributes?.jsdata?.value?.split?.(";_;")?.[1];r&&Object.getOwnPropertySymbols(W_jd[r]).map((t=>{let l=W_jd[r][t];if("object"!=typeof l||null===l)return;let s=Object.values(l)?.[0]?.[32];if(s?.[3]?.[0]?.startsWith?.("http"))e.setAttribute("href",s[3][0]);else if(null!==s?.[3]){let t=Object.values(s?.[3]);t?.[0]?.[0]?.startsWith?.("http")&&e.setAttribute("href",t[0][0])}else null===s?.[3]&&s[11]?.[7]?.startsWith?.("http")&&e.setAttribute("href",s[11][7])}))}))}));this.gbar_=`)
 www.heads.email.oneassessment.com$image
 www.heartland.webspecmail.com$image
 www.highmark-de.com$image
@@ -298206,6 +298206,7 @@ zonedirector.avadacom.com$image
 ||api-meta.petitcolore.com.br^
 ||api-metric.gosweb.gosuslugi.ru^
 ||api-napoli.store.sscnapoli.it^
+||api-node.corvexa.cloud^
 ||api-notify.markarch.com^
 ||api-onedio-lambda-production.onedio.com/srv/counters/
 ||api-pf.nw18.com/cdp-api/api/data
@@ -301083,6 +301084,7 @@ zonedirector.avadacom.com$image
 ||apsrgeo.amap.com^
 ||apssdc.epoise.com^
 ||apssdctest.epoise.com^
+||aptabase.com/api/*/event
 ||aptare.actonservice.com^
 ||aptoide-mmp.aptoide.com^
 ||aptoide-rtb.aptoide.com^
@@ -302554,7 +302556,6 @@ zonedirector.avadacom.com$image
 ||b.tienda.com^
 ||b.todaytix.com^
 ||b.travel-assets.com/travel-pixel-js/
-||b.trueanthem.com^
 ||b.tryknowmad.com^
 ||b.videoamp.com^
 ||b.vidmob.com^
@@ -306842,6 +306843,7 @@ zonedirector.avadacom.com$image
 ||catalog.rottne.com^
 ||catalogcake.com^
 ||catalogs.printplace.com^
+||catalogueau.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-content-events-*.js
 ||catalove.com/bimp/
 ||catalove.com/ntv/
 ||catawiki.com/ab/s.js
@@ -307797,7 +307799,9 @@ zonedirector.avadacom.com$image
 ||chartsurfer.de/uscoll.php?
 ||chase.com/apps/services/clientBeacon.html
 ||chassis.net.mydays.de^
+||chat.deepseek.com/api/*/telemetry
 ||chat.deepseek.com/api/v0/events
+||chat.deepseek.com/api/v0/telemetry
 ||chat.forddirectdealers.com^
 ||chat.groq.com/global_stats
 ||chat.hifiexperience.se^
@@ -309654,6 +309658,7 @@ zonedirector.avadacom.com$image
 ||collector.trendmd.com^
 ||collector.umogames.com^
 ||collector.vhx.tv^
+||collector.wawlabs.com^
 ||collector.xh*/?log=
 ||collector.xhaccess.com^
 ||collector.xhamster*.
@@ -311935,6 +311940,7 @@ zonedirector.avadacom.com$image
 ||culture.pandasuite.io^
 ||culturedcamera.com^
 ||culturedfeather.com^
+||cum.st/js/*.js|$script
 ||cumbersomecarpenter.com^
 ||cumin.signawaybsl.co.uk^
 ||cunda.ai^$third-party
@@ -369773,6 +369779,7 @@ zonedirector.avadacom.com$image
 ||obhnrw.furniturebox.se^
 ||obhtt.innosupps.com^
 ||obhxvb.tmktools.ru^
+||obilet.com/event|
 ||obilic.pravareklama.com^
 ||obixdelivery.obix.com^
 ||objecthero.com^
@@ -418394,6 +418401,7 @@ zonedirector.avadacom.com$image
 ||tata.kravosneakers.com^
 ||tatadigital.com/analytics-engine/
 ||tatehj.nylaarp.com^
+||tatilbudur.com/Q8RLK3/
 ||tato.vitaminese.com.br^
 ||tatpek.com^
 ||tatrack.thinkyeah.com^
@@ -418981,6 +418989,7 @@ zonedirector.avadacom.com$image
 ||telemetry.doitbeststore.com^
 ||telemetry.doxo.com^
 ||telemetry.dzen.ru^
+||telemetry.ecosoft.group^
 ||telemetry.eyeo.com^
 ||telemetry.firez.one^
 ||telemetry.gfe.nvidia.com^
@@ -426687,6 +426696,7 @@ zonedirector.avadacom.com$image
 ||truconversion.com^$third-party
 ||truculentrate.com^
 ||trueachievements.com/tgn/ana?*page_view
+||trueanthem.com^$3p
 ||trueanthem.com^$third-party
 ||truebackpack.com^
 ||truefaced.actonservice.com^
