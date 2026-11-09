@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.11.08
-! Last modified: 2026-11-08 04:49:22 UTC
+! Version: 2026.11.09
+! Last modified: 2026-11-09 04:57:49 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 467,828
+! Total rules: 467,928
 ! File size: 14.7 MB
 ! License: MIT
 !
@@ -190,6 +190,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 &event_name=page_view&
 &event_name=view_item_list&
 &ga_blocked=$image
+&gtm=*&tag_exp=
 &hitType=pageview&
 &http_referer=$script,xmlhttprequest,domain=~biletomat.pl|~facebook.com|~jobscore.com
 &ii=fingerprintjs-pro-react
@@ -199,6 +200,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 &refer=http$script
 &t=pageview&
 &tag_exp=*&e=gtm.
+&tid=*&gtm=*&ecid=
 *$permissions=attribution-reporting=(),from=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 *$permissions=browsing-topics=(),from=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 *$permissions=compute-pressure=(),from=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -742,6 +744,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /?essb_counter_
 /?h=https%3A%2F%2F*&r=&sid=*&qs=*&cid=$image,1p
 /?imp_id=
+/?l=gtmDataLayer
 /?livehit=
 /?local_ga_js=
 /?log=experiment&
@@ -1036,6 +1039,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /a/elevar/static/*
 /a/performance_timing/*
 /a8c-analytics.js
+/a?id=*&gtm=
 /aap/stats
 /ab_track.js
 /abc.gif?
@@ -1311,6 +1315,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /api/metrics/collect
 /api/metrics/event
 /api/notify-track$ping
+/api/otlp/trace
 /api/pageactivity
 /api/pageview/*$ping
 /api/pageview?
@@ -1323,6 +1328,8 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /api/stat?
 /api/statsd|$~third-party,xmlhttprequest
 /api/stn/audience|$xmlhttprequest
+/api/t/c|
+/api/t/gtm/*
 /api/track?guid
 /api/track|$3p,xhr
 /api/track|$domain=turizmguncel.com|brutto-netto-rechner.digital
@@ -1554,6 +1561,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /caos-analytics/*.js
 /capture_client.js
 /cb-pixel.gif?
+/ccm/collect?
 /cdn-cgi/apps/body/*$script,~third-party
 /cdn-cgi/apps/head/*$script,~3p
 /cdn-cgi/apps/head/*$script,~third-party
@@ -1729,6 +1737,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /cogi-etracker.js
 /coherentpath.link/o/*$image
 /cohesion-latest.min.js
+/cohesion/xs2.html
 /coinhive.min.js
 /coinimp-cache/*
 /collect-*/pageview|
@@ -1737,6 +1746,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /collect/?dp=
 /collect/kasupport
 /collect/kf?
+/collect/metric|
 /collect/pageview?
 /collect/pv?
 /collect/stats?
@@ -1887,6 +1897,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /dcjs/prod/*
 /dcs.gif?
 /dcs_tag.js
+/ddm/activity/src=
 /dead-clicks-autocapture.js
 /dedxk.r.ag.d.sendibm3.com/*$image
 /default/pAnalytics
@@ -1954,6 +1965,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /e2t/o/*$image
 /e2t/to/*$image
 /e3t/Cto/*$image
+/e?k=*&v=$image
 /e_stat?g_id=
 /eatms.js
 /ecanalytics.js
@@ -2295,6 +2307,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /get/live/web/_/*$script,~3p
 /get/live/web/_/*$script,~third-party
 /get_cdns?$3p,xhr
+/get_cookie_id?cookie_domain=
 /get_geoip?
 /get_site_data?requestUUID=
 /get_tracking_url.
@@ -2875,6 +2888,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /mcount.cgi?
 /measure/pixel/*
 /measure/visit/*
+/measurement/conversion?
 /measurements/*.ts?rnd=$xhr,3p
 /media.sailthru.com/5ik/1k4/9/*.gif
 /medialaanUniversalTracker.js
@@ -2895,6 +2909,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /metrics/bambuser.min.js
 /metrics/event?
 /metrics/ga.js
+/metrics/ga/*
 /metrics/init?
 /metrics/log-
 /metrics/onload
@@ -3651,6 +3666,8 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /server.php?request=track&output=
 /server/detect.php?
 /service/track?
+/service_worker/6al0/sw.js
+/service_worker/6al0/sw_iframe.html
 /services/pixel.html?
 /services/t/l?referrer=
 /servlet/Cookie?
@@ -3663,6 +3680,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /sessioncam.recorder.js
 /set-cookie.gif?
 /set_cookie.php?
+/set_cookie?val=
 /set_optimizely_cookie.js
 /set_tracking.js
 /sf-recommendations-events-listener.js
@@ -3670,6 +3688,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /sfdc/networktracking.js
 /sfp/universal_analytics.min.
 /sftouch?branchId=
+/sgtm/g/*
 /sgtracker.js
 /share/js/gAnalytics.js
 /shareCounts.
@@ -3737,6 +3756,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /smi/fp.min.js
 /smmch-mine.js
 /smmch-own.js
+/smrwv/v1/webvital
 /snowman.gif?p=
 /snowplow-collector-prod.$xmlhttprequest
 /snowplow-tracker.tatest.js
@@ -3923,6 +3943,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /svs.gif?
 /sw.js?origin=
 /sw/analytics.js
+/sw_iframe.html?origin=
 /swa_t.gif?
 /swatag.js
 /swell-ct-ad-data
@@ -3975,6 +3996,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /tagging?env=
 /tagmanager/event?
 /tagmanager/pptm.js
+/tagmetrics/*
 /tags.js?org_id=
 /tailtarget.js
 /talpa-analytics-pro/*
@@ -4010,6 +4032,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /tking/ajax_track_stats?
 /tlinks.nordaccount.com/q/*$image
 /tmpixel.min.js|
+/tms?id=
 /tnc.js?h=
 /tncms/tracking.js
 /tns-counter.js
@@ -4333,6 +4356,9 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /v.gif?
 /v.gif?t=
 /v1/adn/visit|
+/v1/care/engagement/ux/bundle.js?
+/v1/events/publish|
+/v1/external/visitor|
 /v1/log/web-vitals$xmlhttprequest
 /v1/pixel.js
 /v1/pixel?
@@ -27110,8 +27136,12 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 ://emailtracking.$image
 ://fallback.*/collector
 ://fathom.$domain=~fathom.care|~fathom.co.za|~fathom.fm|~fathom.info|~fathom.io|~fathom.lib.uchicago.edu|~fathom.news|~fathom.org|~fathom.services|~fathom.video|~fathom.world|~fathomdelivers.com|~fathomseo.com|~usesfathom.com
+://gtm-server.
+://gtm-tagging.
 ://gtm.*.js?id=GTM-
 ://gtm.*.js?st=
+://gtm.prd.
+://gtm.prod.
 ://gtrack.*.com/dye?
 ://gtrack.*/dye
 ://i.*@groovehq.com.gif$image
@@ -27125,6 +27155,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 ://links.*/s/eo/$image
 ://links.paypal.*/eos/$image
 ://load.*.js?st=$~third-party
+://load.sgtm.
 ://log.$image,1p,domain=znews.vn|zingnews.vn
 ://mail01.monex.co.jp/bin/checker?
 ://mailmag.hhcross.hankyu-hanshin.jp/c/*.gif
@@ -27145,6 +27176,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 ://segment-api.
 ://segment-cdn.
 ://sg1.wizrocketmail.net/r?e=$image
+://sgtm.
 ://sgtm.*.js?
 ://signal.*/hardal
 ://signals.*/hardal
@@ -27200,6 +27232,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 ?event=performance&
 ?event=performancelogger:
 ?groupType=engagement&eventType=CLICK&
+?id=GTM-*&l=gtmDataLayer
 ?local_ga_js=
 ?log=player-*&stats_tkn=
 ?log=player_*&stats_tkn=
@@ -312532,6 +312565,14 @@ threads.net##+js(href-sanitizer, a[href*="?xmt="], [href], removeParam:xmt)
 thundertix-email.elginoperahouse.com$image
 tickets.mtrl.me$image
 tieba.baidu.com##+js(set-constant, passFingerPrint, noopFunc)
+tiktok.com##+js(set, AppLogBridge.hasStarted, trueFunc)
+tiktok.com##+js(set, AppLogBridge.onEventV3, noopFunc)
+tiktok.com##+js(set, AppLogBridge.profileAppend, noopFunc)
+tiktok.com##+js(set, AppLogBridge.profileIncrement, noopFunc)
+tiktok.com##+js(set, AppLogBridge.profileSet, noopFunc)
+tiktok.com##+js(set, AppLogBridge.profileSetOnce, noopFunc)
+tiktok.com##+js(set, AppLogBridge.profileUnset, noopFunc)
+tiktok.com##+js(set-local-storage-item, /__tea_cache_events_.*/, $remove$)
 tilt.pages.s11.sfmc-osl.com$image
 times.abema.tv##.ad-taboola-mid-article-thumbnails
 timesnownews.com##+js(set-constant, ga, noopFunc)
@@ -323339,6 +323380,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||absentairport.com^
 ||absinfo.eagle.org^
 ||absm.hostliger.com^
+||absmartly.io^$third-party
 ||absoft.actonservice.com^
 ||absolstats.co.za^$3p
 ||absolstats.co.za^$third-party
@@ -325863,6 +325905,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||aljdbnno.sportadventure.pl^
 ||alkemics.com^$third-party
 ||alkeojfg.velovog.com^
+||alketech.eu^$third-party
 ||alkhkw.jul7me.com^
 ||alkiss.softsan.de^
 ||all-top.ru/cgi-bin/topcount.cgi?
@@ -328567,6 +328610,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||api-common.tinkoff.ru/front-logs/
 ||api-developer.sephora.com/v1/sot/evt?$ping
 ||api-developer.sephora.com/v1/sot/evtTopic?$ping
+||api-engage-us.sitecorecloud.io^
 ||api-esp.piano.io/onsite/recdata/id/
 ||api-events.taboola.com^
 ||api-fp-retry-bj.fengkongcloud.com^
@@ -330404,6 +330448,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||app.dreambox.ru.com^
 ||app.drprecoce.com^
 ||app.dtlphx.net^
+||app.dub.co^$third-party
 ||app.e.dowjones.com^
 ||app.e.flukecal.com^
 ||app.e.gettyimages.com^
@@ -330439,6 +330484,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||app.explico.sg^
 ||app.f2trk.com^
 ||app.fabulousfox.com^
+||app.factori.ai/personica.js
 ||app.falkensteinercamping.com^
 ||app.fans.wolveslynx.com^
 ||app.fashalot.com^
@@ -330734,6 +330780,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||app.libertyfirstcreditunionarena.com^
 ||app.libertyflames.com^
 ||app.libre.org^
+||app.lifesight.io/personica.js
 ||app.link.livibank.com^
 ||app.link.nba.com^
 ||app.link/_r?$script,third-party
@@ -330890,6 +330937,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||app.pickyourtrail.com^
 ||app.pittsburghpanthers.com^
 ||app.pixapp.com^
+||app.planhat.com/analytics/plantrack.min.js
 ||app.playhousesquare.org^
 ||app.poconoorganics.com^
 ||app.poconoraceway.com^
@@ -331032,6 +331080,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||app.skydo.cloud^
 ||app.smart.vivint.com^
 ||app.smartcredit.com^
+||app.smartemailing.cz/js/tracking/tracker.js
 ||app.smeuk.experian.com^
 ||app.smrtp.link^
 ||app.smumustangs.com^
@@ -331730,6 +331779,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||asamgd.rossmann.de^
 ||asanalytics.booking.com^
 ||asap-systems.actonservice.com^
+||asaptickets.com/tracker/
 ||asaservicedg.csc.com^
 ||asayer.io/tracker.js
 ||asb.alshafi.com.bd^
@@ -331844,6 +331894,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||aspiringtoy.com^
 ||aspservice.jp^$3p
 ||aspservice.jp^$third-party
+||assemblymag.com/4f8s/
 ||asset*.coupangcdn.com/customjs/coupang-web-log/*/web-log.umd.min.js$domain=login.coupang.com
 ||asset*.coupangcdn.com/customjs/mycoupang/fingerprint2/
 ||asset-protection-pages.protective.com^
@@ -331967,6 +332018,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||assets.sidroga.de^
 ||assets.sky.com/js/thirdparty/sessioncam5-5.js
 ||assets.spectrumhealthlakeland.org^
+||assets.sprocket.bz/trackers/
 ||assets.stooks.se^
 ||assets.strikkehjornet.no^
 ||assets.takbox.se^
@@ -332059,6 +332111,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||astrologyanswers.com/gtmmetrics/
 ||astromed.actonservice.com^
 ||astropeach.com^
+||astroved.com/avdatavault/
 ||asttcp.vatera.hu^
 ||asuleo.j-motto.co.jp^
 ||asumi.shinobi.jp^
@@ -333218,6 +333271,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||baptisttop1000.com^$third-party
 ||baqend.com/v1/rum/
 ||baqend.com/v1/rum/$3p
+||baqend.com^$third-party
 ||bar-navig.yandex.ru/u
 ||barbarousbase.com^
 ||barbatm.barbanegocios.com.br^
@@ -334994,6 +335048,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||bosspush.com^$third-party
 ||bostonscally.com/api/collect
 ||bot.asksyllable.com^
+||bot.cdn.adeo.cloud^
 ||bot.stackbots.com^
 ||bot.streaktrivia.com^
 ||botb.rtl2.de^
@@ -337459,6 +337514,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||cckov.bluatlas.com^
 ||cclink.carfax.com^
 ||ccllt.fromrebel.ca^
+||ccmbg.com^$third-party
 ||ccmd.coveredca.com^
 ||ccnku.meibi.mx^
 ||ccnv.konekti.com.br^
@@ -337635,6 +337691,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||cdn.digg.com/fragments/homepage/static/view-frontpage.js
 ||cdn.dminorschool.com^
 ||cdn.dopc.cz/gen/detect.png
+||cdn.drda.io/scripts/analytics/
 ||cdn.dsmcdn.com/frontend/web/production/dom-event-tracker-
 ||cdn.dsmcdn.com/sfint/production/demeter-prod-*.umd.js
 ||cdn.dsmcdn.com/sfx/mergen/
@@ -337728,6 +337785,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||cdn.lr-hv-in.com/logger.min.js
 ||cdn.lr-in.com/LogRocket.min.js
 ||cdn.lr-in.com/logger-1.min.js
+||cdn.ltba.io^
 ||cdn.lukebond.store^
 ||cdn.lumiflux.co^
 ||cdn.mediatradecraft.com^$3p
@@ -340029,6 +340087,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||collecting.click^$third-party
 ||collection-endpoint-prod.herokuapp.com^
 ||collection-endpoint-staging.herokuapp.com^
+||collection.cyberprocurement.com^
 ||collection.e-satisfaction.com^$third-party
 ||collection.mola.tv^
 ||collection.saga.co.uk^
@@ -341134,6 +341193,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||conversionruler.com^$third-party
 ||conversions-config.reddit.com^
 ||conversions.appsflyer.com^
+||conversions.flowcode.com/pixel-tracker/
 ||conversions.genieventures.co.uk^
 ||conversions.lacadrerie.com^
 ||conversionsapigateway.com^
@@ -351115,6 +351175,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||dinos.co.jp/js/common/load-tagmanagers.js
 ||diocgn.biltorvet.dk^
 ||dioqto.totaljobs.com^
+||dior.com/contcdc/
 ||dircont3.com^$3p
 ||dircont3.com^$third-party
 ||direct-collect.dy-api.com^
@@ -351527,6 +351588,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||dmz.rottne.com^
 ||dmzls.safe-installation.com^$3p
 ||dmztm.varley.com^
+||dn-analytics.alketech.eu^
 ||dn.cydno.co.uk^
 ||dn.dailyneed.org^
 ||dn.pt/scooby/api/v*/log/
@@ -352306,6 +352368,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||dub-hotac-bluekey.ex.net.easyjet.com^
 ||dubai.shadahotels.com^
 ||dubcdn.com/analytics/
+||dubcdn.com^$third-party
 ||dubodfpd.irtish-honey.kz^
 ||dubox.com/api/analytics
 ||dubox.com/statistics^
@@ -359523,6 +359586,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||fupbi.gopurebeauty.com^
 ||fuq.com/js/analytics
 ||fuqcxz.tennis-point.it^
+||furiousvinyl.com^
 ||furlhp.kango.mynavi.jp^
 ||furnishings.bellacor.com^
 ||furniture.scale-furniture.com^
@@ -359600,6 +359664,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||fvvyjd.jtv.com^
 ||fvzva.frankandeileen.com^
 ||fw-ad.jp^$third-party
+||fw-cdn.com^$third-party
 ||fw-csr11.net.abomix.de^
 ||fw.tv/embed/impressions
 ||fw2.velpa.pl^
@@ -362915,6 +362980,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||grokipedia.com/api/stats
 ||groove.eezyball.com^
 ||groove.so/unlocker.js
+||grooveguides.com^
 ||groovespacing.com^
 ||groovy-manul.pikapod.net^
 ||groovyornament.com^
@@ -375520,6 +375586,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||jitsu.ixbt.com^
 ||jitsu.ixbt.games^
 ||jitsu.ixbt.site^
+||jitsu.www1.ru/api/s/track
 ||jitsu.www1.ru^
 ||jiujpc.asgoodasnew.fr^
 ||jivsfr.drogarianovaesperanca.com.br^
@@ -375937,6 +376004,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||js.dsp.bance.jp/bncdmp.js
 ||js.ea3w.com/pv.js
 ||js.edingershops.de^
+||js.eruptr.io/epd.js
 ||js.gleam.io/*/trk.js
 ||js.glossom.jp^$3p
 ||js.go2sdk.com/v2/tune.js
@@ -377055,6 +377123,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||knptu.titanbuilders.us^
 ||knrgt.petscy.com^
 ||knrwvhvd.naturtreu.de^
+||knshow.com/ab?
 ||knv.konovo.rs^
 ||knvrjf.potpourrigift.com^
 ||knvyzx.h201shift.com^
@@ -378310,6 +378379,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||lepus.socialelite.pl^
 ||leqrh.codispoti-law.com^
 ||lern.jobfinderportal.de^
+||leroymerlin.co.za/fokt/
 ||lert-api-shv-02-frx5.net.mydays.de^
 ||les-experts.com^$3p
 ||les.kup-drevo.cz^
@@ -391156,6 +391226,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||master-push.com^$third-party
 ||master-shopify-tracker.s3.amazonaws.com^
 ||master.cifraclub.com.br^
+||masterclass.com/qz6s/
 ||masterenter.com^
 ||masternaut.actonservice.com^
 ||masterstats.com^$3p
@@ -391178,6 +391249,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||mat.strymont.com^
 ||mat.ukraine-nachrichten.de^
 ||mat6tube.com/api/stats?
+||matalan.co.uk/track
 ||matas.dk/internal/Tracking/
 ||match.homeupgradesolutions.com^
 ||match.jimjobs.nl^
@@ -396562,6 +396634,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||miqznq.eszonyeg.hu^
 ||mirabelanalytics.com^
 ||mirabelsmarketingmanager.com^$third-party
+||mirakl.net/mtag.min.js
 ||miraz.mtbazzar.com^
 ||mirec.ubmmexico.com^
 ||mirtesen.ru/js/ms.js
@@ -397221,6 +397294,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||monstat.com^$third-party
 ||monster-strike.com/assets/scripts/tracking.js
 ||monster.branch.rocks^
+||monster.com/visitor/tracking-v11.js
 ||monsterhunternow.vanillacommunities.com/api/*/config?select=analytics.anonymize
 ||monsterhunternow.vanillacommunities.com/dist/*/forum/async/addons/vanillaanalytics*.min.js
 ||monsterjokes.com^
@@ -400584,6 +400658,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||obs.forseasky.com^
 ||obs.greencolumnblog.com^
 ||obs.jollyoutdoorjogger.com^
+||obs.protoroundprince.com^
 ||obs.sd4823.spglobal.com^
 ||obs.system1onesource.com^
 ||obscenesidewalk.com^
@@ -402406,6 +402481,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||p.leadgenjay.com^
 ||p.lessonprep.de^
 ||p.logbox.io^
+||p.marktplaats.net^
 ||p.marqueplace.com^
 ||p.mdb.tools^
 ||p.megzeit.de^
@@ -402434,6 +402510,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||p.raasnet.com^$third-party
 ||p.rapidupsell.com^
 ||p.redipiufitness.it^
+||p.relay-t.io/wh.js
 ||p.ryanhalliday.com^
 ||p.sa7eer.com^
 ||p.sadoc.com.br^
@@ -404447,6 +404524,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||pixel.nine.com.au^
 ||pixel.nudgify.com^
 ||pixel.nur.kz^
+||pixel.optimeeze.data.adeo.cloud^
 ||pixel.patch.com^
 ||pixel.pcworld.com^
 ||pixel.peaberryandleaf.co.uk^
@@ -404455,6 +404533,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||pixel.playbuzz.com^
 ||pixel.poptok.com^
 ||pixel.prb-team.com^
+||pixel.profound.click^
 ||pixel.propublica.org^
 ||pixel.pub.lilyai.net^
 ||pixel.pulsebrand.io^
@@ -404910,6 +404989,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||play.*.com/vendor/$domain=play.aetv.com|play.mylifetime.com
 ||play.ab05.bet^
 ||play.adtonos.com^
+||play.astrogame.org/qw4d/
 ||play.b-t11.com^
 ||play.colorplay.fun^
 ||play.fanslide.com^
@@ -405390,6 +405470,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||potentmagic.com^
 ||potixulert.c-stickers.fr^
 ||potsdamer-stadtplan.com/t.gif
+||pottylife.com^
 ||povtbi.automovilesalhambra.es^
 ||powa-ingest-prod-*.video-player.arcpublishing.com^
 ||power.dj.studio^
@@ -405961,6 +406042,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||prod.adobeccstatic.com/unav/*/AnalyticsProvider.
 ||prod.benchmarkemail.com/tracker.bundle.js
 ||prod.danawa.com/info/ajax/getAdSmartProductList.ajax.php
+||prod.empathy.co/public/visit
 ||prod.eulerian.io^
 ||prod.event.mwm-asset-manager.mwmwebapis.com^
 ||prod.ew.srp.navigacloud.com^
@@ -406045,6 +406127,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||programs.mellanox.com^
 ||progressive.com/Log/
 ||progressivedev.actonservice.com^
+||projectglove.com^
 ||projectmultatuli.org/analytics/
 ||projectsunblock.com^$3p
 ||projectsunblock.com^$third-party
@@ -406268,6 +406351,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||pswec.com/px/$third-party
 ||pswgpb.seshop.com^
 ||psxsjo.carrano.com.br^
+||psychcentral.com/api/drivers/
 ||psychedelicarithmetic.com^
 ||psygde.h-in-c.com^
 ||pt-go.experian.com^
@@ -406632,6 +406716,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||pvcxrt.globehunters.com.au^
 ||pvd.to^$third-party
 ||pvdpix.com^$3p
+||pvdpix.com^$third-party
 ||pveja.heydude.de^
 ||pvfbav.sportler.com^
 ||pvglc.petespasta.com^
@@ -407840,6 +407925,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||ralf.curvo.eu^
 ||ralphlauren.com^*/init.js
 ||ralphs.com/resources/*/collect?
+||ramartworks.com^
 ||rambler.ru/counter.js
 ||rambler.ru/metrics/
 ||rambler.ru/ts-metrics/
@@ -407993,6 +408079,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||rcb.oralsinrjcabofrio.com.br^
 ||rcbsrm.fivefoxes.co.jp^
 ||rccnyh.airportrentalcars.com^
+||rcdn.kervinteractive.com/pixels/
 ||rcdqju.motorcyclegear.com^
 ||rce.iperceptions.com^
 ||rcevcm.lyst.co.uk^
@@ -408108,6 +408195,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||readnotify.com^$3p
 ||readnotify.com^$third-party
 ||readourminds.com^
+||readtargeting.com^$third-party
 ||readthedocs.*/javascript/readthedocs-analytics.js
 ||ready.curriculumassociates.com^
 ||ready.nerdery.com^
@@ -408223,6 +408311,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||rechenschieber.transfermarkt.world^
 ||recid.aquatalia.com^
 ||recipearena.com^
+||recipediner.com^
 ||recipefy.net/analytics.js
 ||recipepile.net^
 ||recipepin.com^
@@ -410091,6 +410180,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||rum.condenastdigital.com^
 ||rum.corewebvitals.io^
 ||rum.cronitor.io^
+||rum.haystack.es^
 ||rum.hlx.page^
 ||rum.ingress.layer0.co^
 ||rum.layer0.co^
@@ -411175,6 +411265,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||s46849916.sc.origins.en25.com^
 ||s4e8.cascades.com^
 ||s4utm.skirting4u.co.uk^
+||s4vrsde.www.arturia.com^
 ||s5.charliehebdo.fr^
 ||s615419487.sc.origins.en25.com^
 ||s73cloud.com/metrics/
@@ -435955,6 +436046,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||sst.lepeelorganics.jp^
 ||sst.lepmetsnoges.eu^
 ||sst.lernidee.de^
+||sst.leroymerlin.pl^
 ||sst.lesfruitsetlegumesfrais.com^
 ||sst.lesjardinsdupresbourg.com^
 ||sst.leskohelp.com^
@@ -443211,6 +443303,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||stat24.meta.ua^
 ||stat24.ru^$3p
 ||stat24.ru^$third-party
+||statad.ru/tracker.js
 ||statad.ru^$3p
 ||statafun.ru^$3p
 ||statclick.nate.com^
@@ -448538,6 +448631,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||tag.viva-cruises.com^
 ||tag.voice.zetacx.net^
 ||tag.waterworldmedford.com^
+||tag.web.onesdata.com^
 ||tag.weezmo.com^
 ||tag.wknd.ai^$3p
 ||tag.wonderways.be^
@@ -448590,6 +448684,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||tagging.bourbon-sleeckx.com^
 ||tagging.chartrequest.com^
 ||tagging.chefstable.restaurant^
+||tagging.conde.digital^
 ||tagging.debontewever.nl^
 ||tagging.dekeij.nl^
 ||tagging.depresenteerschool.nl^
@@ -453691,6 +453786,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||track.adspire.io^
 ||track.adtraction.com/*^url=http://www.gog.com/$doc,urlskip=?url -blocked
 ||track.adtraction.com/*^url=https://www.gog.com/$doc,urlskip=?url -blocked
+||track.adzeb.com^
 ||track.aetheriaaesthetics.com^
 ||track.aetna.com^
 ||track.afcom.com^
@@ -455930,6 +456026,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||tracking.online.wisc.edu^
 ||tracking.opentable.com^
 ||tracking.oppd.com^
+||tracking.optimeeze.data.adeo.cloud^
 ||tracking.optimumgly.ca^
 ||tracking.oranjezoet.nl^
 ||tracking.orientladies.de^
@@ -464563,6 +464660,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||www.agile365enterprise.com^
 ||www.agiledata7.com^
 ||www.aiea6gaza.com^
+||www.airbnb.*/gtg/$script
 ||www.alda1mure.com^
 ||www.aldarcommunications.com^
 ||www.alea6badb.com^
@@ -464760,6 +464858,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||www.euleriantechnologies.fr^
 ||www.eventcapture03.com^
 ||www.eventcapture06.com^
+||www.eventim.*/orchestra/
 ||www.ever-track-51.com^
 ||www.explore-123.com^
 ||www.fasttrack.fr^
@@ -465245,6 +465344,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||www.visionarybusinessacumen.com^
 ||www.visionarycompany52.com^
 ||www.visitormotion.com^
+||www.vivastreet.*/cfgtg/
 ||www.vols7feed.com^
 ||www.vrcmedia.com^
 ||www.wa.postoffice.co.uk^
