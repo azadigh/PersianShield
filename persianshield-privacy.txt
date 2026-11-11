@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.11.10
-! Last modified: 2026-11-10 06:14:39 UTC
+! Version: 2026.11.11
+! Last modified: 2026-11-11 04:59:17 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 467,958
+! Total rules: 467,973
 ! File size: 14.7 MB
 ! License: MIT
 !
@@ -1354,6 +1354,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /api/videos/*/embed/heartbeat|$xhr
 /api/videos/*/embed/view|$xhr
 /api/videos/*/view$xhr,method=post,1p,domain=chaturflix.cam|striphub.cam
+/api/viewcontent.php?
 /api/web/v1/tracker$ping
 /api_adlog.php?
 /api_ip_info.php
@@ -4561,7 +4562,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /wp-content/plugins/yyi-rinker/js/event-tracking.js
 /wp-content/themes/vip/pmc-plugins/pmc-global-functions/js/geoPosition.js
 /wp-content/tracker.js
-/wp-content/uploads/*/*.js?id=G-$domain=fcportables.com
+/wp-content/uploads/*/*.js?id=G-$domain=fcportables.com|zenoplay.to
 /wp-js/analytics.js
 /wp-json/burst/v1/track/*
 /wp-json/iawp/*
@@ -326907,6 +326908,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||analytics.dashboard.fingerprint.com^
 ||analytics.data.lloydsbankinggroup.com^
 ||analytics.data.visenze.com^
+||analytics.datacite.org^
 ||analytics.datahc.com^
 ||analytics.datasavannah.com^
 ||analytics.datascientest.com^
@@ -332105,6 +332107,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||astat.bugly.qq.com^
 ||astat.nikkei.co.jp^
 ||astat.nikkei.com^
+||astatic.ccmbg.com/hz.js
 ||asteriaed.actonservice.com^
 ||asteriresearch.com^$third-party
 ||asterpix.com/tagcloudview/
@@ -333276,6 +333279,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||bapi-*.moengage.com^
 ||baptisttop1000.com^$3p
 ||baptisttop1000.com^$third-party
+||baqend.com/v*/speedkit/signals?
 ||baqend.com/v1/rum/
 ||baqend.com/v1/rum/$3p
 ||baqend.com^$third-party
@@ -337522,7 +337526,6 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||cckov.bluatlas.com^
 ||cclink.carfax.com^
 ||ccllt.fromrebel.ca^
-||ccmbg.com^$third-party
 ||ccmd.coveredca.com^
 ||ccnku.meibi.mx^
 ||ccnv.konekti.com.br^
@@ -337762,6 +337765,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||cdn.jsdelivr.net/gh/unib0ts/
 ||cdn.jsdelivr.net/gh/zahidsattarahmed/storeview/newtrackingscript.min.js
 ||cdn.jsdelivr.net/npm/@adshield/
+||cdn.jsdelivr.net/npm/@datacite/datacite-tracker
 ||cdn.jsdelivr.net/npm/@snowplow/
 ||cdn.jsdelivr.net/npm/@thumbmarkjs/thumbmarkjs/dist/thumbmark.
 ||cdn.jsdelivr.net/npm/perfops-rom$domain=kropic.com|opensubtitles.org
@@ -361244,7 +361248,6 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||gjgjl.1898leather.com^
 ||gjhjo.impactdogcrates.com^
 ||gjhkyh.4fresh.ru^
-||gjirafa.net^$3p
 ||gjirc.findyourhealthyplace.com^
 ||gjjtey.mystylebags.it^
 ||gjkha.beautyandtheboutique.com^
@@ -374466,6 +374469,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||intinfo.wolterskluwer.com^
 ||intlsst.zagg.com^
 ||intlsucus.ucweb.com^
+||intobuddy.com^
 ||intouch.schlesingerassociates.com^
 ||intr.naymish.com^
 ||intralog.euvou.events^
@@ -374633,6 +374637,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||ip-adress.com^$3p
 ||ip-approval.com/*/ip-checker-js$script,domain=amiga.sk
 ||ip-check-perf.radar.cloudflare.com^$third-party
+||ip-info.ff.avast.com^
 ||ip-label.net^$3p
 ||ip-label.net^$third-party
 ||ip-tracker.org^$third-party
@@ -374722,6 +374727,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||iplogger.org^$third-party,domain=~iplogger.com
 ||iplogger.ru^$3p
 ||iplsc.com/inpl.log/
+||ipm-provider.ff.avast.com^
 ||ipm.adblockplus.dev^
 ||ipmeta.io^$3p
 ||ipmeta.io^$third-party
@@ -378673,6 +378679,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||lime.zaplamp.com^
 ||limecodesign.com^
 ||limepeal.com^
+||limitowl.com^
 ||limone.iltrovatore.it^
 ||limpet.pioneerlandscapingllc.com^
 ||linclik.com/info.php^
@@ -396566,6 +396573,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||mieru-ca.com^$third-party
 ||miexgq.forevernew.co.nz^
 ||mightyspiders.com^
+||migros.com.tr/analytics/
 ||migstat.com^
 ||mika.kiddiprint.com^
 ||mikelperaia.openapp.link^
@@ -398766,6 +398774,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||ncbi.nlm.nih.gov/*/pinger.js$script,redirect=noop.js
 ||ncbi.nlm.nih.gov/core/pinger/pinger.js
 ||ncbvr.workmanusa.com^
+||ncc.avast.com^
 ||ncc.nip-col.jp^
 ||nccaf.ncc-mens.com^
 ||nccbp.apothekerblatt.com^
@@ -404395,6 +404404,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||pirounakia.openapp.link^
 ||pirsch.io^$3p
 ||pirsch.io^$third-party
+||pisano.com.tr^
 ||pisqpr.puuilo.fi^
 ||pista.pecasmagicas.com.br^
 ||pitapan.openapp.link^
@@ -408469,6 +408479,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||reebok.jp/resources/js/analysis/tracker.js
 ||reedbusiness.net^$3p
 ||reedbusiness.net^$third-party
+||reelcombat.com^
 ||reelgood.com/v3.0/checkip
 ||reelup.io^$third-party
 ||reeokx.reima.com^
@@ -410162,6 +410173,8 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||rubiconredirect.com^$third-party
 ||rubolite.ems-dental.com^
 ||rubouthunger.com^
+||rubwonders.com^
+||rubymoonwinery.com^
 ||rubyswinehouse.com^
 ||rucounter.ru^$3p
 ||rudder-server-prd.arena.im/v1/track
@@ -412633,6 +412646,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||scripttags.jst.ai^
 ||scrollservice.com^
 ||scrt.link/api/stats
+||scrubchi.com^
 ||scrubswim.com^
 ||scs.allsecur.nl^
 ||scs.arcteryx.com^
@@ -421112,6 +421126,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||shemsfm.net/ar/setStats/
 ||shemsfm.net/fr/setStats/
 ||sheoil.newyorkandcompany.com^
+||shepherd.ff.avast.com^
 ||sheregesh-io.traveler.today^
 ||sherlock-events-sampler.ebay.com^
 ||sherlock.gessikanogueira.com.br^
