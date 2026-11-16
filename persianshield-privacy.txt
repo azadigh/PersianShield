@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.11.15
-! Last modified: 2026-11-15 05:10:01 UTC
+! Version: 2026.11.16
+! Last modified: 2026-11-16 05:07:25 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 469,184
+! Total rules: 469,202
 ! File size: 14.7 MB
 ! License: MIT
 !
@@ -3386,6 +3386,8 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xhr,other
 /prod/ncg/ncg.js
 /prod/ping?
+/prod/pni/fp.min.js?
+/prod/pni/g2i.min.js?
 /production/analytics.min.js
 /production/track$domain=note.com
 /promo/impression?
@@ -299860,6 +299862,7 @@ faz.net##+js(set-session-storage-item, com.adobe.reactor.core.visitorTracking.la
 faz.net##+js(set-session-storage-item, com.adobe.reactor.core.visitorTracking.landingTime, $remove$)
 faz.net##+js(set-session-storage-item, com.adobe.reactor.core.visitorTracking.pagesViewed, $remove$)
 faz.net##+js(set-session-storage-item, com.adobe.reactor.core.visitorTracking.trafficSource, $remove$)
+fcportables.com,filecatchers.com##+js(no-fetch-if, method:POST body:/detect|trigger/)
 fedex.com##+js(set-local-storage-item, fdx_enable_new_detail_page, true)
 feedback.a2g.no$image
 feedback.aarreha.ch$image
@@ -338152,6 +338155,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||celestialspectra.com^
 ||celigo.actonservice.com^
 ||cell.orthocell.com^
+||cella.*.check24.*/tracking/
 ||cellar-analytics.mapion.co.jp^
 ||cellstats.mako.co.il^
 ||cemca.andorwillow.com^
@@ -338424,10 +338428,18 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||check.tep.test.ajo.adobe.com^
 ||check2.bankofscotland.co.uk^
 ||check2.lloydsbank.co.uk^
+||check24.*/*/json/dynamic/set-sem-tracking
+||check24.*/*/traffic-event
+||check24.*/api/client-logs
+||check24.*/api/web-vitals-metrics
 ||check24.*/assets/funnel-tracking.min.js
+||check24.*/files/give_gif.php
 ||check24.*/files/give_png.php
 ||check24.*/gif/*/info.gif
+||check24.*/jsonp/statsd/
 ||check24.*/misc/tracking_gif.php
+||check24.*/rpc/desktop/log/
+||check24.*/syncLocalStorage.html
 ||check24.de/files/give_img.php
 ||check3.tiaa.org^
 ||checkeffect.at^$3p
@@ -344115,6 +344127,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||darnuid.netflix.com^
 ||dart.onjoyri.de^
 ||dartington.co.uk/*/WeltPixel_GA4/js/weltpixel_ga4_gtm.js
+||das-cdn.idealo.com/pixel/
 ||das.deepsnitch.ai^
 ||dash.cfworks.vip^
 ||dash.getsitecontrol.com/api/*/events?
@@ -376436,7 +376449,6 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||jzoxch.menswearhouse.com^
 ||jzprtb.1stdibs.com^
 ||jzq915.playmobil.com^
-||jzq915.playmobil.com^ы
 ||jzqfac.bestsecret.ch^
 ||jzrcod.ygl.co.il^
 ||jzvln.famousfootwear.com^
@@ -407129,6 +407141,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||ptztvpremium.com^$third-party
 ||pu.pretunique.fr^
 ||puadf.spanx.ca^
+||pub-api.*.check24.*/*/shared-identifier
 ||pub-cfg.secu100.net.iberostar.com^
 ||pub.a8.net/cgi-bin/redirect?ar=http$doc,urlskip=?ar
 ||pub.olx.com.br/detect-adblocker.js
@@ -422762,7 +422775,6 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||slickdeals.net/i.php?*&u2=http$doc,urlskip=?u2
 ||slidedeck.com^$image,third-party
 ||slideplayer.biz.tr/slide/getviewscount/
-||slike.indiatimes.com^
 ||slim.slimkiezen.eu^
 ||slimesupplies.net^
 ||slimsense.net^
@@ -428725,6 +428737,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||souisa.com/analytics/
 ||soul.sujusoul.com^
 ||soulclicking.com^
+||soulfreedom.net^
 ||soundcloud.com/v*/events
 ||soundcloud.com^$ping
 ||soundcore.com/metrics/$xhr,method=post
@@ -453110,6 +453123,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||tourmake.it^*/stat/
 ||tourmake.it^*/stats?
 ||tourradar.com/def/partner?$third-party
+||tourspicker.com^
 ||tout.com/tracker.js
 ||toutiao.com/action_log/
 ||toutiao.com^*/user_log/
@@ -459752,6 +459766,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||tuulelipp.jyrgenson.xyz^
 ||tuur.dxpr.com^
 ||tuvevx.agent-sana.com^
+||tuxedocard.com^
 ||tuxmat.surebaby.com^
 ||tuykfa.ivrose.com^
 ||tv-asahi.co.jp/official/logging?
@@ -460139,6 +460154,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||ubrihx.allbirds.jp^
 ||ubssn.namesakehome.com^
 ||ubsumw.ifp.es^
+||ubt-sgp.travix.com/bee/collect
 ||ubt-sgp.travix.com^
 ||ubt-sgp.trip.com^
 ||ubt-sin.tripcdn.com^
@@ -461008,6 +461024,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||url8196.mindrise.app^
 ||url8258.jshek.branch.rocks^
 ||url9609.account.experience-muse.com^
+||urlaub.check24.*/*/json/hotel/featuredHotelReport
 ||urlbrief.com^$3p
 ||urlbrief.com^$third-party
 ||urldefense.com/*/webmon.js
@@ -462594,6 +462611,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||vinted.nl/relay/events
 ||vinub.com^$3p
 ||vinub.com^$third-party
+||vinylanswer.net^
 ||violetdemise.com^
 ||viously.com/*/mt?
 ||viously.com^*/mt?
