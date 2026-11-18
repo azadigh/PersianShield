@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.11.17
-! Last modified: 2026-11-17 06:53:32 UTC
+! Version: 2026.11.18
+! Last modified: 2026-11-18 06:13:35 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 469,231
+! Total rules: 469,272
 ! File size: 14.7 MB
 ! License: MIT
 !
@@ -1652,6 +1652,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /cklog.js
 /cl.animate.co.jp/c/*$image
 /cl.mos.jp/q/*$image
+/cl/2x2.json
 /clarity-*.js
 /clck/*$domain=yandex.*|playhop.com
 /clear.gif?
@@ -31220,7 +31221,7 @@ cbsnews.com##+js(remove-cookie, fly_vid, when, scroll keydown)
 cbsnews.com##+js(set-local-storage-item, /fmscw_resp|intercom/, $remove$)
 cbsnews.com##+js(set-session-storage-item, CBSNEWS.features.fms-params, $remove$)
 cbssports.com##.taboola-recommends
-cbssports.com,foxnews.com,gbatemp.net,news.com.au,pcworld.com,usatoday.com##+js(set, admiral, noopFunc)
+cbssports.com,gbatemp.net,news.com.au,pcworld.com,usatoday.com##+js(set, admiral, noopFunc)
 ccc.schoolsparrow.com$image
 cccp.es.relay.walmart.com$image
 cccp.relay.walmart.ca$image
@@ -300340,6 +300341,9 @@ forum.blu-ray.com##a[href][onclick*="this.href"]:remove-attr(/^on(?:click|contex
 forum.click.s11.sfmc-osl.com$image
 forums.redflagdeals.com##+js(href-sanitizer, a.autolinker_link[href*=".com/t/"][href*="url=http"], ?url)
 forward.mail.nieuweinstituut.nl$image
+foxnews.com##+js(aeld, /load|error/, , G=null), clearTimeout(K), !)
+foxnews.com##+js(nostif, , G=null), clearTimeout(K), !)
+foxnews.com##+js(set-constant, admrlWpJsonP, emptyObj)
 foxnews.com##+js(set-local-storage-item, anon_fpid, $remove$)
 fr.de##.bottom-footer > .dossier
 franchiseemail.hbham.com$image
@@ -317473,6 +317477,8 @@ wing.wingshackwings.com$image
 wired.com,self.com,allure.com,pitchfork.com,gq.com##+js(set-local-storage-item, /^avoinspector/, $remove$)
 wlc7avxfyi7glqzl.click.s11.sfmc-osl.com$image
 woman.excite.co.jp##+js(remove-attr, data-woman-ex, a[href][data-woman-ex])
+woman.mynavi.jp##+js(remove-cookie, am_FPID)
+woman.mynavi.jp##+js(remove-node-text, script, am_FPID)
 womansday.e.aremedia.com.au$image
 womensweeklyfood.e.aremedia.com.au$image
 wordpress.townsquaremedia.info$image
@@ -323208,6 +323214,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||abracon.actonservice.com^
 ||abrakadabra.zensim.com.au^
 ||abrds.oneoff.world^
+||abritel.fr/tagging-client
 ||abrmcbgt.traffictoday.nl^
 ||abs-cbn.com/resources/$script,1p
 ||abs.proxistore.com^
@@ -328393,6 +328400,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||anim.growthgorilla.ai^
 ||animalcoder.com^
 ||animaux.oworld.fr^
+||anime-go.org/theme/assets/js/presence.js
 ||animegratis.net/js/layout-signal.js
 ||animember.net/js/access.js
 ||animo.sto.wiki^
@@ -329000,6 +329008,8 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||api.coloso.co.kr/logs/page
 ||api.comboplay.online^
 ||api.cometogethermkt.com.br^
+||api.community.fox.com/*/analytics/events
+||api.community.fox.com/*/metrics
 ||api.compartilhabem.com^
 ||api.compramais.com.br^
 ||api.compramosagora.pt^
@@ -333212,6 +333222,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||backuplanding.ubm-events.com^
 ||bacon.getcarro.com^$3p
 ||baconbags.com^
+||badge.dimensions.ai^
 ||badgeboat.com^
 ||badgerabbit.com^
 ||badgevolcano.com^
@@ -334268,6 +334279,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||bi.medscape.com^
 ||bi.pst.tech^
 ||bia.brightinfo.com^
+||bianopixel.com^
 ||biberukalap.com^
 ||bibglj.timberland.fr^
 ||bicp-analytics.postscript.io^
@@ -337322,6 +337334,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||carpoolmatch.com^
 ||carpoolqueen.com^
 ||carreira.brunaeugenio.com.br^
+||carrentals.com/tagging-client
 ||carreras.unisabana.edu.co^
 ||carrick-ui.advoncommerce.com^
 ||carrierservices-business.vodafone.com^
@@ -338204,6 +338217,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||ceqkp.meblefurniture.com^
 ||ceqle.budclub.live^
 ||cera.ceraearclinic.com^
+||ceramet.net/v*/stat_views
 ||cerberus.sqrt-5041.de/somtag/logs^
 ||cerdmann.com^$3p
 ||cerebro.edna.yahoo.net^$image
@@ -338428,6 +338442,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||chdpl.mypiada.com^
 ||cheapcinema.club^$all
 ||cheaptickets.com/cl/2x2.gif?
+||cheaptickets.com/tagging-client
 ||check.buetzandbeats.de^
 ||check.ddos-guard.net^$third-party
 ||check.frbservices.org^
@@ -339761,6 +339776,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||coachweb.com/vite/assets/JwPlayer/Shared/Analytics.*.js
 ||coachweb.com/vite/assets/JwPlayer/Shared/TrackingEvents.*.js
 ||coalkitchen.com^
+||coalmerchants.com^
 ||coastersim.com^
 ||coatfood.com^
 ||coavpecq.sklep.hellodogs.pl^
@@ -340503,6 +340519,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||components.justanswer.com/v3/main-tracking-script@released.js
 ||components2.*.it/rcs_tealium/
 ||components2.corriereobjects.it/rcs_data-tracking/
+||components2.corriereobjects.it/rcs_tag-manager/v*/index.min.js
 ||components2.rcsobjects.it/rcs_tracking-service/
 ||compoundservices-g.net.mydays.de^
 ||compress-or-die.com/hokuspokus
@@ -340774,6 +340791,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||connect.lavea.de^
 ||connect.leadmagneten.dk^
 ||connect.lgcns.com^
+||connect.liblynx.com^
 ||connect.lightriver.com^
 ||connect.link.boone.health^
 ||connect.lionsclubs.org^
@@ -356900,6 +356918,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||expedia.*/2x2.gif?
 ||expedia.*/cl/
 ||expedia.*/minify/client-logger-bundle-
+||expedia.*/tagging-client
 ||expedia.com/api/datacapture/track
 ||expedia.com/api/uisprime/track
 ||expedia.com/cl/data/typeahead_client_metrics.json
@@ -357821,6 +357840,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||fevernote9.net.mydays.de^
 ||fewjuice.com^
 ||fewkittens.com^
+||fewo-direkt.de/tagging-client
 ||fewptsgg.argonaudio.com^
 ||fewptsgg.radiantacoustics.com^
 ||fewptsgg.vestlyd.com^
@@ -358939,6 +358959,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||fox.visionaudiovisual.com^
 ||foxford.ru/traqtor|
 ||foxlagoon.com^
+||foxnewsplayer-a.akamaihd.net/player/*/Omniture.js
 ||foxpush.com^$third-party
 ||foxpush.net^$third-party
 ||foxsports.com.au/akam/
@@ -370722,6 +370743,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||hottraffic.nl^$third-party
 ||hotwire.com/api/*/logging/
 ||hotwire.com/api/datacapture/track
+||hotwire.com/tagging-client
 ||hotwire.com^*/1x1.gif?
 ||hotwire.com^*/evaluateexperimentsandlog
 ||hotwirestatic.com/*/comp/gtm/googletaganalytics.js
@@ -377474,6 +377496,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||krcurxzl.soundboks.de^
 ||krcurxzl.soundboks.eu^
 ||kre.wes.org^
+||krepsinis.net/gtgmetrics/
 ||kreyfdv.nordicoil.se^
 ||krfb.8vgr.freemantporter.com^
 ||krfxvi.iconbydesign.com.au^
@@ -378750,6 +378773,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||liczniki.org/hit.php
 ||lida.entyrecare.com^
 ||lida.pflegewegweiser.ch^
+||liderlamp.pl/mx7v2/
 ||lidl.media01.eu/tm_js.aspx?trackid=
 ||liecso.e-himart.co.kr^
 ||lieliskadavana.lv/gtm/
@@ -387839,6 +387863,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||loja.svdseminovos.com.br^
 ||lokalleads-cci.com^$third-party
 ||lokalwerben.t-online.de^
+||loki-ingest.fox.com/loki/api/v1/push
 ||loki-ingest.fox.com^
 ||lolhk.shopfurme.com^
 ||lolly.needforsweet.de^
@@ -402656,6 +402681,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||orbitz.com/cl/data/bingpixels.json?
 ||orbitz.com/cl/data/typeahead_client_metrics.json
 ||orbitz.com/minify/client-logger-bundle-
+||orbitz.com/tagging-client
 ||orbitz.com^*/1x1.gif?
 ||orbitz.com^*/2x2.gif?
 ||orbitz.com^*/evaluateexperimentsandlog
@@ -404558,6 +404584,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||peach-analytics.vercel.app^
 ||peach-static.ebu.io/pipe-*.min.js
 ||peachjohn.co.jp/StaffContent/assets/js/staffstart-analytics.js
+||peachr.tv/s.js
 ||peacocktv.com/*/tracking/
 ||peafowl.prod.fyi^
 ||peahn.modlily.com^
@@ -409165,6 +409192,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||redistats.com^$third-party
 ||redlion.actonservice.com^
 ||redmillgroup.com^
+||redpocket.com/js/trackweb.js
 ||redretarget.com^$third-party
 ||redstatcounter.com^$3p
 ||redstatcounter.com^$third-party
@@ -444207,6 +444235,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||static.fengkongcloud.com^
 ||static.files.bbci.co.uk/ws/simorgh-assets/public/static/js/reverb/
 ||static.fnnews.com/resources/w/statics/fn-staticsV2.js
+||static.foxnews.com/static/isa/app/lib/VisitorAPI.orig.js
 ||static.foxnews.com/static/leap/sites/fnc/metrics.js
 ||static.frusano.com^
 ||static.funshion.com/*/common/log/
@@ -446430,6 +446459,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||stayaction.com^
 ||stayforlong.com/api/kafka/tracking
 ||stayfriends.de/mobilemember/js/framework/sf_tracking.js
+||stayz.*/tagging-client
 ||stayz.com.au/cl/data/omgpixel.json
 ||stbbs.sooplive.com/api/*_log.php
 ||stbg.bankonline.sboff.com^
@@ -447116,6 +447146,8 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||stretchsquirrel.com^
 ||strg.turismodentale.it^
 ||strhl.tirestreets.com^
+||strike.fox.com/static/fnc/video/Amazonbidder.js
+||strike.fox.com/static/fnc/video/Prebidbidder.js
 ||strikeclient.usnursing.com^
 ||strikenurse.usnursing.com^
 ||stripchat.com/pixel/
@@ -458086,6 +458118,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||travelocity.com/cl/data/typeahead_client_metrics.json
 ||travelocity.com/minify/exp.core.channeltracking
 ||travelocity.com/minify/exp.core.tvlytracking
+||travelocity.com/tagging-client
 ||travelocity.com^*/1x1.gif?
 ||travelocity.com^*/2x2.gif?
 ||travelocity.com^*/evaluateexperimentsandlog
@@ -460806,6 +460839,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||unlpa.meetrosy.com^
 ||unm.emol.com^
 ||unpkg.com/@topsort/analytics.js
+||unpkg.com/analytics-plugin-trackable
 ||unpkg.com/web-vitals
 ||unpkg.com/web-vitals?
 ||uns.comunicaciones.santander.cl^
@@ -463314,6 +463348,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||vrasto.openapp.link^
 ||vrbo.com/edap/elo/v1/event/beacon
 ||vrbo.com/serp/api/metrics
+||vrbo.com/tagging-client
 ||vrbzg.craftclubco.com^
 ||vrcamdl.istaging.com^
 ||vrcamdltest.istaging.com^
@@ -463805,6 +463840,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||wamahe.wokularach.pl^
 ||wan.kbdmp.com^
 ||wandzcdn.com^$third-party
+||wanmatures.com^
 ||wanmei.com/public/js/stat.js
 ||wannads.com/api/track/fingerprint^
 ||wantingwindow.com^
@@ -465295,6 +465331,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||wildpetalfarm.com^
 ||wildwoodavenue.com^
 ||wiley.met.vgwort.de^
+||willcollect.com^
 ||willow.thethompsonmethod.com^
 ||wimi.aviendo.dk^
 ||win.staticstuff.net^
@@ -465327,6 +465364,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||wipo.int/wipo-analytics/
 ||wirecomic.com^
 ||wired.*/hotzones/src/pixelpropagate.js
+||wiredcarts.com^
 ||wiredforcoffee.com^
 ||wiredminds.de^$3p
 ||wiredminds.de^$third-party
@@ -465526,6 +465564,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||woodpeckerlog.com^
 ||woodruffsweitzer.actonservice.com^
 ||woodstock.viessmann.com.au^
+||woodstockcustom.com^
 ||woodtone.actonservice.com^
 ||woof.psi-lekarna.cz^
 ||woofweather.com^
@@ -465604,6 +465643,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||wos.lv^$third-party
 ||wotasia2.login.wargaming.net.iberostar.com^
 ||wotasia3.login.wargaming.net.iberostar.com^
+||wotif.*/tagging-client
 ||wotif.com/cl/2x2.gif?
 ||wotljkde.emsa-metal.com^
 ||woutkw.type.jp^
@@ -468061,6 +468101,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||youronestopshop.themagnetgroup.com^
 ||youronlinechoices.com/css/images/pixel.png
 ||youronlinechoices.com/images/pixel.png
+||yourownexpert.com^
 ||yourporsche.nabooda-auto.com^
 ||yourporscheimg.nabooda-auto.com^
 ||yoursolution.electrified.averydennison.com^
