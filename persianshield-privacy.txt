@@ -4,10 +4,10 @@
 ! NO adult content..
 ! Homepage: https://github.com/azadigh/PersianShield
 ! Coded by: github.com/azadigh and t.me/azadi_tg
-! Version: 2026.11.21
-! Last modified: 2026-11-21 05:54:27 UTC
+! Version: 2026.11.22
+! Last modified: 2026-11-22 05:28:02 UTC
 ! Expires: 1 days (update frequency)
-! Total rules: 469,337
+! Total rules: 469,352
 ! File size: 14.7 MB
 ! License: MIT
 !
@@ -3456,6 +3456,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /px.js?ch=
 /px.js?ch=$script
 /px/*/blank.gif?
+/px/?rand=
 /px/client/main.min.js
 /px/track?
 /px?t=
@@ -4103,6 +4104,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 /track/*$to=chtbl.com|chrt.fm|tracking.swap.fm,urlskip=/\/track\/\w+\/([^?]+)/ +https
 /track/?*&event=
 /track/?data=
+/track/?evt=
 /track/?verbose=
 /track/aggregate?
 /track/batch?
@@ -29796,6 +29798,7 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 @@||scorecardresearch.com/crossdomain.xml$domain=web.de
 @@||scorecardresearch.com/internal-c2/plugins/streamingtag_plugin_jwplayer.js$domain=indiatoday.in
 @@||scorecardresearch.com/p?$domain=web.de
+@@||scorecardresearch.com/plugins/streaming-jwplayer/$script,domain=newstak.in
 @@||scorecardresearch.com/r$image,domain=billetnet.dk|billettservice.no|lippupalvelu.fi|pcworld.com|techhive.com|ticketmaster.ae|ticketmaster.co.uk|ticketmaster.de|ticketmaster.ie|ticketmaster.nl|ticnet.se|wsj.com
 @@||scorecardresearch.com^$3p,domain=nissan.ru
 @@||scorecardresearch.com^*/streamingtag_plugin_jwplayer.js
@@ -324595,6 +324598,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||advtek.actonservice.com^
 ||advtxk.chocolife.com.br^
 ||adways.com^$third-party
+||adweek.com/vx39/
 ||adweek.com/wp-content/plugins/adw-parsley/
 ||adwerx.com^$third-party
 ||adwmab.card-db.com^
@@ -336064,6 +336068,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||byteoversea.com/captcha/report
 ||byteoversea.com/monitor_browser/
 ||byteoversea.com/monitor_web/
+||bytes.adweek.com/vs.js
 ||byuwzr.amanacapital.com^
 ||bywefup1a.solo60.com^
 ||bywxp.aritzia.com^
@@ -350740,7 +350745,9 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||dev.ventisec.com^
 ||dev.visualwebsiteoptimizer.com/*/track-
 ||dev.visualwebsiteoptimizer.com/apm
+||dev.visualwebsiteoptimizer.com/cdn/edrv/
 ||dev.visualwebsiteoptimizer.com/collect/events/
+||dev.visualwebsiteoptimizer.com/edrv/
 ||dev.visualwebsiteoptimizer.com/ping_tpc.php
 ||dev.wowangel.com^
 ||dev.zenlifegrounding.com^
@@ -355759,9 +355766,6 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||essdmtcl2.net.mydays.de^
 ||esseecs05.net.mydays.de^
 ||essential-apps-analytics.herokuapp.com^
-||essentiallysports.com/api/track/
-||essentiallysports.com/api/v1/counts
-||essentiallysports.com/growth/engagement/
 ||essmnx.edreams.ch^
 ||esssm.littlepoppyco.com^
 ||est.elegentsa.com^
@@ -355796,6 +355800,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||estrack.net^$third-party
 ||estrelaapps.com/collect
 ||estrich.estrichoplossingen.nl^
+||estuary-data.com/ga4-identify
 ||esub.akkusys.de^
 ||esuldc.holdup.com.br^
 ||esvkay.unifriend.co.kr^
@@ -375401,6 +375406,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||jachd.bioliteenergy.com^
 ||jackal.jakerunzer.com^
 ||jackal.thetie.io^
+||jackalsmovie.com^
 ||jackpot.cashoomo.com^
 ||jacky.net.mydays.de^
 ||jacsg.belaro.ro^
@@ -387815,6 +387821,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||lognormal.net^$third-party
 ||lognxc.needen.fr^
 ||logofa.st/js/script.js
+||logomet.com^
 ||logperf.vnexpress.net^
 ||logql.yahoo.co.jp^
 ||logr-ingest.com^
@@ -392445,7 +392452,6 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||maxclientstatapi.com^
 ||maxcruisers.com^
 ||maxepv.com^
-||maximise.nyc3.cdn.digitaloceanspaces.com/mxmse.min.js$domain=essentiallysports.com
 ||maximum.ru/uploads/metrics.js
 ||maxkill.upinmax.com^
 ||maxmind.com/app/$third-party
@@ -393109,6 +393115,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||media-allrecipes.com/assets/deployables/*/analytics.bundled.js
 ||media-amazon.com/images/*/metrics.jpg
 ||media-analytic.com/gtag.js
+||media-analytic.com/media.js
 ||media-analytic.com^
 ||media-atl3-1.cdn.whatsapp.net.iberostar.com^
 ||media-cdg4-1.cdn.whatsapp.net.iberostar.com^
@@ -405185,6 +405192,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||pitcher.actonservice.com^
 ||pitdog.frsperformance.com.br^
 ||pitkinvstatefarmgeneralinsurancecompany.e.epiqnotification.com^
+||pitmanmusic.com^
 ||pitomec.ru/top.gif
 ||pittaking.openapp.link^
 ||piu.alldent-zahnzentrum-bremen.de^
@@ -409099,6 +409107,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||reanime.to/pv.js
 ||reaonq.xn--hdks770u8f0a8dvzft.net^
 ||reauthenticator.com^
+||rebatecircle.com^
 ||rebelclover.com^
 ||rebelhen.com^
 ||rebelmouse.com/pharos/
@@ -409122,6 +409131,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||recepcao.ranchodasdunas.com.br^
 ||receptivereaction.com^
 ||recessrain.com^
+||recessremote.com^
 ||rechenschieber.soccerdonna.de^
 ||rechenschieber.transfermarkt.at^
 ||rechenschieber.transfermarkt.be^
@@ -409251,6 +409261,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||redistats.com^$3p
 ||redistats.com^$third-party
 ||redlion.actonservice.com^
+||redmaceta.com^
 ||redmillgroup.com^
 ||redpocket.com/js/trackweb.js
 ||redretarget.com^$third-party
@@ -409293,6 +409304,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||reebok.jp/resources/js/analysis/tracker.js
 ||reedbusiness.net^$3p
 ||reedbusiness.net^$third-party
+||reelboat.com^
 ||reelcombat.com^
 ||reelgood.com/v3.0/checkip
 ||reelup.io^$third-party
@@ -412918,6 +412930,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||sandboxsectrk.veracity.com^
 ||sanders.sanderswellnesslayton.com^
 ||sandpad.bushheritage.org.au^
+||sandshredder.com^
 ||sandstrophies.com^
 ||sandypocket.com^
 ||sandytaco.com^
@@ -418788,6 +418801,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||sfcbsh.mmlafleur.com^
 ||sfcev.ragenationapparel.com^
 ||sfchronicle.com/413gkwMT/init.js
+||sfchronicle.com/api/client-logs
 ||sfcv.chinavi-shop.jp^
 ||sfeedback.equa.cz^
 ||sffctn.bimago.it^
@@ -446605,6 +446619,7 @@ zy4jviawqldmteoh.view.s11.sfmc-osl.com$image
 ||steinsala.viessmann.lu^
 ||stel.telegraaf.nl^
 ||stellarbalms.com^
+||stellarcoded.com^
 ||stellarduel.com^
 ||stellaservice.com^$3p
 ||stellaservice.com^$third-party
